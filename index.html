@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2712%27 fill=%27%230C3A63%27/%3E%3Cpath d=%27M12 48h10V30H12zm15 0h10V18H27zm15 0h10V8H42z%27 fill=%27%231BB1BF%27/%3E%3Cpath d=%27M12 24l15-10 15 6 10-12%27 stroke=%27%23E09A2B%27 stroke-width=%273%27 fill=%27none%27 stroke-linecap=%27round%27/%3E%3C/svg%3E">
 <title>國立中山大學微電網建置統包工程 投標決策與可行性評估中樞｜進能服 6692</title>
-<meta name="description" content="國立中山大學微電網建置統包工程（9,200萬~9,500萬）高階主管可行性評估中樞：涵蓋西子灣天然孤島環境、GCB6饋線拓撲、3MWh儲能櫃(C5M/IP65/細水霧/VPC)、1200kW PCS Seamless無縫切換、國研半導體實驗保供、全校ABB保護電驛與避雷接地優化，以及四大面向致命風險、三選項可行性評估、五大釋疑談判底線與5年全責保固。">
+<meta name="description" content="國立中山大學微電網建置統包工程（9,200萬~9,500萬）高階主管可行性評估中樞：涵蓋西子灣天然孤島環境、GCB6饋線拓撲、3MWh儲能櫃(C5M/IP65/細水霧/VPC)、1200kW PCS Seamless無縫切換、國研半導體實驗保供、五大核心致命風險、12項前期評估技術缺口、11大標前釋疑追蹤表與5年全責保固。">
 
 <style>
 :root{
@@ -40,14 +40,14 @@ body{
 .topnav::-webkit-scrollbar{display:none}
 .topnav a{
   text-decoration:none; color:var(--muted); font-size:.82rem; font-weight:600;
-  padding:5px 11px; border-radius:4px; white-space:nowrap; border:1px solid transparent;
+  padding:5px 10px; border-radius:4px; white-space:nowrap; border:1px solid transparent;
   transition:all .15s ease;
 }
 .topnav a:hover{color:var(--blue); background:var(--blue-soft)}
 .topnav a.active{color:#fff; background:var(--blue); font-weight:700}
 .topbar .meta{font-size:.74rem; color:var(--muted); white-space:nowrap; font-weight:600}
-@media(max-width:1250px){.topbar .meta{display:none}}
-@media(max-width:860px){.topbar .brand .tx{font-size:.78rem}}
+@media(max-width:1300px){.topbar .meta{display:none}}
+@media(max-width:900px){.topbar .brand .tx{font-size:.78rem}}
 
 /* ---------- views / slides ---------- */
 .view{display:none}
@@ -133,6 +133,7 @@ th{background:var(--blue); color:#fff; text-align:left; font-weight:700; padding
 th.sub{background:var(--blue-d)}
 th.coral{background:var(--coral)}
 th.amber{background:var(--amber)}
+th.purple{background:var(--purple)}
 td{padding:8px 12px; border-bottom:1px solid #EDF1F5; vertical-align:top}
 tr:last-child td{border-bottom:none}
 tbody tr:nth-child(even){background:#FAFCFE}
@@ -199,15 +200,18 @@ td.ctr,th.ctr{text-align:center}
 .part-card.c3{border-top-color:var(--amber)}
 .part-card.c4{border-top-color:var(--coral)}
 .part-card.c5{border-top-color:var(--purple)}
+.part-card.c6{border-top-color:#C53030; background:#FFFBFB}
 .part-card .pc-eyebrow{font-size:.72rem; font-weight:800; letter-spacing:.14em; color:var(--blue)}
 .part-card.c2 .pc-eyebrow{color:var(--teal-d)}
 .part-card.c3 .pc-eyebrow{color:#9a6a10}
 .part-card.c4 .pc-eyebrow{color:#b4432c}
 .part-card.c5 .pc-eyebrow{color:var(--purple)}
+.part-card.c6 .pc-eyebrow{color:#C53030}
 .part-card h2{font-size:1.15rem; font-weight:800; margin:8px 0 6px; line-height:1.35}
 .part-card p{color:var(--muted); font-size:.85rem; line-height:1.55}
 .part-card .pc-flags{margin-top:12px; display:flex; gap:6px; flex-wrap:wrap}
 .part-card .pc-go{margin-top:14px; font-weight:800; color:var(--blue); font-size:.84rem}
+.part-card.c6 .pc-go{color:#C53030}
 .part-card .pc-icon{position:absolute; right:14px; top:14px; opacity:.85}
 
 .quick-spec-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:12px; margin-top:24px}
@@ -278,7 +282,7 @@ td.ctr,th.ctr{text-align:center}
       <rect x="0" y="14" width="12" height="12" rx="2" fill="#1BB1BF" opacity=".6"/>
       <rect x="14" y="14" width="12" height="12" rx="2" fill="#1968AD"/>
     </svg>
-    <div class="tx">進能服 6692<small>中山大學微電網統包工程・決策中樞</small></div>
+    <div class="tx">進能服 6692<small>中山大學微電網統包工程・決策中樞 v0.2</small></div>
   </a>
   <nav class="topnav">
     <a href="#home" data-nav="home">封面</a>
@@ -287,8 +291,9 @@ td.ctr,th.ctr{text-align:center}
     <a href="#p3" data-nav="p3">Part 3 運轉調度與維運 (5 頁)</a>
     <a href="#p4" data-nav="p4">Part 4 契約與關鍵風險 (5 頁)</a>
     <a href="#p5" data-nav="p5">Part 5 可行性決策建議 (4 頁)</a>
+    <a href="#p6" data-nav="p6" style="color:#C53030; font-weight:700;">Part 6 標前釋疑與追蹤 (4 頁)</a>
   </nav>
-  <div class="meta">初判：有條件投標 ｜ 預算：9,200萬~9,500萬 ｜ 履約期限：116/06/30</div>
+  <div class="meta">初判：有條件投標 ｜ 11項釋疑追蹤 ｜ 電氣設備台製限制 ｜ 116/06/30</div>
 </div>
 
 <!-- ================= HOME VIEW ================= -->
@@ -312,26 +317,27 @@ td.ctr,th.ctr{text-align:center}
       </g>
     </svg>
     <div class="inner">
-      <div class="kicker">進能服 6692 · 統包工程內部可行性評估與高階決策中樞</div>
-      <h1>西子灣饋線末端微網工程：技術全規格拆解 × 四面向致命風險 × 有條件投標決策</h1>
+      <div class="kicker">進能服 6692 · 統包工程內部可行性評估與高階決策中樞 (v0.2 計畫書稽核交叉版)</div>
+      <h1>西子灣饋線末端微網工程：技術全規格拆解 × 五大核心致命風險 × 11大標前釋疑追蹤</h1>
       <p class="lede">
-        本決策中樞專為向公司高階主管匯報設計，深度整合《中山大學微電網建置統包工程需求說明書》全 16 份正式招標文件與內部可行性評估報告：技術規格我方具備完全交付能力（3MWh C5M 儲能、1200kW PCS Seamless 瞬切、國研 584kW 半導體不斷電）；惟契約條款存在三大致命硬傷（損害賠償無上限、無物價調整、預算前後矛盾）與極端緊繃工期（40天細設扣減、116/6/30硬工期）。經綜合權衡，提出「選項 B：有條件投標」作為核心決策建言，明訂投標前 5 大釋疑談判底線與風控閉環。
+        本決策中樞專為向公司高階主管匯報設計，深度整合《中山大學微電網建置統包工程需求說明書》全 16 份正式招標文件、前期評估技術稽核與 v0.2 可行性評估報告：技術規格我方具備交付能力；惟契約與採購條款存在重大合規硬傷（投標須知勾選<strong>「電氣設備原產地須屬我國」</strong>電芯無台產源、3MWh未定義安裝或可用容量、損害賠償無上限、無物調、預算矛盾）。特別獨立新增 <strong>Part 6 標前釋疑與追蹤表</strong>，將 11 大疑慮與建議答復做成表格，作為投標前關鍵談判與 Go/No-Go 決策依據。
       </p>
       <div class="herometa">
         <span class="highlight">可行性初判：有條件投標</span>
-        <span>預算金額：9,500萬 vs 9,200萬含稅（待釋疑）</span>
-        <span>儲能 3MWh ＋ PCS 1,200kW（VPC認證）</span>
-        <span>國研半導體實驗 584kW 孤島保供</span>
-        <span>Seamless 瞬切（<15%畸變零感知）</span>
+        <span class="highlight">合規障礙：電氣設備原產地須我國</span>
+        <span>容量定義：3MWh 安裝 vs 可用待釋疑</span>
+        <span>預算金額：9,500萬 vs 9,200萬含稅</span>
+        <span>儲能 3MWh ＋ PCS 1,200kW</span>
+        <span>國研半導體 584kW 孤島保供</span>
+        <span>48h 防災能量缺口 8,656 kWh</span>
         <span class="highlight">致命風險：損害賠償無上限</span>
-        <span>履約期限：116年6月30日（工期約7個月）</span>
-        <span>最有利標序位法（上限60頁）</span>
+        <span class="highlight">Part 6：11大釋疑追蹤表</span>
       </div>
     </div>
   </div>
 
   <div class="homebody">
-    <!-- 5 Chapter Cards -->
+    <!-- 6 Chapter Cards -->
     <div class="part-cards">
       <a class="part-card" href="#p1-1">
         <svg class="pc-icon" width="28" height="28" viewBox="0 0 30 30"><rect x="1" y="1" width="12" height="12" rx="2" fill="#1968AD" opacity=".2"/><rect x="17" y="1" width="12" height="12" rx="2" fill="#1968AD" opacity=".45"/><rect x="1" y="17" width="12" height="12" rx="2" fill="#1968AD" opacity=".45"/><rect x="17" y="17" width="12" height="12" rx="2" fill="#1968AD"/></svg>
@@ -364,8 +370,8 @@ td.ctr,th.ctr{text-align:center}
         <svg class="pc-icon" width="28" height="28" viewBox="0 0 30 30"><circle cx="15" cy="15" r="13" stroke="#D95F45" stroke-width="2" fill="none"/><path d="M15 8v9M15 21v2" stroke="#D95F45" stroke-width="2.5" stroke-linecap="round"/></svg>
         <div class="pc-eyebrow">PART 4</div>
         <h2>契約與關鍵風險</h2>
-        <p>向主管匯報四大面向風險清單：損害賠償無上限、無物價調整、消防新制審查、工期不可壓縮外部關鍵路徑、尾款綁台電補助撥付與現金流缺口。</p>
-        <div class="pc-flags"><span class="chip coral">5 頁</span><span class="chip coral">無賠償上限</span><span class="chip amber">無物調</span><span class="chip purple">工期無浮時</span></div>
+        <p>向主管匯報五大核心致命風險（原產地限制電氣設備台製、3MWh容量定義、無上限賠償、無物調、預算矛盾）及 12 項技術稽核補遺缺口。</p>
+        <div class="pc-flags"><span class="chip coral">5 頁</span><span class="chip coral">電氣設備台製限制</span><span class="chip amber">安裝vs可用容量</span><span class="chip purple">48h柴油缺口</span></div>
         <div class="pc-go">進入契約與關鍵風險 &rarr;</div>
       </a>
 
@@ -373,9 +379,18 @@ td.ctr,th.ctr{text-align:center}
         <svg class="pc-icon" width="28" height="28" viewBox="0 0 30 30"><path d="M5 15l7 7L25 7" stroke="#6B46C1" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
         <div class="pc-eyebrow">PART 5</div>
         <h2>可行性決策建議</h2>
-        <p>A/B/C 三選項決策矩陣（建議採選項 B 有條件投標）、5 大前置門檻檢核表、往上向上董事會匯報 × 往下執行責任矩陣、5 大必提書面釋疑底線。</p>
-        <div class="pc-flags"><span class="chip purple">4 頁</span><span class="chip green">建議選項 B</span><span class="chip blue">5大釋疑清單</span><span class="chip teal">RACI 矩陣</span></div>
+        <p>A/B/C 三選項決策矩陣（建議採選項 B 有條件投標，增列電芯產地否決條件）、6 大前置門檻檢核表、往上向上董事會匯報 × 往下執行責任矩陣。</p>
+        <div class="pc-flags"><span class="chip purple">4 頁</span><span class="chip green">建議選項 B</span><span class="chip coral">一票否決條件</span><span class="chip teal">RACI 矩陣</span></div>
         <div class="pc-go">進入可行性決策建議 &rarr;</div>
+      </a>
+
+      <a class="part-card c6" href="#p6-1">
+        <svg class="pc-icon" width="28" height="28" viewBox="0 0 30 30"><path d="M15 2 C7.8 2 2 7.8 2 15 C2 22.2 7.8 28 15 28 C22.2 28 28 22.2 28 15 C28 7.8 22.2 2 C15 2 Z" fill="#C53030" opacity=".15"/><path d="M15 8 L15 17 M15 21 L15 23" stroke="#C53030" stroke-width="2.6" stroke-linecap="round"/></svg>
+        <div class="pc-eyebrow">PART 6 · 專案焦點</div>
+        <h2>標前釋疑與追蹤表</h2>
+        <p>條列向中山大學正式提出之 11 大疑慮與釋疑題目（原產地、容量定義、賠償上限、預算、48h柴油、球場光電等），完整建議方式與追蹤表。</p>
+        <div class="pc-flags"><span class="chip coral">4 頁</span><span class="chip coral">11 大釋疑清單</span><span class="chip green">建議答復文案</span><span class="chip blue">談判底線追蹤</span></div>
+        <div class="pc-go">進入標前釋疑與追蹤表 &rarr;</div>
       </a>
     </div>
 
@@ -383,27 +398,27 @@ td.ctr,th.ctr{text-align:center}
     <div class="quick-spec-grid">
       <div class="metric coral">
         <div class="k">有條件投標</div>
-        <div class="t">可行性評估初判（技術可達成，契約條款含 3 大致命項須釋疑）</div>
+        <div class="t">可行性初判結論（合規與契約有 5 大致命風險，以釋疑為前提推進）</div>
+      </div>
+      <div class="metric coral">
+        <div class="k">電氣設備台製限制</div>
+        <div class="t">須知勾選原產地須我國，電芯無台產，若涵蓋電芯則一票否決無法投標</div>
       </div>
       <div class="metric amber">
-        <div class="k">9,200 vs 9,500萬</div>
-        <div class="t">預算數字不一致（需求書 9,200萬含稅 vs 須知 9,500萬，標價超額即廢標）</div>
+        <div class="k">安裝 vs 可用容量</div>
+        <div class="t">3MWh 未定義 Installed 或 Usable，若驗收要求可用，設備價差達 600~900 萬</div>
       </div>
       <div class="metric blue">
-        <div class="k">3 MWh / 1.2 MW</div>
-        <div class="t">儲能系統容量與 PCS（C5-M 耐鹽蝕、IP65、UL9540A、細水霧消防）</div>
+        <div class="k">9,200 vs 9,500萬</div>
+        <div class="t">預算前後矛盾（需求書 9,200萬含稅 vs 須知 9,500萬，標價超額即廢標）</div>
       </div>
-      <div class="metric teal">
-        <div class="k">584 kW</div>
-        <div class="t">國研半導體實驗尖峰保供（斷電損失不可計量，夜間純儲能 &ge; 4h）</div>
+      <div class="metric purple">
+        <div class="k">48h 缺口 8,656 kWh</div>
+        <div class="t">250kW 連續 48 小時需柴油約 2,700L，柴發油箱與補給責任招標文件空白</div>
       </div>
       <div class="metric coral">
         <div class="k">無上限求償</div>
-        <div class="t">契約第 19 條未勾選上限，微網切換失誤恐遭無限追償所失利益</div>
-      </div>
-      <div class="metric purple">
-        <div class="k">116/06/30</div>
-        <div class="t">硬性竣工報竣日（扣除 40 天細設，施工僅約 7 個月，無浮時緩衝）</div>
+        <div class="t">契約第 19 條未設賠償上限，半導體實驗數據毀損損失無法計量</div>
       </div>
     </div>
 
@@ -1892,51 +1907,64 @@ td.ctr,th.ctr{text-align:center}
     <div class="slide-header">
       <div>
         <div class="eyebrow">Part 4 · 契約與關鍵風險 4.1</div>
-        <h1>核心風險總覽與三大優先釋疑致命項</h1>
-        <p class="sub">向高階主管匯報：本案技術規格我方可完全達成，價格空間偏緊但非不可行；真正的致命殺傷力在「契約條款」，其中三項屬投標前必須用「書面釋疑」處理掉的重大風險。</p>
+        <h1>核心風險總覽：五大優先確認致命項 (v0.2更新)</h1>
+        <p class="sub">向高階主管匯報：經與計畫書技術稽核交叉比對，致命風險由三項擴充為五項！技術規格我方可達成，真正的殺傷力在「採購合規硬門檻」與「契約條款無上限曝險」，必須於投標前釋疑處理。</p>
       </div>
       <div class="flags">
         <span class="flag coral">初判：有條件投標</span>
+        <span class="flag coral">電氣設備台製限制</span>
+        <span class="flag amber">安裝vs可用容量</span>
         <span class="flag coral">損害賠償無上限</span>
-        <span class="flag amber">工程物價無調整</span>
-        <span class="flag blue">預算矛盾 92M vs 95M</span>
+        <span class="flag blue">預算前後矛盾</span>
       </div>
     </div>
     <div class="slide-body">
       <div class="big-callout alert">
-        <div class="label">向董事長與總經理報告 · 初判結論</div>
-        <div class="answer">「初判：有條件投標」——技術能做，但契約條款存在致命曝險</div>
-        <div class="more">除逾期違約金 10% 上限外，損害賠償依民法 216 條含「所失利益」且無金額上限；國研大樓為半導體實驗場域，若微網切換失誤導致晶圓實驗中斷，理論上求償無上限！此三項致命點必須在投標前釋疑期內徹底釐清並設防。</div>
+        <div class="label">向董事長與總經理報告 · v0.2 重大合規發現</div>
+        <div class="answer">「最需優先確認的五項風險」——原產地限制可能直接決定能否投標！</div>
+        <div class="more">投標須知第 16 點勾選「電氣設備原產地須屬我國」，而全球電芯幾乎無台灣產源。若電氣設備涵蓋儲能電芯，投標將面臨結構性違規；加之 3MWh 未定義安裝或可用容量（價差 600~900 萬）與無上限求償，投標前必須透過「書面釋疑」形成防護網！</div>
       </div>
 
       <div class="table-wrap">
         <table>
           <thead>
             <tr>
-              <th style="width:6%;">#</th>
-              <th style="width:24%;">最需優先確認的致命風險</th>
-              <th style="width:50%;">為什麼對我方極度致命（法條出處與實務連動）</th>
+              <th style="width:5%;">#</th>
+              <th style="width:23%;">最需優先確認的五大風險</th>
+              <th style="width:52%;">為什麼對我方極度致命（條款出處、稽核比對與實務連動）</th>
               <th style="width:20%;">處置時機與策略</th>
             </tr>
           </thead>
           <tbody>
             <tr class="bad-row">
               <td class="ctr"><strong>1</strong></td>
-              <td><strong>損害賠償無上限</strong><br><small style="color:var(--coral);">契約第19條(八)2</small></td>
-              <td><strong>契約四個上限選項全部未勾選〔查證〕。</strong><br>依民法 216 條賠償「所受損害＋所失利益」。國研大樓是工學院半導體重鎮，需求書自己寫「實驗數據毀損，損失無法計量」。若微網切換微秒偏差導致實驗跳機，求償金額恐吞掉全公司！</td>
-              <td><strong style="color:var(--coral);">投標前釋疑期內必提</strong><br>要求明訂以契約價金總額為賠償上限。</td>
+              <td><strong>原產地限制：電氣設備須台製</strong><br><small style="color:var(--coral);">須知第16點(2)勾選清單 🆕</small></td>
+              <td><strong>投標須知勾選「■電氣設備、■太陽能設備原產地須屬我國」〔查證〕。</strong><br>3MWh 儲能電芯全球無台灣產源（日韓中為主）。若「電氣設備」涵蓋儲能系統/PCS/配電盤，投標即面臨結構性合規障礙；台達電芯供應鏈亦有中國產地疑慮。<strong>此項可能直接決定能不能投！</strong></td>
+              <td><strong style="color:var(--coral);">最優先釋疑題</strong><br>必須釐清電氣設備是否涵蓋儲能電池芯/櫃體/PCS。</td>
             </tr>
             <tr class="hl-row">
               <td class="ctr"><strong>2</strong></td>
-              <td><strong>工程物價調整：無</strong><br><small style="color:var(--amber);">契約第5條第1款7目</small></td>
-              <td><strong>明載「工程物價指數調整：無」〔查證〕。</strong><br>本案履約工期橫跨至 116 年 6 月 30 日（跨年度）。國際鋰電池原物料、銅線纜、鋼構在未來 9 個月若發生價格波動，全由廠商自行吸收，無任何補貼。</td>
-              <td><strong>投標前報價風險準備</strong><br>估算納入 5～8% 物價波動風險準備金。</td>
+              <td><strong>3MWh 未定義安裝或可用容量</strong><br><small style="color:var(--amber);">需求書表1-1 vs 計畫書 🆕</small></td>
+              <td><strong>需求書僅寫「3MWh（或以上）」全文未定義 Installed 或 Usable。</strong><br>計畫書並存 3MWh / 可用 5,000kWh / 354kW×10 三版本。若驗收要求可用容量 3MWh，以 80% DoD 反推安裝需 3.75MWh，<strong>設備差價高達 600～900 萬元〔推論〕</strong>，統包契約不得追加價金！</td>
+              <td><strong style="color:var(--amber);">投標前釋疑必問</strong><br>建請答復以「額定安裝容量 3,000kWh」為準。</td>
+            </tr>
+            <tr class="bad-row">
+              <td class="ctr"><strong>3</strong></td>
+              <td><strong>損害賠償無上限</strong><br><small style="color:var(--coral);">契約第19條(八)2</small></td>
+              <td><strong>契約四個上限選項全部未勾選〔查證〕。</strong><br>依民法 216 條賠償「所受損害＋所失利益」。國研大樓是工學院半導體重鎮，需求書自己寫「實驗數據毀損，損失無法計量」。微網若有微秒異常導致跳脫，求償金額恐吞掉全公司！</td>
+              <td><strong style="color:var(--coral);">投標前釋疑必提</strong><br>要求明訂以契約價金總額為賠償上限。</td>
             </tr>
             <tr class="hl-row">
-              <td class="ctr"><strong>3</strong></td>
+              <td class="ctr"><strong>4</strong></td>
+              <td><strong>工程物價調整：無</strong><br><small style="color:var(--amber);">契約第5條第1款7目</small></td>
+              <td><strong>明載「工程物價指數調整：無」〔查證〕。</strong><br>本案履約工期橫跨至 116 年 6 月 30 日（跨年度）。國際鋰電池原物料、銅線纜、鋼構在未來 9 個月若發生價格波動，全由廠商自行吸收，無任何補貼。</td>
+              <td><strong>投標前報價準備</strong><br>估算納入 5～8% 物價波動風險準備金。</td>
+            </tr>
+            <tr class="hl-row">
+              <td class="ctr"><strong>5</strong></td>
               <td><strong>預算數字前後矛盾</strong><br><small style="color:var(--blue);">投標須知 vs 需求說明書</small></td>
               <td><strong>投標須知載 9,500 萬 vs 需求書載 9,200 萬含稅〔查證〕。</strong><br>依投標須知第 50 點，廠商標價高於「公告之預算」即為不合規定廢標！若以 9,300 萬報價而機關認定上限為 9,200 萬，直接廢標出局。</td>
-              <td><strong style="color:var(--blue);">投標前釋疑期內必提</strong><br>釐清以何者為報價廢標上限。</td>
+              <td><strong style="color:var(--blue);">投標前釋疑釐清</strong><br>釐清以何者為報價廢標上限。</td>
             </tr>
           </tbody>
         </table>
@@ -1953,14 +1981,14 @@ td.ctr,th.ctr{text-align:center}
     <div class="slide-header">
       <div>
         <div class="eyebrow">Part 4 · 契約與關鍵風險 4.2</div>
-        <h1>法規與審批風險：消防新制、台電併審與資安</h1>
-        <p class="sub">盤點本案四大不可壓縮之外部法規與行政審批風險：消防署 114/11/3 儲能新制審查、台電配電級併聯審查、資安禁用陸資產品要求，以及指定單一廠牌爭議。</p>
+        <h1>法規與審批風險：原產地瑕疵、消防與台電併審</h1>
+        <p class="sub">盤點本案四大不可壓縮之外部法規與行政審批風險：投標須知原產地勾選自身不完整瑕疵、消防署 114/11/3 儲能新制審查、台電配電級併聯審查外部關鍵路徑，以及指定單一廠牌爭議。</p>
       </div>
       <div class="flags">
+        <span class="flag coral">原產地清單勾選瑕疵</span>
         <span class="flag coral">儲能消防新制</span>
         <span class="flag blue">台電併審關鍵路徑</span>
-        <span class="flag amber">禁用陸資產地證明</span>
-        <span class="flag teal">ABB 廠牌爭議</span>
+        <span class="flag amber">ABB 單一廠牌爭議</span>
       </div>
     </div>
     <div class="slide-body">
@@ -1975,6 +2003,12 @@ td.ctr,th.ctr{text-align:center}
             </tr>
           </thead>
           <tbody>
+            <tr class="bad-row">
+              <td><strong>原產地限制與文件瑕疵</strong><br><small>須知第16點(2) 🆕</small></td>
+              <td>勾選清單明列「電氣設備、太陽能設備原產地須屬我國」；但其下兩個子選項（「原產地須屬我國者」／「得為下列外國者」）<strong>均未勾選</strong>〔查證〕</td>
+              <td>文件自身勾選不完整；若驗收認定電芯須台製，日韓電芯亦不符，重大可終止契約並沒收保證金。</td>
+              <td><strong>以招標文件瑕疵為正當理由提出釋疑</strong>，要求澄清「電氣設備」僅指盤體管線，儲能電芯與 PCS 得為非陸資外國原產（日韓歐美）。</td>
+            </tr>
             <tr>
               <td><strong>儲能消防新制審查</strong></td>
               <td>內政部消防署 <strong>114/11/3 修正之「提升儲能系統消防安全管理指引」</strong>，須出具火災風險評估報告〔查證〕</td>
@@ -1988,15 +2022,9 @@ td.ctr,th.ctr{text-align:center}
               <td><strong>選項 A（建議）：</strong> 決標後立即啟動台電前置協商預審。<br><strong>選項 B：</strong> 等細設審定才送件，併審恐落入關鍵路徑導致工期逾期。</td>
             </tr>
             <tr>
-              <td><strong>資安法遵與禁用陸資</strong></td>
-              <td>《資通安全管理法》、投標須知第 16 點<strong>明文禁止陸資資通訊及太陽能產品</strong>〔查證〕</td>
-              <td>供應鏈任一通訊模組被判定為中國製或陸資廠牌，驗收直接不通過，重大可解約沒收保證金。</td>
-              <td><strong>全供應鏈非中國製聲明 ＋ 進口報單查驗</strong>；採購成本約上升 5～15%，但可根除被退件風險。</td>
-            </tr>
-            <tr>
               <td><strong>指定 ABB REF-615 爭議</strong></td>
-              <td>需求說明書第 7 章明文指定電驛採用 ABB REF-615 單一廠牌〔查證〕</td>
-              <td>潛在未獲指定之競爭廠商可能於等標期內提出異議或申訴，導致招標程序延宕流標。</td>
+              <td>需求說明書第 7 章明文指定電驛採用 ABB REF-615 單一廠牌；計畫書亦附錄台達 LOGO 型號〔查證〕</td>
+              <td>競業廠商可能以採購法第 26 條向特定廠牌傾斜為由提出異議/申訴，導致招標程序延宕流標。</td>
               <td>投標前於書面釋疑中建請機關敘明「或同等品」認定程序，預防廠商爭議影響進程。</td>
             </tr>
           </tbody>
@@ -2010,7 +2038,7 @@ td.ctr,th.ctr{text-align:center}
         </div>
         <div class="card teal">
           <h3>📑 產地查核嚴格把關機制</h3>
-          <p>PCM 與校方將於竣工驗收嚴格查驗 EMS 主機、通訊 Gateway、變流器與電池管理系統（BMS）進口原產地證明，投標前必須鎖定非陸資供應鏈。</p>
+          <p>PCM 與校方將於竣工驗收嚴格查驗 EMS 主機、通訊 Gateway、變流器與電池管理系統（BMS）進口原產地證明，投標前必須鎖定非陸資供應鏈與完整進口報單。</p>
         </div>
       </div>
     </div>
@@ -2025,14 +2053,14 @@ td.ctr,th.ctr{text-align:center}
     <div class="slide-header">
       <div>
         <div class="eyebrow">Part 4 · 契約與關鍵風險 4.3</div>
-        <h1>技術規格風險評估：Seamless 驗收、柴發改造與鹽害</h1>
-        <p class="sub">分析工程落地四大技術陷阱：Seamless 切換時間未訂量化毫秒標準、既有柴發並聯通訊相容性、舊 EMS API 不開放改建成本，以及西子灣鹽害對 5 年保固之侵蝕。</p>
+        <h1>技術規格評估：48h防災柴油缺口、Seamless與Modbus資安</h1>
+        <p class="sub">分析工程落地三大關鍵技術缺口：48 小時連續供電需 2,700L 柴油但油箱與補給責任空白、Seamless 驗收時間未量化、Modbus 缺乏安全機制與 MGC 白名單矛盾（需增列 OT 資安層 150~300 萬）。</p>
       </div>
       <div class="flags">
-        <span class="flag coral">Seamless 驗收標準模糊</span>
-        <span class="flag amber">舊柴發並聯介面</span>
-        <span class="flag purple">既有 EMS 整合盲區</span>
-        <span class="flag blue">西子灣鹽害保固成本</span>
+        <span class="flag coral">48h 柴油缺口 2,700L</span>
+        <span class="flag amber">Seamless 驗收標準模糊</span>
+        <span class="flag purple">Modbus 資安層 150~300萬</span>
+        <span class="flag blue">海工 295kWp 跨饋線</span>
       </div>
     </div>
     <div class="slide-body">
@@ -2040,18 +2068,30 @@ td.ctr,th.ctr{text-align:center}
         <table>
           <thead>
             <tr>
-              <th>技術項目</th>
-              <th>招標規範記載內容</th>
-              <th>潛在工程爭議與風險評估</th>
+              <th>技術缺口項目</th>
+              <th>標案與計畫書記載內容</th>
+              <th>潛在工程爭議與稽核風險評估</th>
               <th>我方因應對策與建議</th>
             </tr>
           </thead>
           <tbody>
             <tr class="bad-row">
-              <td><strong>Seamless 無縫驗收標準</strong></td>
+              <td><strong>48h 防災能量平衡與柴油缺口</strong><br><small>缺口 1 · 重大 🆕</small></td>
+              <td>需求書負載提高為 <strong>250kW</strong>，48h 需 12,000 kWh。扣除 BESS 可用 2,400 kWh 與國研光電 944 kWh，<strong>缺口達 8,656 kWh，需柴油 2,700L、運轉 35 小時</strong>〔推論〕</td>
+              <td><strong>標案完全未規範：</strong>1. 既有柴發日用油箱僅數百公升；2. 災時燃油補給責任誰屬；3. 油箱擴充是否屬工作範圍（涉公共危險物品申報）。且海工 295kWp 在 GCB6 外，孤島無法支援！</td>
+              <td><strong>書面釋疑明確要求校方確認：</strong>48小時係以柴發持續運轉為前提，燃油補給由校方負責；統包不含儲油擴建。服務建議書附能量平衡模擬說明。</td>
+            </tr>
+            <tr>
+              <td><strong>Seamless 無縫驗收標準</strong><br><small>缺口 7 · 重大</small></td>
               <td>需求書載「電壓在 15% 畸變範圍內重新建立」；PCM 需求書寫「均不得有停電情形」〔查證〕</td>
               <td><strong>未明訂切換時間數值標準（如 &lt;10ms 或 &lt;20ms）</strong>。驗收時半導體實驗室若要求達 UPS 級超高速切換，標準認定恐生爭端。</td>
               <td><strong>服務建議書主動寫明技術承諾上限</strong>（如切換時間 &le; 20ms、電壓跌落 &le; 15%），並列為契約附件鎖定驗收依據。</td>
+            </tr>
+            <tr class="hl-row">
+              <td><strong>Modbus 通訊與資安矛盾</strong><br><small>缺口 8 · 成本未列項 🆕</small></td>
+              <td>需求書要求設備採 Modbus；同時要求 MGC 具備設備身分驗證、完整性驗證與指令白名單〔查證〕</td>
+              <td>Modbus RTU/TCP 本身無加密認證。要達成白名單與滲透測試無 Medium 弱點，必須額外疊加 OT 安全閘道器與 TLS 通道，<strong>此工項標單未列項</strong>！</td>
+              <td><strong>報價獨立編列 OT 資安層費用（約 150～300 萬元）</strong>，包含安全閘道器、憑證管理、原碼弱掃與滲透測試委外費用。</td>
             </tr>
             <tr>
               <td><strong>既有 400kW 柴油發電機改造</strong></td>
@@ -2059,32 +2099,19 @@ td.ctr,th.ctr{text-align:center}
               <td>機齡已達 11 年，原有控制器若老舊停產或不支援數位通訊，雙源孤島模式將無法聯動。</td>
               <td>投標前務必實勘柴發銘牌與盤體；報價中編列 <strong>100~150 萬元</strong> 機組控制器整體更新備援費用。</td>
             </tr>
-            <tr>
-              <td><strong>既有全校 EMS 整合不確定</strong></td>
-              <td>優先整合既有 EMS，無法整合時須建置全新新能源管理系統〔查證〕</td>
-              <td>既有原廠若不配合釋出資料庫架構或通訊 API，統包商被迫吸收全套新建成本（預算固定）。</td>
-              <td>報價直接以<strong>新建全新符合規範之 EMS</strong>編列，避免寄望舊廠商而造成進度與利潤失控。</td>
-            </tr>
-            <tr>
-              <td><strong>200 公尺高壓電纜路徑</strong></td>
-              <td>儲能設置點距國研大樓電氣室約 200 米，路徑穿越排球場周邊〔查證〕</td>
-              <td>地下可能遭遇既有未明管線、景觀林木根系或柴山地質岩層，開挖許可審查與土建變更。</td>
-              <td>投標前現勘詳查管線圖說，規劃明挖與管中管穿線兩套備案，費用納入直接工程費。</td>
-            </tr>
-            <tr>
-              <td><strong>西子灣高鹽害 5 年保固</strong></td>
-              <td>海岸第一排堤邊環境，驗收合格次日起 5 年全責維護保養〔查證〕</td>
-              <td>鹽霧沉降率高，PCS 散熱風扇、銅排接點老化加速，24/72 SLA 違約每日罰 2,000 元。</td>
-              <td>報價時<strong>調高保固維運海岸係數（上浮 20~30%）</strong>，儲能櫃與 PCS 採用雙道重防腐塗層。</td>
-            </tr>
           </tbody>
         </table>
       </div>
 
-      <div class="big-callout" style="background:linear-gradient(120deg,#12518A,#1968AD);">
-        <div class="label">技術可行性總結</div>
-        <div class="answer">「技術能做到，但驗收邊界必須由我方主動定義」</div>
-        <div class="more">本案技術難度集中在 Seamless 瞬切與發電機並聯；進能服配合台達電 PCS 與專屬微電網控制器，技術上可完全攻克，關鍵在於服務建議書中精確定義驗收量化邊界，防範業主無限上綱。</div>
+      <div class="two-col">
+        <div class="card amber">
+          <h3>📉 契約容量降載 1,000kW 之承諾風險（缺口 4）</h3>
+          <p>服務建議書若直接承諾降低契約容量 1,000 kW，依評選須知將成為契約附件，且保固滿一年須出具效益報告！但 1.2MW/3MWh 滿載僅能放電 2.4h，夏日午後空調尖峰常達 3~5h；<strong>服務建議書必須敘明「以校方配合負載管理為前提」</strong>。</p>
+        </div>
+        <div class="card purple">
+          <h3>🌐 校方已有 DIgSILENT 模擬預期（缺口 9）</h3>
+          <p>計畫書已完成黑啟動時序與 RMS 頻率響應模擬。評選委員心有模擬基準，我方須於投標前決定是否投入 30~60 萬委外完成 DIgSILENT 動態模擬，作為爭取評選項目二（25%）最高分的王牌。</p>
+        </div>
       </div>
     </div>
     <div class="slide-foot">
@@ -2175,14 +2202,14 @@ td.ctr,th.ctr{text-align:center}
     <div class="slide-header">
       <div>
         <div class="eyebrow">Part 4 · 契約與關鍵風險 4.5</div>
-        <h1>商務財務與資金佔用：尾款延後、保留款與利潤</h1>
-        <p class="sub">向財務長匯報資金曝險：驗收尾款綁台電補助款撥付時程、每期扣 5% 保留款、保證金長期凍結約 1,200 萬元，且空白標單間接費僅編 4%，利潤空間需精準精算。</p>
+        <h1>商務財務與經費結構：計畫層級剖析與資金佔用</h1>
+        <p class="sub">向財務長匯報資金曝險：統包 9,200 萬僅是整體計畫 2.22 億的一環，台電補助 1 億為主要財源使尾款延後風險加劇；保留款每期扣 5%、保證金凍結 1,200 萬，全生命週期成本 (LCC) 需轉向災損防護敘事。</p>
       </div>
       <div class="flags">
         <span class="flag coral">尾款綁台電補助款</span>
         <span class="flag amber">保留款每期扣 5%</span>
-        <span class="flag blue">保證金凍結 1,200萬</span>
-        <span class="flag purple">標單管理利潤僅 4%</span>
+        <span class="flag blue">整體計畫 2.22 億</span>
+        <span class="flag purple">LCC 回收期約 20 年</span>
       </div>
     </div>
     <div class="slide-body">
@@ -2190,50 +2217,56 @@ td.ctr,th.ctr{text-align:center}
         <table>
           <thead>
             <tr>
-              <th>財務曝險環節</th>
-              <th>契約規範條款</th>
-              <th>資金佔用金額估算</th>
-              <th>財務風險分析與對策</th>
+              <th>計畫經費層級</th>
+              <th>金額規模</th>
+              <th>資金性質與撥付關聯</th>
+              <th>對本案統包商之財務衝擊評估</th>
             </tr>
           </thead>
           <tbody>
-            <tr class="bad-row">
-              <td><strong>驗收尾款撥付條件</strong></td>
-              <td>契約第 5 條第 1 款 4 目明載：<strong>須俟台電補助款核撥到校後，始得支付</strong>〔查證〕</td>
-              <td><strong>約 1,380 ~ 1,840 萬元</strong><br>（契約總價之 15~20%）</td>
-              <td>若台電行政撥款延宕，尾款可能延遲 <strong>6～12 個月</strong> 收回且非機關違約！財務調度須備妥等額資金成本。</td>
+            <tr>
+              <td><strong>整體計畫總預算</strong></td>
+              <td><strong>2 億 2,252 萬元</strong></td>
+              <td>台電補助 1 億元 ＋ 校方自籌 1 億 2,252 萬元</td>
+              <td>計畫規模龐大，但本統包案僅佔 41%，受 PCM 與校方高強度監督</td>
+            </tr>
+            <tr>
+              <td><strong>PCM 專管監造經費</strong></td>
+              <td>約 1 億元（含工程管理費、空汙費）</td>
+              <td>校方委聘專案管理及監造技術服務</td>
+              <td>PCM 訂有嚴苛之 EMS 原始碼、弱掃與第三方可接手性查核把關</td>
             </tr>
             <tr class="hl-row">
+              <td><strong>本統包工程經費</strong></td>
+              <td><strong>9,200 萬含稅</strong>（須知載 9,500 萬）</td>
+              <td><strong>台電補助 1 億元 ≈ 本統包工程金額</strong></td>
+              <td><strong>尾款（約 1,400~1,800 萬）非行政程序延遲，而是主要財源延後！</strong></td>
+            </tr>
+            <tr class="bad-row">
               <td><strong>工程保留款扣留</strong></td>
-              <td>契約第 5 條第 1 款 3 目：各期估驗款扣除 <strong>5% 保留款</strong>〔查證〕</td>
-              <td><strong>累計約 460 萬元</strong></td>
-              <td>初驗合格且無逾期僅能領回 50%，全部驗收合格才退還其餘 50%；施工期現金流遭實質壓縮。</td>
+              <td>累計約 <strong>460 萬元</strong></td>
+              <td>各期估驗款扣除 5% 保留款</td>
+              <td>初驗合格退 50%，總驗收才退其餘 50%，施工期營運資金遭實質壓縮</td>
             </tr>
             <tr>
-              <td><strong>各階段保證金凍結</strong></td>
-              <td>押標金 5%、履約保證金 5%、保固保證金 3%（押 5 年 + 90 日）〔查證〕</td>
-              <td><strong>保固保證金約 276 萬元</strong><br>需長期凍結逾 5 年</td>
-              <td>一律爭取以<strong>銀行連帶保證書或保證保險單</strong>繳納，避免自有現金流長期凍結。</td>
-            </tr>
-            <tr>
-              <td><strong>標單間接費結構限制</strong></td>
-              <td>空白標單格式載：品管費 1%、工程管理+利潤+保險+空污費僅 <strong>4%</strong>〔查證〕</td>
-              <td>名目管理利潤僅約 360 萬</td>
-              <td>格式名目利潤極低；統包商實際利潤必須透過設備採購議價隱含於直接工程費中，否則單項難以反映真實管理成本。</td>
+              <td><strong>保證金長期凍結</strong></td>
+              <td>約 <strong>1,200 萬元</strong>（保固金押5年）</td>
+              <td>押標 5% &rarr; 履約 5% &rarr; 保固 3%（押 5年+90日）</td>
+              <td>一律以銀行連帶保證書繳納，避免自有現金流長期凍結逾 5 年</td>
             </tr>
           </tbody>
         </table>
       </div>
 
-      <div class="split-45">
+      <div class="two-col">
         <div class="card coral">
           <h3>💰 現金流缺口峰值模擬</h3>
           <p>專案施工高峰期（第 4~6 個月設備進場交貨），加上保留款與設備預付款，<strong>累計資金缺口峰值估計達 2,500 ~ 3,000 萬元</strong>，須向銀行申請專案工程融資額度支援。</p>
         </div>
 
-        <div class="card amber">
-          <h3>📜 智財權條款爭議</h3>
-          <p>契約第 19 條 (三) 勾選「機關取得全部權利」；但 PCM 需求書載「不含自有核心平台原始碼」。釋疑期必須釐清<strong>自研核心平台智財權保留</strong>，僅交付客製化區塊與 API，確保公司核心數位資產不受侵害。</p>
+        <div class="card purple">
+          <h3>📊 LCC 回收期約 20 年與評選敘事（缺口 12）</h3>
+          <p>年化效益約 461.8 萬，單純財務回收期高達 20 年！評選項目二要求說明 LCC，<strong>服務建議書應將焦點由「投資回收」轉向「半導體實驗跳機災損避免」與「台電韌性指標」</strong>，主動揭露 10 年後電池更換成本，避免評選臨場被問倒。</p>
         </div>
       </div>
     </div>
@@ -2255,13 +2288,13 @@ td.ctr,th.ctr{text-align:center}
       <div>
         <div class="eyebrow">Part 5 · 可行性決策建議 5.1</div>
         <h1>三大可行性決策選項分析 (A / B / C 對照)</h1>
-        <p class="sub">向董事會與高階主管呈閱三種決策路徑：全面評估技術實力、合約致命曝險與策略收益，明確建言採取「選項 B：有條件投標」，透過釋疑與前置風控鎖定承攬邊界。</p>
+        <p class="sub">向董事會與高階主管呈閱三種決策路徑：全面評估技術實力、合約致命曝險與策略收益，明確建言採取「選項 B：有條件投標」，並增列電芯產地限制之一票否決退路。</p>
       </div>
       <div class="flags">
         <span class="flag green">核心建言：選項 B</span>
+        <span class="flag coral">一票否決機制 🆕</span>
         <span class="flag blue">選項 A 全力搶標</span>
         <span class="flag coral">選項 C 放棄不標</span>
-        <span class="flag purple">董事會決策</span>
       </div>
     </div>
     <div class="slide-body">
@@ -2284,13 +2317,13 @@ td.ctr,th.ctr{text-align:center}
             </tr>
             <tr class="good-row">
               <td><strong>選項 B<br>有條件投標<br><span class="chip green" style="font-size:.8rem;">★ 最佳建議方案</span></strong></td>
-              <td><strong>以技術優勢搶標，但以合約防護為前提！</strong>於等標期內透過書面釋疑切除無上限賠償與條款衝突；以現勘鎖定電纜與柴發成本；鎖定台達電交期。</td>
-              <td>釋疑與現勘將消耗 2~3 週密集準備時間；釋疑公開可能提示競爭對手；<strong>若機關釋疑回覆不願設賠償上限，則立即啟動煞車轉為選項 C。</strong></td>
+              <td><strong>以技術優勢搶標，但以合約防護為前提！</strong>於等標期內透過書面釋疑 11 題切除電氣設備台製限制、容量模糊、無上限賠償與條款衝突；以現勘鎖定電纜與柴發成本。</td>
+              <td>釋疑與現勘將消耗 2~3 週密集準備時間；釋疑公開可能提示競爭對手；<strong>若機關釋疑回覆不願設賠償上限或堅持電芯須台製，則立即啟動煞車轉為選項 C。</strong></td>
               <td><strong style="color:var(--green); font-size:1.02rem;">優先推進路線</strong><br>守住底線前提下全力爭取決標。</td>
             </tr>
             <tr>
               <td><strong>選項 C<br>不建議投標</strong></td>
-              <td>無上限損害賠償 &times; 半導體實驗場域 &times; 116/6/30 硬工期 &times; 無物調，五重疊加風險超載；單一跳電意外事故之賠償可能數倍於本案全部利潤。</td>
+              <td>電氣設備台製障礙 &times; 無上限損害賠償 &times; 半導體實驗場域 &times; 116/6/30 硬工期 &times; 無物調，五重疊加風險超載；單一跳電意外事故之賠償可能數倍於本案全部利潤。</td>
               <td>放棄台電微電網指標案實績與後續全校擴充機會；競爭對手取得後將在未來大學微網標案形成領先地位。</td>
               <td><span class="chip coral">保全資本底線</span><br>若釋疑未獲善意回應時之必然退路。</td>
             </tr>
@@ -2299,17 +2332,14 @@ td.ctr,th.ctr{text-align:center}
       </div>
 
       <div class="split-55">
+        <div class="card coral">
+          <h3>🚨 核心一票否決條件（Stop 條件 · v0.2 重點）</h3>
+          <p><strong>若機關書面釋疑第 1 題答復為：</strong>「電氣設備涵蓋儲能電池芯，且原產地必須為台灣」&rarr; <strong style="color:var(--coral); font-size:1.05rem;">直接轉為選項 C 放棄投標，無須再評估其他項目！</strong>（因全球電芯無台灣產源，投標面臨結構性違規與解約風險）。</p>
+        </div>
         <div class="card green">
           <h3>🎯 決策關鍵轉折點：釋疑結果決定走向</h3>
-          <p><strong>若機關書面釋疑回覆：</strong> 同意明訂賠償上限為契約總額、釐清預算以 9,500 萬或 9,200 萬為準、界定風雨球場僅留通訊介面 &rarr; <strong>全力啟動投標（執行選項 B）</strong>。<br>
-          <strong>若機關回覆：</strong> 堅持賠償無上限、且預算壓死在 9,200 萬 &rarr; <strong>轉為選項 C 放棄，或大幅上調 15% 風險準備金報價</strong>。</p>
-        </div>
-        <div class="card purple">
-          <h3>📊 評估向度量化雷達評分（滿分 5 分）</h3>
-          <p>技術可行性：<strong>4.8 分</strong>（我方完全勝任）<br>
-          商務條款合規：<strong>2.2 分</strong>（殺傷力大，需釋疑）<br>
-          財務資金獲利率：<strong>3.1 分</strong>（間接費緊繃，需專案融資）<br>
-          示範與戰略價值：<strong>4.9 分</strong>（全台微網指標首選）</p>
+          <p><strong>若機關答復：</strong> 澄清電芯得為非陸資外國原產、同意賠償上限為契約總額、釐清 3MWh 為安裝容量 &rarr; <strong>全力啟動投標（執行選項 B）</strong>。<br>
+          <strong>若機關答復：</strong> 堅持賠償無上限或預算鎖死 9,200 萬 &rarr; <strong>轉選項 C 或大幅上調 15% 風險準備金</strong>。</p>
         </div>
       </div>
     </div>
@@ -2324,11 +2354,11 @@ td.ctr,th.ctr{text-align:center}
     <div class="slide-header">
       <div>
         <div class="eyebrow">Part 5 · 可行性決策建議 5.2</div>
-        <h1>選項 B「有條件投標」五大前置門檻查核表</h1>
-        <p class="sub">落實選項 B 之具體行動清單：於投標日前必須完成 5 大前置風險閉環查核，由業務、設計、採購與法務分工並行，全數亮綠燈方得正式送件。</p>
+        <h1>選項 B「有條件投標」六大前置門檻查核表</h1>
+        <p class="sub">落實選項 B 之具體行動清單：於投標日前必須完成 6 大前置風險閉環查核，由業務、設計、採購與法務分工並行，全數亮綠燈方得正式送件。</p>
       </div>
       <div class="flags">
-        <span class="flag green">5大前置門檻</span>
+        <span class="flag green">6大前置門檻 (v0.2)</span>
         <span class="flag blue">風控查核矩陣</span>
         <span class="flag coral">Go / No-Go 查核</span>
       </div>
@@ -2346,17 +2376,17 @@ td.ctr,th.ctr{text-align:center}
             </tr>
           </thead>
           <tbody>
-            <tr class="hl-row">
+            <tr class="bad-row">
               <td class="ctr"><strong>1</strong></td>
-              <td><strong>提出書面釋疑函件</strong></td>
-              <td>預算上限確認、損害賠償上限設防、智財權原始碼邊界、風雨球場界面、電驛上限衝突等 5 大題提送校方。</td>
+              <td><strong>提出書面釋疑 11 題</strong></td>
+              <td>電氣設備台製範圍、安裝vs可用容量、損害賠償上限、預算、48h柴油補給、球場光電等 11 大題提送校方。</td>
               <td>業務部 / 法務室</td>
               <td>等標期 1/4 內</td>
             </tr>
             <tr>
               <td class="ctr"><strong>2</strong></td>
               <td><strong>強制實地現勘與測量</strong></td>
-              <td>招標文件強制要求；確認 200m 高壓電纜管溝路徑、儲能場址地質與消防間距、400kW 柴發控制介面、既有 EMS API。</td>
+              <td>招標文件強制要求；確認 200m 電纜管溝、儲能消防間距、<strong>400kW 柴發控制介面與日用油箱容量</strong>、GCB6保護電驛。</td>
               <td>設計部 / 機電技師</td>
               <td>投標前 10 天</td>
             </tr>
@@ -2370,16 +2400,23 @@ td.ctr,th.ctr{text-align:center}
             <tr>
               <td class="ctr"><strong>4</strong></td>
               <td><strong>儲能設備商價格交期綁定</strong></td>
-              <td>取得台達電（已有 6/16 報價基礎）或一線大廠<strong>含交期承諾之固定價格報價單</strong>，確保 116 年 2 月前可交貨。</td>
+              <td>取得台達電（已有 6/16 報價基礎）<strong>含交期承諾與電芯原產地 BOM 聲明</strong>的固定價格報價，確保 116 年 2 月前可交貨。</td>
               <td>採購部 / 設備商</td>
               <td>投標前 5 天</td>
             </tr>
             <tr>
               <td class="ctr"><strong>5</strong></td>
               <td><strong>報價風險準備金精算</strong></td>
-              <td>成本分析表內建置 <strong>5～8% 物價風險準備金</strong>及<strong>海岸高鹽害 5 年保固加乘係數</strong>，完成底價試算。</td>
+              <td>成本分析表內建置 5～8% 物價風險準備金、海岸高鹽害 5 年保固加乘係數、<strong>OT 資安層（150～300萬）</strong>。</td>
               <td>成本估算組 / 財務部</td>
               <td>投標前 3 天</td>
+            </tr>
+            <tr class="hl-row">
+              <td class="ctr"><strong>6</strong></td>
+              <td><strong>動態模擬投入決策 🆕</strong></td>
+              <td>決定是否投入 <strong>30～60 萬委外進行 DIgSILENT / PSCAD 動態模擬</strong>（對抗校方既有黑啟動與頻率響應模擬基準）。</td>
+              <td>設計規劃組 / 經營層</td>
+              <td>投標前 14 天</td>
             </tr>
           </tbody>
         </table>
@@ -2387,13 +2424,13 @@ td.ctr,th.ctr{text-align:center}
 
       <div class="three-col">
         <div class="note">
-          <strong>Go 條件：</strong> 5 項查核全部合格，且校方釋疑同意增列損害賠償上限（如以契約價金總額為限） &rarr; <strong>正式送件投標</strong>。
+          <strong>Go 條件：</strong> 釋疑澄清電芯得為非陸資外國製、設有賠償上限、確認 3MWh 為安裝容量 &rarr; <strong>正式送件投標</strong>。
         </div>
         <div class="warn">
           <strong>Hold 條件：</strong> 校方釋疑回覆模糊，但未完全拒絕 &rarr; <strong>報價上調風險準備金至上限，保守投標</strong>。
         </div>
         <div class="bad-row" style="padding:10px 14px; border-radius:3px; border-left:4px solid var(--coral);">
-          <strong>Stop 條件：</strong> 校方堅持賠償無上限、預算鎖死 9,200 萬且儲能原廠無法承諾交期 &rarr; <strong>啟動停損，放棄投標</strong>。
+          <strong>Stop 條件：</strong> 釋疑答復電芯須台製、堅持賠償無上限、或原廠無法承諾交期 &rarr; <strong>啟動停損，放棄投標</strong>。
         </div>
       </div>
     </div>
@@ -2438,11 +2475,11 @@ td.ctr,th.ctr{text-align:center}
               </tr>
               <tr>
                 <td><strong>3.8 法務室</strong></td>
-                <td>損害賠償無上限與智財權全歸機關條款，<strong>需出具正式法律風險意見書</strong>，作為投標底線依據。</td>
+                <td>損害賠償無上限、原產地電氣設備限制與智財權條款，<strong>需出具正式法律風險意見書</strong>。</td>
               </tr>
               <tr>
                 <td><strong>1.3 策略合作夥伴</strong></td>
-                <td>與台達電之合作由專案採購升級為<strong>策略夥伴層級協議</strong>，鎖定交期違約背對背（Back-to-Back）條款。</td>
+                <td>與台達電之合作由專案採購升級為<strong>策略夥伴層級協議</strong>，鎖定交期違約背對背（Back-to-Back）與電芯產地保證。</td>
               </tr>
             </tbody>
           </table>
@@ -2459,7 +2496,7 @@ td.ctr,th.ctr{text-align:center}
             <tbody>
               <tr>
                 <td><strong>4.1 業務開發部</strong></td>
-                <td>提送釋疑函件、實地勘查安排；嚴守採購法第 71 點利益衝突條款（與 PCM 廠商保持距離）。</td>
+                <td>提送 11 大釋疑函件、實地勘查安排；嚴守採購法第 71 點利益衝突條款（與 PCM 廠商保持距離）。</td>
               </tr>
               <tr>
                 <td><strong>4.2 設計規劃組</strong></td>
@@ -2494,13 +2531,13 @@ td.ctr,th.ctr{text-align:center}
     <div class="slide-header">
       <div>
         <div class="eyebrow">Part 5 · 可行性決策建議 5.4</div>
-        <h1>投標前書面釋疑清單與關鍵談判底線</h1>
-        <p class="sub">於等標期四分之一內必須以書面正式向中山大學提送之五大釋疑題目：逐條引述招標文件依據、擬定我方主張文案，並預設機關可能回覆與談判退讓底線。</p>
+        <h1>投標決策閉環與後續工作建議</h1>
+        <p class="sub">落實內部評估結論：依價值排序提出下一步待補齊之三項關鍵工作，建立完整的決策閉環，引導至 Part 6 標前釋疑追蹤表實施具體攻防。</p>
       </div>
       <div class="flags">
-        <span class="flag coral">5大必提釋疑題目</span>
-        <span class="flag blue">招標文件衝突釐清</span>
-        <span class="flag green">談判退讓底線</span>
+        <span class="flag green">決策閉環</span>
+        <span class="flag blue">下一步行動</span>
+        <span class="flag coral">銜接 Part 6 釋疑</span>
       </div>
     </div>
     <div class="slide-body">
@@ -2508,48 +2545,36 @@ td.ctr,th.ctr{text-align:center}
         <table>
           <thead>
             <tr>
-              <th style="width:6%;">題號</th>
-              <th style="width:20%;">釋疑主題</th>
-              <th style="width:34%;">引述招標文件衝突之處</th>
-              <th style="width:24%;">我方主張建議修訂文字</th>
-              <th style="width:16%;">我方談判退讓底線</th>
+              <th style="width:8%;">優先序</th>
+              <th style="width:24%;">下一步關鍵行動</th>
+              <th style="width:48%;">工作目標與產出價值</th>
+              <th style="width:20%;">預定完成期限</th>
             </tr>
           </thead>
           <tbody>
             <tr class="hl-row">
               <td class="ctr"><strong>1</strong></td>
-              <td><strong>預算上限確認</strong></td>
-              <td>投標須知第 9 點載預算 9,500 萬；但需求書第 4 章載 9,200 萬含稅。依須知第 50 點高於預算廢標。</td>
-              <td>建請機關函覆本案公告之報價廢標上限金額究為 9,200 萬元或 9,500 萬元。</td>
-              <td>若確認為 9,200 萬，報價不得逾 9,200 萬。</td>
+              <td><strong>正式遞交 11 大書面釋疑函</strong></td>
+              <td>依採購法施行細則第 43 條，於等標期 1/4 內以公司公文正式向中山大學遞送 Part 6 之 11 大釋疑題。</td>
+              <td>等標期第 5 日曆天前</td>
             </tr>
-            <tr class="bad-row">
+            <tr>
               <td class="ctr"><strong>2</strong></td>
-              <td><strong>損害賠償上限</strong></td>
-              <td>契約第 19 條 (八) 2 四個賠償上限選項全未勾選；國研實驗室損失無法計量。</td>
-              <td>建請依工程會統包契約範本，增訂「損害賠償總額以契約價金總額為上限」。</td>
-              <td>若堅持不設上限，轉選項 C 放棄或上浮保險。</td>
+              <td><strong>比對電子領標版與正式閱覽版差異</strong></td>
+              <td>比對 `1_標案規範/國立中山大學115YL004-01/` 與正式閱覽版是否有條款差異，版本不一致為實務重大爭議來源。</td>
+              <td>投標前 10 天</td>
             </tr>
             <tr>
               <td class="ctr"><strong>3</strong></td>
-              <td><strong>智財權核心源碼</strong></td>
-              <td>契約第 19 條 (三) 勾選機關取得全部權利；PCM 需求書載不含廠商自有核心平台原始碼。</td>
-              <td>建請澄清僅客製化區塊與 API 屬機關，廠商原有 EMS 核心底層原始碼保留智財權。</td>
-              <td>必須確保原有 EMS 不被整包收歸國有。</td>
+              <td><strong>讀取台達電 6/16 報價單精算設備成本</strong></td>
+              <td>調閱 `3_設計資訊/設備規格/儲能設備_台達電/` 實際單價，將本報告中所有〔推論〕金額轉化為確定採購成本。</td>
+              <td>投標前 7 天</td>
             </tr>
             <tr>
               <td class="ctr"><strong>4</strong></td>
-              <td><strong>風雨球場介面</strong></td>
-              <td>評選項目二含風雨球場介面規劃，需求書第 7 章提 1475~2000kWp 租用光電系統。</td>
-              <td>建請澄清該風雨球場光電工程非本案施工範圍，本案僅負責預留數位通訊併接介面。</td>
-              <td>防範被要求全包風雨球場施工。</td>
-            </tr>
-            <tr>
-              <td class="ctr"><strong>5</strong></td>
-              <td><strong>保護電驛數量上限</strong></td>
-              <td>需求書寫 ABB REF-615 上限購買 5 台；但契約第 4 條又寫統包必須工程不得加價。</td>
-              <td>建請確認全校保護協調若超出 5 台，超出部分由機關另案採購或辦理契約變更。</td>
-              <td>上限必須鎖定為 5 台，超出不吸收。</td>
+              <td><strong>研讀 2_標前準備 之 6/23 會議錄影紀錄</strong></td>
+              <td>校方在標前會議透露之真實期待與痛點，能精準預測評選委員簡報現場之提問與攻防焦點。</td>
+              <td>服務建議書定稿前</td>
             </tr>
           </tbody>
         </table>
@@ -2557,17 +2582,358 @@ td.ctr,th.ctr{text-align:center}
 
       <div class="split-img-left">
         <div class="card purple">
-          <h3>📮 釋疑提出時效規定（採購法施行細則第 43 條）</h3>
-          <p>等標期若為 20 日曆天，<strong>必須在招標公告日起 5 日曆天內以書面正式遞交中山大學</strong>。釋疑公文提送越早，機關召開審查會修正招標公告之機會越大，對我方最有利。</p>
+          <h3>📮 銜接 Part 6 標前釋疑與追蹤表</h3>
+          <p>請立即點擊下方按鈕或頂部導航進入 <strong>Part 6</strong>。我們將所有需要詢問中山大學的 11 大題目逐條列出，詳述疑慮與致命風險，並附上具體「建議答復方式」製成追蹤表，方便專案主管與業務團隊每日管控進度！</p>
         </div>
         <div class="tip">
-          <strong>決策閉環總結：</strong> 經由 Part 1~3 之完整工程拆解，與 Part 4~5 之犀利風控評估，進能服已具備參與本案最完整的技術底氣與防護壁壘，建議依「選項 B：有條件投標」穩健推進！
+          <strong>高階決策總結：</strong> 技術有信心、合約嚴把關、釋疑守底線、動態爭高分。以「選項 B：有條件投標」穩健出擊，爭取進能服在南台灣微電網標竿案場的重大勝利！
         </div>
       </div>
     </div>
     <div class="slide-foot">
       <span>Part 5 · 可行性決策建議</span>
       <span class="pageno">P5.4 / 4</span>
+    </div>
+  </section>
+
+</div>
+
+<!-- ================= PART 6: 標前釋疑與追蹤表 (單獨新增) ================= -->
+<div class="view" id="view-p6">
+
+  <!-- P6.1 -->
+  <section class="slide">
+    <div class="slide-header">
+      <div>
+        <div class="eyebrow">Part 6 · 標前釋疑與問題追蹤 6.1</div>
+        <h1>標前釋疑總體策略與 11 大問題分類看板</h1>
+        <p class="sub">依《政府採購法》第 41 條及施行細則第 43 條規定，廠商對招標文件內容有疑義者，應於等標期之四分之一內以書面向機關請求釋疑。本案統整 11 大必提釋疑題目，涵蓋合規、商務、工程邊界與技術標準四大構面。</p>
+      </div>
+      <div class="flags">
+        <span class="flag coral">11大必提釋疑題目</span>
+        <span class="flag blue">採購法第41/43條</span>
+        <span class="flag green">四維度風險看板</span>
+        <span class="flag purple">追蹤責任制</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <div class="big-callout alert">
+        <div class="label">專案主管與業務團隊執行手冊</div>
+        <div class="answer">「以書面釋疑切除致命合規硬傷，建立全體廠商公開透明之承攬基準」</div>
+        <div class="more">本案招標文件存在多處前後矛盾與空白（原產地限制電氣設備台製、未定義安裝或可用容量、48小時柴油缺口、損害賠償無上限）。釋疑公文提送越早，機關召開審查會修正招標公告之機會越大，對我方最有利！</div>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th style="width:6%;">項次</th>
+              <th style="width:15%;">風險維度</th>
+              <th style="width:34%;">釋疑主題清單</th>
+              <th style="width:25%;">若未獲善意答復之最壞衝擊</th>
+              <th class="ctr" style="width:10%;">優先度</th>
+              <th class="ctr" style="width:10%;">追蹤狀態</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bad-row">
+              <td class="ctr"><strong>Q1</strong></td>
+              <td>採購合規</td>
+              <td>「電氣設備」原產地須屬我國是否涵蓋儲能電芯、PCS？</td>
+              <td>若涵蓋電芯，全球無台產，<strong>本案結構上無法投標</strong></td>
+              <td class="ctr"><span class="chip coral">致命</span></td>
+              <td class="ctr"><span class="chip amber">待公文送出</span></td>
+            </tr>
+            <tr class="hl-row">
+              <td class="ctr"><strong>Q2</strong></td>
+              <td>招標瑕疵</td>
+              <td>投標須知第 16 點(2)原產地限制兩個子選項均未勾選</td>
+              <td>供應鏈非陸資外國原產地資格處於未定狀態</td>
+              <td class="ctr"><span class="chip coral">致命</span></td>
+              <td class="ctr"><span class="chip amber">待公文送出</span></td>
+            </tr>
+            <tr class="hl-row">
+              <td class="ctr"><strong>Q3</strong></td>
+              <td>規格定義</td>
+              <td>儲能 3MWh 係安裝容量 (Installed) 或可用容量 (Usable)？</td>
+              <td>若要求可用容量，成本額外激增 600～900 萬元</td>
+              <td class="ctr"><span class="chip coral">重大</span></td>
+              <td class="ctr"><span class="chip amber">待公文送出</span></td>
+            </tr>
+            <tr class="bad-row">
+              <td class="ctr"><strong>Q4</strong></td>
+              <td>法律合約</td>
+              <td>契約第 19 條損害賠償責任是否增列契約價金總額為上限？</td>
+              <td>半導體實驗跳機求償無上限，恐吞掉全公司</td>
+              <td class="ctr"><span class="chip coral">致命</span></td>
+              <td class="ctr"><span class="chip amber">待公文送出</span></td>
+            </tr>
+            <tr class="hl-row">
+              <td class="ctr"><strong>Q5</strong></td>
+              <td>商務報價</td>
+              <td>公告預算 9,500 萬 vs 需求書 9,200 萬含稅何者為廢標上限？</td>
+              <td>誤判報價金額，標價高於預算直接廢標出局</td>
+              <td class="ctr"><span class="chip coral">重大</span></td>
+              <td class="ctr"><span class="chip amber">待公文送出</span></td>
+            </tr>
+            <tr>
+              <td class="ctr"><strong>Q6</strong></td>
+              <td>工程邊界</td>
+              <td>48h 防災供電之柴油補給責任、油箱擴充是否屬本案範圍？</td>
+              <td>2,700L 柴油缺口未解，且涉公共危險物品申報</td>
+              <td class="ctr"><span class="chip amber">高</span></td>
+              <td class="ctr"><span class="chip amber">待公文送出</span></td>
+            </tr>
+            <tr>
+              <td class="ctr"><strong>Q7</strong></td>
+              <td>工程邊界</td>
+              <td>風雨球場 1,475~2,000 kWp 光電是否屬本案施工工作範圍？</td>
+              <td>評選佔 25%，防範被強加風雨球場龐大建置工程</td>
+              <td class="ctr"><span class="chip amber">高</span></td>
+              <td class="ctr"><span class="chip amber">待公文送出</span></td>
+            </tr>
+            <tr>
+              <td class="ctr"><strong>Q8</strong></td>
+              <td>電網調度</td>
+              <td>海工停車場 295 kWp 光電是否需納入孤島模式調度？</td>
+              <td>海工不在 GCB6 饋線內，納入需施作跨饋線工程</td>
+              <td class="ctr"><span class="chip blue">中</span></td>
+              <td class="ctr"><span class="chip amber">待公文送出</span></td>
+            </tr>
+            <tr>
+              <td class="ctr"><strong>Q9</strong></td>
+              <td>驗收標準</td>
+              <td>Seamless 無縫切換之量化毫秒標準與孤島偵測依循標準</td>
+              <td>未訂標準，驗收解釋權全在校方，恐難順利結案</td>
+              <td class="ctr"><span class="chip amber">高</span></td>
+              <td class="ctr"><span class="chip amber">待公文送出</span></td>
+            </tr>
+            <tr>
+              <td class="ctr"><strong>Q10</strong></td>
+              <td>資產智財</td>
+              <td>智財權「機關取得全部」與 PCM「不含核心原始碼」對齊</td>
+              <td>廠商 EMS 核心底層原始碼被整包要求交付公有化</td>
+              <td class="ctr"><span class="chip amber">高</span></td>
+              <td class="ctr"><span class="chip amber">待公文送出</span></td>
+            </tr>
+            <tr>
+              <td class="ctr"><strong>Q11</strong></td>
+              <td>合約條款</td>
+              <td>保護電驛（上限5台）等數量上限與契約第4條不得加價衝突</td>
+              <td>全校協調檢討若需超量安裝，廠商被強制吸收費用</td>
+              <td class="ctr"><span class="chip blue">中</span></td>
+              <td class="ctr"><span class="chip amber">待公文送出</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="slide-foot">
+      <span>Part 6 · 標前釋疑與問題追蹤</span>
+      <span class="pageno">P6.1 / 4</span>
+    </div>
+  </section>
+
+  <!-- P6.2 -->
+  <section class="slide">
+    <div class="slide-header">
+      <div>
+        <div class="eyebrow">Part 6 · 標前釋疑與問題追蹤 6.2</div>
+        <h1>致命合規與商務條款釋疑追蹤表 (Q1 ~ Q5)</h1>
+        <p class="sub">針對最優先的 5 項合規與商務致命條款：逐題剖析條款出處、我方實質疑慮與法律風險，並提出我方建議修訂文案（建議方式），作為釋疑公文內容及追蹤底線。</p>
+      </div>
+      <div class="flags">
+        <span class="flag coral">Q1 原產地電氣設備限制</span>
+        <span class="flag amber">Q2 子選項未勾選瑕疵</span>
+        <span class="flag coral">Q3 安裝vs可用容量</span>
+        <span class="flag coral">Q4 損害賠償上限</span>
+        <span class="flag blue">Q5 預算前後矛盾</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th style="width:4%;">#</th>
+              <th style="width:16%;">釋疑題目與出處</th>
+              <th style="width:36%;">我方疑慮之詳細敘述（風險核心）</th>
+              <th style="width:34%;">建議方式（建請機關回覆之修訂文案）</th>
+              <th style="width:10%;">談判底線</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bad-row">
+              <td class="ctr"><strong>Q1</strong></td>
+              <td><strong>原產地電氣設備限制</strong><br><small>投標須知第16點(2)清單</small></td>
+              <td><strong>【疑慮敘述】</strong>投標須知第 16 點(2)勾選「■電氣設備、■太陽能設備之原產地須屬我國」。然 3MWh 鋰電池電芯全球幾乎無台灣產源（主流為日、韓、中）。若機關認定「電氣設備」涵蓋電池芯／電池櫃／PCS，廠商在技術供應鏈上將面臨<strong>結構性無法投標</strong>；驗收時亦有遭認定產地不符而解約之致命風險。</td>
+              <td><strong>【建議方式】</strong>建請機關澄清：「電氣設備」僅指新設之一般高低壓配電盤體與配電管線工程；儲能系統之電池芯、電池模組、電池櫃及 PCS 得採用原產地為非陸資外國之合格產品（如日、韓、歐美等國產製）。</td>
+              <td><span class="chip coral">一票否決</span><br>若答復電芯須台製則放棄投標</td>
+            </tr>
+            <tr class="hl-row">
+              <td class="ctr"><strong>Q2</strong></td>
+              <td><strong>第16點(2)勾選瑕疵</strong><br><small>投標須知第16點(2)</small></td>
+              <td><strong>【疑慮敘述】</strong>投標須知第 16 點(2)主項勾選「不適用我國締結之條約或協定」，但其下「□原產地須屬我國者」與「□得為下列外國者」<strong>兩子選項均未勾選</strong>，招標文件自身存在勾選不完整之瑕疵，導致外國產品允許範圍處於不明狀態。</td>
+              <td><strong>【建議方式】</strong>建請機關重新補正確認勾選項目，並明確載明本案設備除資通訊及太陽能禁用陸資外，主要設備得採用 WTO/GPA 締約國或其他非陸資之外國原產地產品。</td>
+              <td><span class="chip green">防禦確認</span><br>要求書面明確函復</td>
+            </tr>
+            <tr class="bad-row">
+              <td class="ctr"><strong>Q3</strong></td>
+              <td><strong>3MWh 安裝 vs 可用容量</strong><br><small>需求書表1-1 vs 計畫書</small></td>
+              <td><strong>【疑慮敘述】</strong>需求說明書表 1-1 僅寫「3MWh（或以上）」，未定義係額定安裝容量或可用放電容量；且計畫書中並存 3MWh、5,000kWh、3,540kWh 三版本。若驗收時校方主張可用容量須達 3MWh，以 80% DoD 反推安裝需達 3.75MWh，<strong>設備差價高達 600～900 萬元</strong>，統包價金不得追加，將吞噬利潤。</td>
+              <td><strong>【建議方式】</strong>建請機關明確核示：儲能系統規格係以「電池櫃額定安裝容量達 3,000 kWh（或以上）」為驗收合格標準，而非指放電可用容量。</td>
+              <td><span class="chip amber">成本守門</span><br>若為可用容量報價需增列900萬</td>
+            </tr>
+            <tr class="bad-row">
+              <td class="ctr"><strong>Q4</strong></td>
+              <td><strong>損害賠償上限設防</strong><br><small>契約第19條(八)2</small></td>
+              <td><strong>【疑慮敘述】</strong>契約第 19 條(八)2 四個上限選項全未勾選，損害賠償依民法 216 條含「所失利益」且無金額天花板。國研大樓為工學院半導體精密晶圓製程，需求書明載「實驗數據毀損，損失無法計量」，微電網切換微秒偏差導致實驗中斷，理論上求償無上限，廠商無法承擔。</td>
+              <td><strong>【建議方式】</strong>建請機關依行政院公共工程委員會統包工程採購契約範本第 19 條第 8 款，增訂勾選「得標廠商之損害賠償責任總額以契約價金總額為上限」。</td>
+              <td><span class="chip coral">核心底線</span><br>爭取設上限，否則上浮保額</td>
+            </tr>
+            <tr class="hl-row">
+              <td class="ctr"><strong>Q5</strong></td>
+              <td><strong>預算上限不一致</strong><br><small>投標須知 vs 需求說明書</small></td>
+              <td><strong>【疑慮敘述】</strong>投標須知第 9 點載預算 9,500 萬元；但需求說明書第 4 章建置經費載 9,200 萬元含稅。依須知第 50 點，廠商標價高於「公告之預算」即廢標。若廠商以 9,300 萬報價而機關認定上限為 9,200 萬，將面臨直接廢標出局之風險。</td>
+              <td><strong>【建議方式】</strong>建請機關明確函復：本案公告之廠商投標報價廢標上限金額，究以 9,200 萬元或 9,500 萬元為準。</td>
+              <td><span class="chip blue">報價邊界</span><br>若9200萬則以9200萬為上限</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="slide-foot">
+      <span>Part 6 · 標前釋疑與問題追蹤</span>
+      <span class="pageno">P6.2 / 4</span>
+    </div>
+  </section>
+
+  <!-- P6.3 -->
+  <section class="slide">
+    <div class="slide-header">
+      <div>
+        <div class="eyebrow">Part 6 · 標前釋疑與問題追蹤 6.3</div>
+        <h1>工程邊界與容量定義釋疑追蹤表 (Q6 ~ Q8)</h1>
+        <p class="sub">聚焦場域介面與工程範圍爭議：釐清 48 小時防災供電之 2,700L 柴油補給責任、風雨球場 1,475~2,000 kWp 光電工程界線（評選佔 25%），以及海工停車場 295 kWp 光電跨饋線問題。</p>
+      </div>
+      <div class="flags">
+        <span class="flag coral">Q6 48h 柴油補給責任</span>
+        <span class="flag amber">Q7 風雨球場 25% 配分邊界</span>
+        <span class="flag blue">Q8 海工 295kWp 跨饋線</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th style="width:4%;">#</th>
+              <th style="width:16%;">釋疑題目與出處</th>
+              <th style="width:36%;">我方疑慮之詳細敘述（風險核心）</th>
+              <th style="width:34%;">建議方式（建請機關回覆之修訂文案）</th>
+              <th style="width:10%;">談判底線</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bad-row">
+              <td class="ctr"><strong>Q6</strong></td>
+              <td><strong>48h 防災柴油補給責任</strong><br><small>需求書第1章 250kW</small></td>
+              <td><strong>【疑慮敘述】</strong>需求書負載提高為 250kW，48h 需 12,000 kWh。扣除 BESS 可用 2,400 kWh 與屋頂光電 944 kWh，<strong>缺口達 8,656 kWh，需柴油約 2,700 公升、運轉 35 小時</strong>。但既有 400kW 柴發日用油箱僅數百公升，招標文件完全未規範：1. 災時燃油補給由誰負責；2. 油箱擴充是否屬工作範圍（涉公共危險物品場所設置許可）。</td>
+              <td><strong>【建議方式】</strong>建請機關確認：1. 「48小時防災供電」係以既有柴油發電機持續運轉為前提，災時所需燃油補給由校方負責；2. 本統包工程範圍僅限於柴發並聯控制盤與通訊改造，不包含儲油設施擴建及燃油採購。</td>
+              <td><span class="chip amber">工項劃分</span><br>統包不吸收油箱擴建</td>
+            </tr>
+            <tr class="hl-row">
+              <td class="ctr"><strong>Q7</strong></td>
+              <td><strong>風雨球場光電工程界線</strong><br><small>評選項目二 (25%) vs 需求書</small></td>
+              <td><strong>【疑慮敘述】</strong>評選項目二配分高達 25%（全案最高），載明「微電網連接光電風雨球場場域介面規劃」；需求書第 7 章亦提新建風雨球場 1,475～2,000 kWp 租用光電系統。惟招標文件未明確界定該風雨球場之土建、鋼構與光電主體工程是否屬本案 9,200 萬統包總價範圍，易產生工程範圍擴大爭端。</td>
+              <td><strong>【建議方式】</strong>建請機關澄清：風雨球場 1,475～2,000 kWp 太陽能主體工程由校方另案採購/租用；本案統包廠商僅負責於國研大樓端預留微電網通訊監控與高壓併接引入口介面，不包含風雨球場之光電設備建置。</td>
+              <td><span class="chip coral">範圍防禦</span><br>嚴防被要求全包球場施工</td>
+            </tr>
+            <tr>
+              <td class="ctr"><strong>Q8</strong></td>
+              <td><strong>海工光電跨饋線孤島調度</strong><br><small>需求書表1-1 vs 第1章</small></td>
+              <td><strong>【疑慮敘述】</strong>表 1-1 列入海工館停車場 295kWp 自發自用光電；但微電網涵蓋範圍為 GCB6 饋線（國研、社管、A水池），海工館位屬其他饋線。若孤島模式下要求海工 295kWp 跨饋線供電予國研大樓，需施作跨饋線高壓跳線聯絡工程，屬未載明之路徑與未計價工項。</td>
+              <td><strong>【建議方式】</strong>建請機關確認：海工停車場 295kWp 光電僅於市電正常之併網模式下自發自用；孤島與防災模式下微電網電源僅限於 GCB6 饋線內之儲能、國研光電 118kWp 與柴油發電機，不包含跨饋線孤島轉供。</td>
+              <td><span class="chip blue">線路邊界</span><br>僅作併網調度，不跨饋線</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="slide-foot">
+      <span>Part 6 · 標前釋疑與問題追蹤</span>
+      <span class="pageno">P6.3 / 4</span>
+    </div>
+  </section>
+
+  <!-- P6.4 -->
+  <section class="slide">
+    <div class="slide-header">
+      <div>
+        <div class="eyebrow">Part 6 · 標前釋疑與問題追蹤 6.4</div>
+        <h1>技術標準、資產智財與數量上限釋疑追蹤表 (Q9 ~ Q11)</h1>
+        <p class="sub">聚焦驗收量化指標與智慧財產權防護：釐清 Seamless 無縫切換毫秒標準、確立 EMS 核心平台原始碼智財權歸屬廠商，以及全校電驛/避雷設備數量上限與契約不得加價之衝突解套。</p>
+      </div>
+      <div class="flags">
+        <span class="flag teal">Q9 Seamless 驗收量化</span>
+        <span class="flag purple">Q10 EMS 核心原始碼保留</span>
+        <span class="flag amber">Q11 電驛數量上限衝突</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th style="width:4%;">#</th>
+              <th style="width:16%;">釋疑題目與出處</th>
+              <th style="width:36%;">我方疑慮之詳細敘述（風險核心）</th>
+              <th style="width:34%;">建議方式（建請機關回覆之修訂文案）</th>
+              <th style="width:10%;">談判底線</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="hl-row">
+              <td class="ctr"><strong>Q9</strong></td>
+              <td><strong>Seamless 驗收標準未量化</strong><br><small>需求書第2章 vs PCM需求書</small></td>
+              <td><strong>【疑慮敘述】</strong>需求書僅寫「電壓在 15% 畸變範圍內重新建立」，PCM 需求書寫「均不得有停電情形」，未訂切換時間數值標準（如 &lt;10ms 或 &lt;20ms）及依循標準版本（IEEE 1547.4）。若驗收時半導體實驗單位要求達 UPS 級零延遲無擾動，將因驗收標準過於主觀抽象而產生拒付尾款爭議。</td>
+              <td><strong>【建議方式】</strong>建請機關明訂 Seamless 無縫切換之驗收量化合格標準為：切換過渡時間 &le; 20ms、瞬態電壓變動 &le; 15% 且於 3 個交流週期內恢復穩定，依 IEEE 1547.4 規範進行現場 SAT 實測驗證。</td>
+              <td><span class="chip teal">驗收鎖定</span><br>服務建議書寫死 &le;20ms</td>
+            </tr>
+            <tr class="bad-row">
+              <td class="ctr"><strong>Q10</strong></td>
+              <td><strong>智財權與核心原始碼對齊</strong><br><small>契約第19條(三) vs PCM需求書</small></td>
+              <td><strong>【疑慮敘述】</strong>契約第 19 條 (三) 勾選機關取得全部著作與專利權利；但 PCM 監造需求書第六點之十一又寫「客製化區塊程式原始碼，不含統包廠商自有核心平台原始碼」。若兩者未對齊，廠商研發之微電網 EMS 底層核心資產有被要求全套交付乃至公有化之重大智慧財產侵害風險。</td>
+              <td><strong>【建議方式】</strong>建請機關修訂契約第 19 條，敘明：機關取得智慧財產權者，僅限於為本案專案客製化開發之區塊與 API 介面；統包廠商原有之微電網控制演算法、核心平台底層架構原始碼仍屬廠商所有，機關享有永久無償使用授權。</td>
+              <td><span class="chip purple">核心資產</span><br>自有核心源碼絕對不交付</td>
+            </tr>
+            <tr class="hl-row">
+              <td class="ctr"><strong>Q11</strong></td>
+              <td><strong>全校電驛數量上限衝突</strong><br><small>需求書第7章 vs 契約第4條</small></td>
+              <td><strong>【疑慮敘述】</strong>需求說明書第 7 章載 ABB REF-615 電驛「上限購買 5 台」、消導雷器「上限 11 台」、突波吸收器「上限 32 台」；但契約第 4 條又規定「為完成履約標的所必須具備之工程不得要求增加契約價金」。若全校檢討報告指出需 8 台電驛，機關恐強制廠商無償吸收額外採購費用。</td>
+              <td><strong>【建議方式】</strong>建請機關確認：本案全校保護電驛、消導雷器與突波吸收器之供應數量以需求書所列上限為限；若經全校保護協調檢討建議超出上限數量者，超出部分由機關另案辦理採購或另以契約變更程序追加價金。</td>
+              <td><span class="chip blue">責任上限</span><br>採購量鎖定需求書上限</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="split-45">
+        <div class="card green">
+          <h3>📋 專案團隊釋疑追蹤落地 SOP</h3>
+          <p>1. <strong>業務部：</strong> 依本表建議文案正式發函中山大學。<br>
+          2. <strong>法務室：</strong> 追蹤校方釋疑公告回覆，逐題比對符合度。<br>
+          3. <strong>專案主持人：</strong> 針對回覆不利之題目召開緊急評估會議，啟動 Go / Hold / Stop 判定程序。</p>
+        </div>
+        <div class="card amber">
+          <h3>⏱️ 時程倒數提醒</h3>
+          <p>等標期法定釋疑截止日為<strong>公告日起算第 5 日曆天</strong>。逾期提出機關得不予受理，業務部須於招標公告領標當日即刻發出公文！</p>
+        </div>
+      </div>
+    </div>
+    <div class="slide-foot">
+      <span>Part 6 · 標前釋疑與問題追蹤</span>
+      <span class="pageno">P6.4 / 4</span>
     </div>
   </section>
 
@@ -2587,7 +2953,7 @@ td.ctr,th.ctr{text-align:center}
   <div class="progress"><div class="fill" id="pfill"></div></div>
   <div class="hint">按 &larr; &rarr; 鍵翻頁 ｜ Home 鍵回首頁 ｜ F 鍵全螢幕</div>
   <div class="ctrl">
-    <div class="counter" id="pnum">P1.1 (1 / 25)</div>
+    <div class="counter" id="pnum">P1.1 (1 / 29)</div>
     <button id="btnPrev" aria-label="上一頁">&larr;</button>
     <button id="btnNext" aria-label="下一頁">&rarr;</button>
   </div>
@@ -2602,11 +2968,12 @@ td.ctr,th.ctr{text-align:center}
     p2: Array.prototype.slice.call(document.querySelectorAll('#view-p2 .slide')),
     p3: Array.prototype.slice.call(document.querySelectorAll('#view-p3 .slide')),
     p4: Array.prototype.slice.call(document.querySelectorAll('#view-p4 .slide')),
-    p5: Array.prototype.slice.call(document.querySelectorAll('#view-p5 .slide'))
+    p5: Array.prototype.slice.call(document.querySelectorAll('#view-p5 .slide')),
+    p6: Array.prototype.slice.call(document.querySelectorAll('#view-p6 .slide'))
   };
-  var order = ['p1','p2','p3','p4','p5'];
+  var order = ['p1','p2','p3','p4','p5','p6'];
   var state = { view:'home', idx:0 };
-  var last = { p1:0, p2:0, p3:0, p4:0, p5:0 };
+  var last = { p1:0, p2:0, p3:0, p4:0, p5:0, p6:0 };
 
   var viewHome = document.getElementById('view-home');
   var deckbar = document.getElementById('deckbar');
@@ -2672,7 +3039,7 @@ td.ctr,th.ctr{text-align:center}
   function goHash(hash){
     hash = (hash||'#home').replace('#','');
     if(hash==='home'||hash===''){ state.view='home'; render(); return; }
-    var m = hash.match(/^(p1|p2|p3|p4|p5)-(\d+)$/);
+    var m = hash.match(/^(p1|p2|p3|p4|p5|p6)-(\d+)$/);
     if(m){
       var v=m[1], i=parseInt(m[2],10)-1;
       if(parts[v] && parts[v][i]){ state.view=v; state.idx=i; render(); return; }
@@ -2728,8 +3095,8 @@ td.ctr,th.ctr{text-align:center}
 /* ---------- Table Expand / Collapse ---------- */
 document.querySelectorAll('.table-wrap').forEach(function(wrap){
   var rows = Array.prototype.slice.call(wrap.querySelectorAll('tbody tr'));
-  if(rows.length <= 5) return;
-  rows.slice(5).forEach(function(row){ row.classList.add('table-extra'); });
+  if(rows.length <= 6) return;
+  rows.slice(6).forEach(function(row){ row.classList.add('table-extra'); });
   var button = document.createElement('button');
   button.type = 'button';
   button.className = 'table-toggle';
