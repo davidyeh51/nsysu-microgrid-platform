@@ -1,0 +1,1902 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2712%27 fill=%27%230C3A63%27/%3E%3Cpath d=%27M12 48h10V30H12zm15 0h10V18H27zm15 0h10V8H42z%27 fill=%27%231BB1BF%27/%3E%3Cpath d=%27M12 24l15-10 15 6 10-12%27 stroke=%27%23E09A2B%27 stroke-width=%273%27 fill=%27none%27 stroke-linecap=%27round%27/%3E%3C/svg%3E">
+<title>國立中山大學微電網建置統包工程 投標決策與規格中樞｜進能服 6692</title>
+<meta name="description" content="國立中山大學微電網建置統包工程（9,200萬元）投標決策與工程規格中樞：涵蓋西子灣天然孤島環境、GCB6饋線拓撲、3MWh儲能櫃(C5M/IP65/細水霧/VPC)、1200kW PCS Seamless無縫切換、國研大樓半導體實驗保供、全校ABB保護電驛與避雷接地優化、最有利標7大評選指標及5年全責保固。">
+
+<style>
+:root{
+  --blue:#1968AD; --blue-d:#12518A; --blue-dd:#0C3A63; --blue-soft:#E8F1F9;
+  --teal:#1BB1BF; --teal-d:#12818C; --teal-soft:#E2F5F7;
+  --ink:#12293D; --muted:#5B7285; --line:#D9E3EC; --paper:#F4F7FA; --card:#fff;
+  --amber:#E09A2B; --amber-soft:#FCF2DE;
+  --coral:#D95F45; --coral-soft:#FBEAE5;
+  --grey:#9FB1C0; --grey-soft:#EDF1F5;
+  --green:#2E7D32; --green-soft:#E8F5E9;
+  --purple:#6B46C1; --purple-soft:#F3E8FF;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:"Noto Sans TC","Microsoft JhengHei","PingFang TC",system-ui,sans-serif;
+  background:var(--paper); color:var(--ink); line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* ---------- top bar ---------- */
+.topbar{
+  position:fixed; top:0; left:0; right:0; z-index:50; height:54px;
+  display:flex; align-items:center; gap:8px; padding:0 20px;
+  background:rgba(255,255,255,.96); backdrop-filter:blur(10px);
+  border-bottom:2px solid var(--blue);
+}
+.topbar .brand{display:flex; align-items:center; gap:9px; margin-right:14px; white-space:nowrap; text-decoration:none}
+.topbar .brand .mk{flex:0 0 26px}
+.topbar .brand .tx{font-weight:800; font-size:.88rem; letter-spacing:.02em; color:var(--ink); line-height:1.15}
+.topbar .brand .tx small{display:block; font-weight:700; font-size:.66rem; letter-spacing:.08em; color:var(--blue)}
+.topnav{display:flex; gap:4px; flex:1; min-width:0; overflow-x:auto; scrollbar-width:none}
+.topnav::-webkit-scrollbar{display:none}
+.topnav a{
+  text-decoration:none; color:var(--muted); font-size:.84rem; font-weight:600;
+  padding:6px 13px; border-radius:4px; white-space:nowrap; border:1px solid transparent;
+  transition:all .15s ease;
+}
+.topnav a:hover{color:var(--blue); background:var(--blue-soft)}
+.topnav a.active{color:#fff; background:var(--blue); font-weight:700}
+.topbar .meta{font-size:.74rem; color:var(--muted); white-space:nowrap; font-weight:600}
+@media(max-width:1160px){.topbar .meta{display:none}}
+@media(max-width:860px){.topbar .brand .tx{font-size:.78rem}}
+
+/* ---------- views / slides ---------- */
+.view{display:none}
+.view.active{display:block}
+.slide{
+  display:none; min-height:100vh; padding:78px 48px 88px;
+  max-width:1360px; margin:0 auto; flex-direction:column;
+}
+.slide.active{display:flex}
+.slide-header{display:flex; justify-content:space-between; align-items:flex-start; gap:16px; margin-bottom:18px}
+.eyebrow{font-size:.76rem; font-weight:800; letter-spacing:.14em; color:var(--teal-d); text-transform:uppercase; margin-bottom:6px}
+.slide-header h1,.slide-header h2{font-size:clamp(1.35rem,2.8vw,1.95rem); line-height:1.3; font-weight:800; max-width:32em; color:var(--ink)}
+.slide-header h1::after,.slide-header h2::after{
+  content:""; display:block; width:64px; height:4px; margin-top:10px;
+  background:linear-gradient(90deg,var(--blue),var(--teal));
+}
+.slide-header .sub{margin-top:10px; color:var(--muted); font-size:.92rem; max-width:60em; line-height:1.58}
+.flags{display:flex; gap:8px; flex-wrap:wrap; justify-content:flex-end}
+.flag{font-size:.72rem; font-weight:700; padding:5px 12px; border-radius:3px; white-space:nowrap}
+.flag.blue{background:var(--blue-soft); color:var(--blue-d)}
+.flag.teal{background:var(--teal-soft); color:var(--teal-d)}
+.flag.amber{background:var(--amber-soft); color:#9a6a10}
+.flag.coral{background:var(--coral-soft); color:#b4432c}
+.flag.green{background:var(--green-soft); color:var(--green)}
+.flag.purple{background:var(--purple-soft); color:var(--purple)}
+.flag.grey{background:var(--grey-soft); color:var(--muted)}
+.slide-body{flex:1; display:flex; flex-direction:column; gap:16px}
+.slide-foot{display:flex; justify-content:space-between; gap:16px; margin-top:20px; padding-top:12px; border-top:1px solid var(--line); font-size:.73rem; color:var(--muted); background:rgba(255,255,255,.6); border-radius:3px; padding-left:8px; padding-right:8px}
+.slide-foot .pageno{white-space:nowrap; font-weight:800; color:var(--blue)}
+
+/* ---------- layout grids ---------- */
+.two-col{display:grid; grid-template-columns:1fr 1fr; gap:18px; align-items:stretch}
+.three-col{display:grid; grid-template-columns:repeat(3,1fr); gap:14px}
+.four-col{display:grid; grid-template-columns:repeat(4,1fr); gap:12px}
+.five-col{display:grid; grid-template-columns:repeat(5,1fr); gap:10px}
+.split-45{display:grid; grid-template-columns:45% 1fr; gap:18px; align-items:start}
+.split-55{display:grid; grid-template-columns:1fr 45%; gap:18px; align-items:start}
+.split-img-right{display:grid; grid-template-columns:1fr 1.15fr; gap:18px; align-items:start}
+.split-img-left{display:grid; grid-template-columns:1.15fr 1fr; gap:18px; align-items:start}
+
+@media(max-width:1050px){
+  .slide{padding:72px 18px 96px}
+  .two-col,.three-col,.four-col,.five-col,.split-45,.split-55,.split-img-right,.split-img-left{grid-template-columns:1fr}
+}
+
+/* ---------- components ---------- */
+.card{background:var(--card); border:1px solid var(--line); border-top:3px solid var(--blue); border-radius:4px; padding:16px 18px; box-shadow:0 3px 10px rgba(18,41,61,.04)}
+.card.teal{border-top-color:var(--teal)}
+.card.amber{border-top-color:var(--amber)}
+.card.coral{border-top-color:var(--coral)}
+.card.green{border-top-color:var(--green)}
+.card.purple{border-top-color:var(--purple)}
+.card.grey{border-top-color:var(--grey)}
+.card h3{font-size:.98rem; font-weight:800; margin-bottom:8px; color:var(--ink)}
+.card p{font-size:.88rem; color:var(--muted); line-height:1.55}
+.card ul{padding-left:18px; margin-top:8px; font-size:.86rem; color:var(--muted); line-height:1.6}
+.card ul li{margin-bottom:4px}
+
+.metric{border-radius:4px; padding:14px 16px; border:1px solid var(--line); background:#fff; border-left:5px solid var(--blue); box-shadow:0 2px 8px rgba(18,41,61,.03)}
+.metric .k{font-size:clamp(1.4rem,2.4vw,1.95rem); font-weight:900; line-height:1.1; color:var(--blue); font-variant-numeric:tabular-nums}
+.metric .t{font-size:.8rem; color:var(--muted); margin-top:6px; line-height:1.45}
+.metric.teal{border-left-color:var(--teal)} .metric.teal .k{color:var(--teal-d)}
+.metric.amber{border-left-color:var(--amber)} .metric.amber .k{color:#9a6a10}
+.metric.coral{border-left-color:var(--coral)} .metric.coral .k{color:#b4432c}
+.metric.green{border-left-color:var(--green)} .metric.green .k{color:var(--green)}
+.metric.purple{border-left-color:var(--purple)} .metric.purple .k{color:var(--purple)}
+.metric.grey{border-left-color:var(--grey)} .metric.grey .k{color:var(--muted)}
+
+.big-callout{
+  background:linear-gradient(120deg,var(--blue-dd),var(--blue) 62%,var(--teal-d)); color:#fff;
+  border-radius:4px; padding:20px 24px; position:relative; overflow:hidden;
+}
+.big-callout .label{font-size:.72rem; letter-spacing:.14em; opacity:.85; font-weight:800; margin-bottom:6px}
+.big-callout .answer{font-size:clamp(1.1rem,2.2vw,1.45rem); font-weight:800; line-height:1.38}
+.big-callout .more{margin-top:8px; font-size:.88rem; opacity:.92; line-height:1.55}
+
+.table-wrap{background:#fff; border:1px solid var(--line); border-radius:4px; overflow-x:auto; box-shadow:0 4px 14px rgba(7,29,59,.05); margin-bottom:6px}
+table{width:100%; border-collapse:collapse; font-size:.85rem; min-width:560px}
+th{background:var(--blue); color:#fff; text-align:left; font-weight:700; padding:9px 12px; white-space:nowrap; font-size:.82rem}
+th.sub{background:var(--blue-d)}
+td{padding:8px 12px; border-bottom:1px solid #EDF1F5; vertical-align:top}
+tr:last-child td{border-bottom:none}
+tbody tr:nth-child(even){background:#FAFCFE}
+tbody tr:hover{background:#F0F6FC}
+td.num,th.num{text-align:right; font-variant-numeric:tabular-nums}
+td.ctr,th.ctr{text-align:center}
+.hl-row{background:var(--amber-soft) !important}
+.hl-row td{font-weight:700}
+.bad-row{background:var(--coral-soft) !important}
+.good-row{background:var(--green-soft) !important}
+
+.table-toggle{display:block; width:100%; padding:9px 12px; border:0; border-top:1px solid var(--line); background:var(--blue-soft); color:var(--blue-dd); text-align:left; font:700 .78rem inherit; cursor:pointer}
+.table-toggle:hover{background:#d8e6f5}
+.table-extra{display:none}
+.table-wrap.expanded .table-extra{display:table-row}
+
+.chip{display:inline-block; font-size:.7rem; font-weight:700; padding:2px 8px; border-radius:3px; white-space:nowrap}
+.chip.blue{background:var(--blue-soft); color:var(--blue-d)}
+.chip.teal{background:var(--teal-soft); color:var(--teal-d)}
+.chip.amber{background:var(--amber-soft); color:#9a6a10}
+.chip.coral{background:var(--coral-soft); color:#b4432c}
+.chip.green{background:var(--green-soft); color:var(--green)}
+.chip.purple{background:var(--purple-soft); color:var(--purple)}
+.chip.grey{background:var(--grey-soft); color:var(--muted)}
+
+.note{background:var(--amber-soft); border-left:4px solid var(--amber); padding:10px 14px; font-size:.86rem; border-radius:0 3px 3px 0; color:#825308}
+.warn{background:var(--coral-soft); border-left:4px solid var(--coral); padding:10px 14px; font-size:.86rem; border-radius:0 3px 3px 0; color:#9c3420}
+.tip{background:var(--green-soft); border-left:4px solid var(--green); padding:10px 14px; font-size:.86rem; border-radius:0 3px 3px 0; color:#1b5e20}
+
+.fig{background:#fff; border:1px solid var(--line); border-radius:4px; padding:12px 14px; box-shadow:0 3px 12px rgba(18,41,61,.04); position:relative}
+.fig .cap{font-size:.78rem; color:var(--muted); margin-top:8px; text-align:center; line-height:1.4}
+.fig .figtitle{font-size:.86rem; font-weight:800; margin-bottom:8px; color:var(--blue-dd); display:flex; justify-content:space-between; align-items:center}
+.fig .figtitle .hint-zoom{font-size:.7rem; font-weight:600; color:var(--teal-d); background:var(--teal-soft); padding:2px 6px; border-radius:3px; cursor:pointer}
+.fig img{display:block; width:100%; height:auto; border-radius:3px; object-fit:contain; background:#0b1d30; max-height:420px; cursor:zoom-in; transition:transform .2s ease}
+.fig img:hover{transform:scale(1.01)}
+
+/* ---------- home view ---------- */
+.home{min-height:100vh}
+.hero{
+  position:relative; overflow:hidden; color:#fff;
+  background:linear-gradient(115deg,var(--blue-dd) 0%,var(--blue) 55%,#1580A8 100%);
+  padding:96px 48px 52px;
+}
+.hero .inner{max-width:1360px; margin:0 auto; position:relative; z-index:2}
+.hero .kicker{font-size:.8rem; font-weight:800; letter-spacing:.16em; color:#8FD9E4}
+.hero h1{font-size:clamp(1.75rem,4.2vw,2.75rem); font-weight:900; line-height:1.24; margin-top:12px; max-width:28em}
+.hero .lede{margin-top:14px; max-width:54em; font-size:.98rem; opacity:.93; line-height:1.68}
+.hero .herometa{margin-top:20px; display:flex; gap:8px; flex-wrap:wrap}
+.hero .herometa span{font-size:.74rem; font-weight:700; background:rgba(255,255,255,.16); padding:5px 12px; border-radius:3px}
+.hero .deco{position:absolute; right:-60px; top:-40px; width:840px; opacity:.36; pointer-events:none; z-index:1}
+@media(max-width:1000px){.hero{padding:80px 18px 40px} .hero .deco{width:560px; right:-140px; opacity:.24}}
+.homebody{max-width:1360px; margin:0 auto; padding:30px 48px 56px}
+@media(max-width:1000px){.homebody{padding:24px 18px 46px}}
+
+.part-cards{display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:18px}
+.part-card{
+  display:block; text-decoration:none; color:var(--ink); background:#fff;
+  border:1px solid var(--line); border-top:4px solid var(--blue); border-radius:4px; padding:22px;
+  transition:transform .15s ease, box-shadow .15s ease; position:relative; overflow:hidden;
+}
+.part-card:hover{transform:translateY(-4px); box-shadow:0 12px 28px rgba(18,41,61,.12)}
+.part-card.c2{border-top-color:var(--teal)} .part-card.c3{border-top-color:var(--amber)}
+.part-card .pc-eyebrow{font-size:.72rem; font-weight:800; letter-spacing:.14em; color:var(--blue)}
+.part-card.c2 .pc-eyebrow{color:var(--teal-d)} .part-card.c3 .pc-eyebrow{color:#9a6a10}
+.part-card h2{font-size:1.22rem; font-weight:800; margin:8px 0 6px; line-height:1.35}
+.part-card p{color:var(--muted); font-size:.87rem; line-height:1.58}
+.part-card .pc-flags{margin-top:12px; display:flex; gap:6px; flex-wrap:wrap}
+.part-card .pc-go{margin-top:14px; font-weight:800; color:var(--blue); font-size:.85rem}
+.part-card .pc-icon{position:absolute; right:14px; top:14px; opacity:.85}
+
+.quick-spec-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:12px; margin-top:24px}
+.home-foot{padding-top:20px; font-size:.74rem; color:var(--muted); border-top:1px solid var(--line); margin-top:30px; line-height:1.8}
+
+/* ---------- map section ---------- */
+.map-panel{background:#fff; border:1px solid var(--line); border-radius:4px; padding:16px; margin-top:24px; box-shadow:0 3px 12px rgba(18,41,61,.04)}
+.map-header{display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; flex-wrap:wrap; gap:8px}
+.map-title{font-size:1.05rem; font-weight:800; color:var(--blue-dd)}
+.map-tags{display:flex; gap:6px; flex-wrap:wrap}
+#campus-map{height:460px; width:100%; border-radius:4px; border:1px solid var(--line); z-index:10}
+
+/* ---------- interactive simulator ---------- */
+.sim-container{background:#fff; border:1px solid var(--line); border-radius:4px; padding:18px; box-shadow:0 3px 14px rgba(18,41,61,.04); margin-bottom:18px}
+.sim-controls{display:flex; gap:8px; flex-wrap:wrap; margin-bottom:16px}
+.sim-btn{padding:8px 16px; border:1px solid var(--line); border-radius:4px; background:var(--paper); color:var(--ink); font-weight:700; font-size:.84rem; cursor:pointer; transition:all .2s ease}
+.sim-btn:hover{background:var(--blue-soft); color:var(--blue)}
+.sim-btn.active{background:var(--blue); color:#fff; border-color:var(--blue); box-shadow:0 2px 8px rgba(25,104,173,.3)}
+.sim-canvas{background:#0a192f; border-radius:4px; padding:20px; color:#fff; position:relative; overflow:hidden}
+.sim-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:12px; text-align:center}
+@media(max-width:850px){.sim-grid{grid-template-columns:1fr 1fr}}
+.sim-node{background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.15); border-radius:4px; padding:12px; transition:all .3s ease}
+.sim-node.active{border-color:var(--teal); background:rgba(27,177,191,.15); box-shadow:0 0 12px rgba(27,177,191,.35)}
+.sim-node.standby{opacity:.45}
+.sim-node.alert{border-color:var(--coral); background:rgba(217,95,69,.2)}
+.sim-node-title{font-size:.78rem; color:#8FD9E4; font-weight:700; margin-bottom:4px}
+.sim-node-val{font-size:1.15rem; font-weight:900; font-variant-numeric:tabular-nums}
+.sim-node-sub{font-size:.7rem; opacity:.75; margin-top:2px}
+.sim-status-box{margin-top:14px; padding:12px 14px; background:rgba(255,255,255,.06); border-left:3px solid var(--teal); border-radius:0 4px 4px 0; font-size:.85rem; line-height:1.55}
+
+/* ---------- lightbox modal ---------- */
+.lightbox-modal{display:none; position:fixed; top:0; left:0; right:0; bottom:0; z-index:100; background:rgba(7,29,59,.92); backdrop-filter:blur(8px); padding:30px; align-items:center; justify-content:center; flex-direction:column}
+.lightbox-modal.active{display:flex}
+.lightbox-content{max-width:92vw; max-height:84vh; position:relative; display:flex; flex-direction:column; align-items:center}
+.lightbox-content img{max-width:100%; max-height:78vh; object-fit:contain; border-radius:4px; box-shadow:0 10px 40px rgba(0,0,0,.6); background:#0b1d30}
+.lightbox-caption{color:#fff; margin-top:12px; font-size:.9rem; text-align:center; max-width:800px; line-height:1.4}
+.lightbox-close{position:absolute; top:-36px; right:0; color:#fff; font-size:1.8rem; background:none; border:none; cursor:pointer; font-weight:700; opacity:.8}
+.lightbox-close:hover{opacity:1}
+
+/* ---------- bottom controls ---------- */
+.deckbar{position:fixed; left:0; right:0; bottom:0; z-index:50; pointer-events:none; display:none}
+.progress{height:4px; background:#DFE7EE}
+.progress .fill{height:100%; width:0%; background:linear-gradient(90deg,var(--blue),var(--teal)); transition:width .25s ease}
+.hint{position:absolute; left:20px; bottom:14px; font-size:.74rem; color:var(--muted); background:rgba(255,255,255,.94); padding:4px 10px; border-radius:3px; border:1px solid var(--line)}
+.ctrl{position:absolute; right:16px; bottom:12px; display:flex; align-items:center; gap:8px; pointer-events:auto}
+.ctrl .counter{font-size:.78rem; color:var(--muted); background:rgba(255,255,255,.94); border:1px solid var(--line); padding:5px 12px; border-radius:3px; font-variant-numeric:tabular-nums}
+.ctrl button{
+  width:32px; height:32px; border:1px solid var(--line); background:rgba(255,255,255,.94);
+  border-radius:3px; cursor:pointer; font-size:1.1rem; color:var(--ink); font-weight:800;
+  display:flex; align-items:center; justify-content:center; transition:background .15s;
+}
+.ctrl button:hover{background:var(--blue); color:#fff}
+@media(max-width:800px){.hint{display:none}}
+.custom-pin{background:none; border:none}
+</style>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+
+<!-- ================= TOP BAR ================= -->
+<div class="topbar">
+  <a class="brand" href="#home">
+    <svg class="mk" width="26" height="26" viewBox="0 0 26 26" aria-hidden="true">
+      <rect x="0" y="0" width="12" height="12" rx="2" fill="#1968AD" opacity=".9"/>
+      <rect x="14" y="0" width="12" height="12" rx="2" fill="#1BB1BF" opacity=".9"/>
+      <rect x="0" y="14" width="12" height="12" rx="2" fill="#1BB1BF" opacity=".6"/>
+      <rect x="14" y="14" width="12" height="12" rx="2" fill="#1968AD"/>
+    </svg>
+    <div class="tx">進能服 6692<small>中山大學微電網統包工程・決策中樞</small></div>
+  </a>
+  <nav class="topnav">
+    <a href="#home" data-nav="home">封面</a>
+    <a href="#p1" data-nav="p1">Part 1 專案背景與評選 (5 頁)</a>
+    <a href="#p2" data-nav="p2">Part 2 系統架構與機電 (6 頁)</a>
+    <a href="#p3" data-nav="p3">Part 3 運轉調度與維運 (5 頁)</a>
+  </nav>
+  <div class="meta">預算：NT$ 9,200 萬 (含稅) ｜ 履約期限：116/06/30 ｜ 最有利標序位法</div>
+</div>
+
+<!-- ================= HOME VIEW ================= -->
+<div class="view active home" id="view-home">
+  <div class="hero">
+    <svg class="deco" viewBox="0 0 900 520" aria-hidden="true">
+      <g fill="#fff" opacity=".2">
+        <path d="M300 60 L470 8 L600 60 L430 112 Z"/>
+        <path d="M620 130 L790 78 L900 122 L730 174 Z"/>
+        <path d="M250 250 L420 198 L540 244 L370 296 Z"/>
+        <path d="M660 330 L830 278 L900 305 L730 357 Z"/>
+      </g>
+      <g fill="#8FD9E4" opacity=".35">
+        <circle cx="560" cy="180" r="50"/>
+        <circle cx="420" cy="330" r="40"/>
+      </g>
+      <g stroke="#fff" stroke-width="2" fill="none" opacity=".4">
+        <path d="M120 190 L470 402"/><circle cx="120" cy="190" r="5"/>
+        <path d="M180 400 L300 400 Q330 400 330 370 L330 300"/><circle cx="180" cy="400" r="5"/>
+        <path d="M700 420 L560 470 L200 470"/><circle cx="200" cy="470" r="5"/>
+      </g>
+    </svg>
+    <div class="inner">
+      <div class="kicker">進能服 6692 · 統包投標決策與技術工程規格中樞</div>
+      <h1>西子灣饋線末端電力韌性示範：3MWh 儲能 × 1.2MW PCS × 國研半導體不斷電</h1>
+      <p class="lede">
+        本中樞完整解構「國立中山大學微電網建置統包工程」需求說明書與評選全規範：西子灣靠山面海天然孤島地形、GCB6 饋線拓撲、國研大樓 584kW 半導體關鍵實驗保供；落地配置 3MWh C5M 級耐鹽蝕防護儲能櫃、1200kW PCS Seamless 無縫瞬切、MGC 毫秒級 OT 安全邊界、雲地協同 EMS 演算法注入空間、全校 ABB REF-615 電驛協調與消導雷突波優化，以及最有利標 7 大評選指標 (100分) 與 5 年全責保固閉環。
+      </p>
+      <div class="herometa">
+        <span>工程預算：NT$ 9,200 萬 (含稅全包)</span>
+        <span>儲能 3MWh ＋ PCS 1,200kW (VPC認證)</span>
+        <span>國研半導體實驗核心 584kW 保供</span>
+        <span>孤島運轉 ≥ 4h ｜ 防災留置 ≥ 48h</span>
+        <span>Seamless 瞬切 (<15% 畸變無感接軌)</span>
+        <span>履約期限：116年6月30日</span>
+        <span>評選序位法 (滿分 100 分)</span>
+        <span>保固 5 年全責維護 (24/72 SLA)</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="homebody">
+    <!-- 3 Chapter Cards -->
+    <div class="part-cards">
+      <a class="part-card" href="#p1-1">
+        <svg class="pc-icon" width="30" height="30" viewBox="0 0 30 30"><rect x="1" y="1" width="12" height="12" rx="2" fill="#1968AD" opacity=".2"/><rect x="17" y="1" width="12" height="12" rx="2" fill="#1968AD" opacity=".45"/><rect x="1" y="17" width="12" height="12" rx="2" fill="#1968AD" opacity=".45"/><rect x="17" y="17" width="12" height="12" rx="2" fill="#1968AD"/></svg>
+        <div class="pc-eyebrow">PART 1</div>
+        <h2>專案背景與評選</h2>
+        <p>西子灣台電末端天然屏障、校園十大饋線與 GCB6 供電區、排球場儲能實勘場址、統包工作權責邊界與最有利標 7 大評選維度（100分）。</p>
+        <div class="pc-flags"><span class="chip blue">5 頁</span><span class="chip teal">西子灣孤島</span><span class="chip coral">最有利標 100分</span><span class="chip amber">限 60 頁</span></div>
+        <div class="pc-go">進入專案背景與評選 &rarr;</div>
+      </a>
+
+      <a class="part-card c2" href="#p2-1">
+        <svg class="pc-icon" width="30" height="30" viewBox="0 0 30 30"><path d="M4 26 L4 17 L10 17 L10 26 M12 26 L12 11 L18 11 L18 26 M20 26 L20 4 L26 4 L26 26" stroke="#1BB1BF" stroke-width="2.4" fill="none"/></svg>
+        <div class="pc-eyebrow">PART 2</div>
+        <h2>系統架構與機電</h2>
+        <p>3MWh C5M 儲能櫃五層縱向防護、1200kW PCS、國研+海工光電改建與風雨球場擴充、MGC 毫秒級 OT 安全邊界、雲地協同 EMS 與 ABB 電驛避雷優化。</p>
+        <div class="pc-flags"><span class="chip teal">6 頁</span><span class="chip blue">3MWh / 1.2MW</span><span class="chip purple">MGC 安全邊界</span><span class="chip green">VPC 認證</span></div>
+        <div class="pc-go">進入系統架構與機電 &rarr;</div>
+      </a>
+
+      <a class="part-card c3" href="#p3-1">
+        <svg class="pc-icon" width="30" height="30" viewBox="0 0 30 30"><path d="M15 3l6 6-6 6-6-6z" fill="#E09A2B" opacity=".5"/><path d="M15 15l6 6-6 6-6-6z" fill="#E09A2B"/></svg>
+        <div class="pc-eyebrow">PART 3</div>
+        <h2>運轉調度與維運</h2>
+        <p>併網超約抑制與尖離峰轉移、孤島保供 4h 與防災中心 48h、Seamless 電源瞬切波形、5大商業模式驗證、116/6/30 里程碑與 5 年全責保固 SLA。</p>
+        <div class="pc-flags"><span class="chip amber">5 頁</span><span class="chip coral">Seamless 瞬切</span><span class="chip green">48h 防災</span><span class="chip purple">5年全責保固</span></div>
+        <div class="pc-go">進入運轉調度與維運 &rarr;</div>
+      </a>
+    </div>
+
+    <!-- Quick Spec Grid -->
+    <div class="quick-spec-grid">
+      <div class="metric blue">
+        <div class="k">9,200 萬</div>
+        <div class="t">統包總預算（含稅，技師建築師簽證/審查規費/職安衛全包）</div>
+      </div>
+      <div class="metric teal">
+        <div class="k">3 MWh</div>
+        <div class="t">儲能系統容量（1200kW PCS、C5M 抗鹽蝕、細水霧消防）</div>
+      </div>
+      <div class="metric amber">
+        <div class="k">584 kW</div>
+        <div class="t">國研大樓尖峰負載（工學院半導體實驗重點，孤島保供首選）</div>
+      </div>
+      <div class="metric coral">
+        <div class="k">&ge; 48 小時</div>
+        <div class="t">防災留置中心供電（國研負載限縮 &le;250kW，儲能+光電長時運轉）</div>
+      </div>
+      <div class="metric green">
+        <div class="k">&lt; 15%</div>
+        <div class="t">Seamless 電壓畸變（市電異常與復電無感瞬切，設備零中斷）</div>
+      </div>
+      <div class="metric purple">
+        <div class="k">5 年全責</div>
+        <div class="t">維護保固服務（24h 受理窗口、24h 到場、72h 完修回復）</div>
+      </div>
+    </div>
+
+    <!-- Interactive Map Panel -->
+    <div class="map-panel">
+      <div class="map-header">
+        <div>
+          <div class="eyebrow">場域地理圖資標定</div>
+          <div class="map-title">國立中山大學西子灣校區 · 微電網建置關鍵節點 GIS 分布</div>
+        </div>
+        <div class="map-tags">
+          <span class="chip blue">高雄市鼓山區蓮海路70號</span>
+          <span class="chip teal">國研電氣室高壓側併接</span>
+          <span class="chip amber">儲能距併接點 200m</span>
+          <span class="chip green">GCB6 饋線涵蓋區</span>
+        </div>
+      </div>
+      <div id="campus-map"></div>
+    </div>
+
+    <!-- Quick Dispatch Simulator -->
+    <div class="sim-container" style="margin-top:24px;">
+      <div class="eyebrow">微電網運轉邏輯動態展示</div>
+      <h3 style="font-size:1.15rem; font-weight:800; margin:4px 0 12px; color:var(--blue-dd);">五大多功能調度模式動態潮流模擬器</h3>
+      <div class="sim-controls">
+        <button class="sim-btn active" onclick="setSimMode('grid')">⚡ 併網超約抑制模式</button>
+        <button class="sim-btn" onclick="setSimMode('shift')">📊 併網尖離峰轉移模式</button>
+        <button class="sim-btn" onclick="setSimMode('island_bess')">🏝️ 儲能單獨孤島 (&ge;4h)</button>
+        <button class="sim-btn" onclick="setSimMode('island_dual')">⚙️ 雙源孤島 (柴發輔助 SOC&lt;30%)</button>
+        <button class="sim-btn" onclick="setSimMode('disaster')">🚨 防災緊急模式 (&ge;48h 留置)</button>
+        <button class="sim-btn" onclick="setSimMode('seamless')">🔄 Seamless 無縫瞬切</button>
+      </div>
+
+      <div class="sim-canvas">
+        <div class="sim-grid">
+          <div class="sim-node" id="node-grid">
+            <div class="sim-node-title">台電電網 (GCB6)</div>
+            <div class="sim-node-val" id="val-grid">450 kW</div>
+            <div class="sim-node-sub" id="sub-grid">主電網正常併聯</div>
+          </div>
+          <div class="sim-node" id="node-pv">
+            <div class="sim-node-title">太陽光電 (PV 413kWp)</div>
+            <div class="sim-node-val" id="val-pv">210 kW</div>
+            <div class="sim-node-sub" id="sub-pv">自發自用優先</div>
+          </div>
+          <div class="sim-node" id="node-bess">
+            <div class="sim-node-title">儲能系統 (3MWh / 1.2MW)</div>
+            <div class="sim-node-val" id="val-bess">+180 kW</div>
+            <div class="sim-node-sub" id="sub-bess">放電削峰中 ｜ SOC 85%</div>
+          </div>
+          <div class="sim-node" id="node-load">
+            <div class="sim-node-title">國研大樓關鍵負載</div>
+            <div class="sim-node-val" id="val-load">584 kW</div>
+            <div class="sim-node-sub" id="sub-load">半導體實驗核心供電</div>
+          </div>
+        </div>
+        <div class="sim-status-box" id="sim-desc">
+          <strong>【併網超約抑制模式】</strong> 當國研大樓用電負載激增、淨用電高於調度工作點時，PCS 控制 3MWh 儲能系統啟動放電，及時介入微網作為輔助電力，確保校內不發生超約罰款；離峰時段若淨負載偏低，則由電網或剩餘光電回充儲備。
+        </div>
+      </div>
+    </div>
+
+    <div class="home-foot">
+      進能服（6692）微電網統包工程決策中樞 ｜ 國立中山大學微電網建置統包工程（案號：115YL004-01）專案決策 ｜ 支援鍵盤 &larr; &rarr; 鍵翻頁、Home 回首頁、F 鍵全螢幕
+    </div>
+  </div>
+</div>
+
+<!-- ================= PART 1: 專案背景與評選 ================= -->
+<div class="view" id="view-p1">
+
+  <!-- P1.1 -->
+  <section class="slide">
+    <div class="slide-header">
+      <div>
+        <div class="eyebrow">Part 1 · 專案背景與評選 1.1</div>
+        <h1>專案起源與西子灣天然孤島環境</h1>
+        <p class="sub">因地處西子灣為台電饋線末端，一旦饋線事故再加柴山天然屏障阻隔，校園即成孤島。中山大學獲選台電「大學節能及電力韌性推動計畫」南部示範代表，總預算 9,200 萬元含稅統包建置。</p>
+      </div>
+      <div class="flags">
+        <span class="flag blue">台電節能韌性示範</span>
+        <span class="flag teal">饋線末端天然孤島</span>
+        <span class="flag amber">預算 9,200 萬 (含稅)</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <div class="split-img-right">
+        <div style="display:flex; flex-direction:column; gap:14px;">
+          <div class="big-callout">
+            <div class="label">案場關鍵環境特徵</div>
+            <div class="answer">「靠山面海、末端饋線、天然孤島」之最佳微網驗證場域</div>
+            <div class="more">中山大學校地 73.4 公頃（可用 29 公頃），建物 35 處。西子灣因地理阻隔無法由鄰近電網靈活轉供，非常適合透過「光電 ＋ 儲能 ＋ 柴發 ＋ 智慧微網調度」實現孤島與韌性運轉驗證。</div>
+          </div>
+          <div class="two-col">
+            <div class="card">
+              <h3>🏫 學校規模與用電量體</h3>
+              <p>總建物樓地板面積 337,275 m²，師生約 1.2 萬人，設有醫學院、半導體學院與國際金融學院，對高可靠電力需求極為嚴苛。</p>
+            </div>
+            <div class="card teal">
+              <h3>💰 統包建置經費與全包責任</h3>
+              <p>總預算 NT$ 9,200 萬元（含稅）。費用包含電機/土木/結構技師、建築師、消防設備師各項簽證、台電公會行政規費、職安衛、保險與稅什。</p>
+            </div>
+          </div>
+          <div class="note">
+            <strong>採購招標資訊：</strong> 採購機關為國立中山大學，採政府採購法第 24 條統包方式辦理，決標方式為最有利標（序位法），投標文件限提送服務建議書 12 份及光碟 1 片。
+          </div>
+        </div>
+        <div class="fig clickable" onclick="openLightbox('assets/img/fig1-1_campus_map.jpeg', '圖1-1：國立中山大學建築物與主要用電分布', '全校 35 處主要建築用電場所，沿西子灣海岸線與柴山山麓狹長分布')">
+          <div class="figtitle">
+            <span>圖1-1 國立中山大學建築物與主要用電分布</span>
+            <span class="hint-zoom">🔍 點擊放大</span>
+          </div>
+          <img src="assets/img/fig1-1_campus_map.jpeg" alt="中山大學建築用電分布圖" loading="lazy">
+          <div class="cap">校區依山傍海，建物主要分佈於蓮海路沿線，具備典型海島型微電網場域特性</div>
+        </div>
+      </div>
+    </div>
+    <div class="slide-foot">
+      <span>Part 1 · 專案背景與評選</span>
+      <span class="pageno">P1.1 / 5</span>
+    </div>
+  </section>
+
+  <!-- P1.2 -->
+  <section class="slide">
+    <div class="slide-header">
+      <div>
+        <div class="eyebrow">Part 1 · 專案背景與評選 1.2</div>
+        <h1>全校饋線系統與 GCB6 關鍵供電區</h1>
+        <p class="sub">全校建置有十大饋線迴路。本案微電網選定 GCB6 饋線，主要供電予 A水池、社科院、管理學院與工學院半導體實驗核心——國研大樓（尖峰負載 584 kW）。</p>
+      </div>
+      <div class="flags">
+        <span class="flag blue">十大饋線系統</span>
+        <span class="flag teal">GCB6 饋線</span>
+        <span class="flag coral">國研半導體 584kW</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <div class="two-col">
+        <div class="fig clickable" onclick="openLightbox('assets/img/fig1-2_feeders.png', '圖1-2：國立中山大學饋線迴路系統', '全校十組 GCB 饋線高壓配電拓撲與末端聯絡轉供開關')">
+          <div class="figtitle">
+            <span>圖1-2 全校饋線迴路拓撲系統</span>
+            <span class="hint-zoom">🔍 點擊放大</span>
+          </div>
+          <img src="assets/img/fig1-2_feeders.png" alt="全校饋線迴路系統" loading="lazy">
+          <div class="cap">全校高壓饋線主架構，GCB6 下轄國研大樓、社管與 A水池，具備微電網實體分區隔離條件</div>
+        </div>
+
+        <div class="fig clickable" onclick="openLightbox('assets/img/fig1-3_gcb6_aerial.jpeg', '圖1-3：微電網規劃之GCB6饋線供電區域空拍圖', 'GCB6 涵蓋場域空拍：一側傍柴山、一側臨西子灣海域')">
+          <div class="figtitle">
+            <span>圖1-3 GCB6 供電區域空拍實景</span>
+            <span class="hint-zoom">🔍 點擊放大</span>
+          </div>
+          <img src="assets/img/fig1-3_gcb6_aerial.jpeg" alt="GCB6供電區域空拍圖" loading="lazy">
+          <div class="cap">現場空拍實景：國研大樓緊鄰海岸堤防與排球場，為微電網核心調度區域</div>
+        </div>
+      </div>
+
+      <div class="three-col">
+        <div class="card coral">
+          <h3>🔬 國研大樓半導體實驗保供</h3>
+          <p>國研大樓尖峰負載 <strong>584 kW</strong>，為工學院半導體實驗重鎮。若突發斷電，將造成昂貴晶圓試樣與實驗數據永久損壞，損失無法計量，為微網孤島必保核心。</p>
+        </div>
+        <div class="card amber">
+          <h3>📉 離峰用電特性與調度裕度</h3>
+          <p>依學校行事曆與寒暑假作業情況，國研大樓離峰負載約為尖峰的 40% 以下（&le; 240 kW）。夜間 3MWh 儲能可提供充裕的長時間孤島放電支撐。</p>
+        </div>
+        <div class="card green">
+          <h3>🛡️ A水池與社管大樓負載分級</h3>
+          <p>GCB6 饋線包含 A水池與社管大樓。系統在電網事故時可執行分級卸載，將非必要負載迅速切離，最大化保留電力資源給予半導體中心。</p>
+        </div>
+      </div>
+    </div>
+    <div class="slide-foot">
+      <span>Part 1 · 專案背景與評選</span>
+      <span class="pageno">P1.2 / 5</span>
+    </div>
+  </section>
+
+  <!-- P1.3 -->
+  <section class="slide">
+    <div class="slide-header">
+      <div>
+        <div class="eyebrow">Part 1 · 專案背景與評選 1.3</div>
+        <h1>儲能與微電網配置場域實勘分析</h1>
+        <p class="sub">儲能系統設置於國研大樓旁排球場側空地，距電氣室高壓側併接點約 200 米，與 GCB6 饋線及微電網調度光電屬同迴路，具備最佳傳輸能效。</p>
+      </div>
+      <div class="flags">
+        <span class="flag blue">排球場旁場地</span>
+        <span class="flag teal">併接點距離 200m</span>
+        <span class="flag amber">保留 2m 行人通道</span>
+        <span class="flag coral">C5M 最高耐鹽蝕</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <div class="split-img-left">
+        <div class="fig clickable" onclick="openLightbox('assets/img/fig1-4_buildings_bess_layout.jpeg', '圖1-4：微電網區域內各建築物及儲能系統預定放置位置', '國研大樓旁儲能預定地與周邊排球場、海工館、海堤相對位置')">
+          <div class="figtitle">
+            <span>圖1-4 建築物及儲能系統預定放置位置</span>
+            <span class="hint-zoom">🔍 點擊放大</span>
+          </div>
+          <img src="assets/img/fig1-4_buildings_bess_layout.jpeg" alt="建物與儲能系統配置圖" loading="lazy">
+          <div class="cap">儲能系統配置於國研大樓臨海側排球場旁，配線路徑直達國研高壓電氣室</div>
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap:12px;">
+          <div class="card">
+            <h3>📐 基地尺寸與動線約束</h3>
+            <p>現場勘查量測基地尺寸約 <strong>13.2m &times; 5.8m &times; 5.1m &times; 7.2m</strong>，需容納 3MWh 儲能貨櫃與 1200kW PCS。必須保留至少 <strong>2 米行人通道</strong>供師生往返排球場，施工過程不得影響師生活動動線。</p>
+          </div>
+          <div class="card teal">
+            <h3>🌊 海岸堤邊極端環境挑戰</h3>
+            <p>設置點正對西子灣海岸堤邊，常年處於高溫、高濕、高鹽霧飛沫環境：</p>
+            <ul>
+              <li><strong>防腐等級：</strong> 儲能外殼與 PCS 必須達到 <strong>C5-M</strong> 最高抗鹽蝕防腐塗裝</li>
+              <li><strong>防護等級：</strong> 戶外箱體必須達到 <strong>IP65</strong> / IP55 防水防塵標準</li>
+              <li><strong>結構強度：</strong> 須通過耐強風與抗震結構計算，防止颱風鹽霧侵蝕</li>
+            </ul>
+          </div>
+          <div class="tip">
+            <strong>現場配線優勢：</strong> 儲能併接點位於國研大樓電氣室高壓側，距離僅約 200 米，地下管溝施工期程短，線損低，能有效保障高可用性。
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slide-foot">
+      <span>Part 1 · 專案背景與評選</span>
+      <span class="pageno">P1.3 / 5</span>
+    </div>
+  </section>
+
+  <!-- P1.4 -->
+  <section class="slide">
+    <div class="slide-header">
+      <div>
+        <div class="eyebrow">Part 1 · 專案背景與評選 1.4</div>
+        <h1>統包工程工作範圍與權責矩陣</h1>
+        <p class="sub">本工程採設計與施工統包模式，範圍涵蓋細部設計、設備採購、土木機電施工、DREAMS台電介接至驗收後 5 年全責保固，廠商需負擔全部簽證與法規責任。</p>
+      </div>
+      <div class="flags">
+        <span class="flag blue">設計施工統包 (EPC)</span>
+        <span class="flag coral">禁止中國製資通產品</span>
+        <span class="flag green">介接台電 DREAMS</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <div class="four-col">
+        <div class="card">
+          <h3>📐 1. 規劃與細部設計</h3>
+          <ul>
+            <li>土木、電力及消防施工詳圖</li>
+            <li>電機、土木/結構、建築師、消防設備師各項法定簽證</li>
+            <li>執照申請與消防安全審查（含火災風險評估報告）</li>
+            <li>決標日+40天提送細部設計成果</li>
+          </ul>
+        </div>
+        <div class="card teal">
+          <h3>📦 2. 設備採購供應</h3>
+          <ul>
+            <li>3MWh BESS 儲能電池系統</li>
+            <li>1,200kW PCS 功率調節器</li>
+            <li>國研(118kWp)+海工(295kWp) 光電</li>
+            <li>6座 EV 充電樁、ABB 電驛5台</li>
+            <li>微電網控制器 MGC、EMS 軟硬體</li>
+          </ul>
+        </div>
+        <div class="card amber">
+          <h3>🏗️ 3. 土木機電施工</h3>
+          <ul>
+            <li>基礎座土木基礎與耐震水保</li>
+            <li>高低壓機電管路與電纜工程</li>
+            <li>儲能貨櫃吊裝與防蝕安裝</li>
+            <li>消防細水霧與 EPO 緊急連動</li>
+            <li>全校消導雷器11台與SPD32台安裝</li>
+          </ul>
+        </div>
+        <div class="card purple">
+          <h3>🛠️ 4. 5年全責保固維運</h3>
+          <ul>
+            <li>驗收次日起 5 年全責維護保養</li>
+            <li>耗材、零件、清洗、人力全包</li>
+            <li>24h 受理窗口、24h 內派員到場</li>
+            <li>72h 內完修回復系統運作</li>
+            <li>保固起算1年出具節能效益報告</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="two-col" style="margin-top:4px;">
+        <div class="warn">
+          <strong>⚠️ 國安資通與產地硬約束：</strong> 本案資通訊設備、伺服器、EMS、儲能控制元件、太陽能變流器「嚴格禁止採用中國製產品」，並須全面符合《資通安全管理法》規範，提供原碼掃描、弱點掃描與滲透測試報告。
+        </div>
+        <div class="note">
+          <strong>⚡ 台電 DREAMS 介接義務：</strong> 系統必須無縫介接台電公司「配電級再生能源管理系統」(DREAMS) 監視功能，符合台電配電級儲能併聯技術要點與審查作業須知。
+        </div>
+      </div>
+    </div>
+    <div class="slide-foot">
+      <span>Part 1 · 專案背景與評選</span>
+      <span class="pageno">P1.4 / 5</span>
+    </div>
+  </section>
+
+  <!-- P1.5 -->
+  <section class="slide">
+    <div class="slide-header">
+      <div>
+        <div class="eyebrow">Part 1 · 專案背景與評選 1.5</div>
+        <h1>投標評選須知 7 大評分維度與致勝關鍵</h1>
+        <p class="sub">評選委員會由 7 位委員組成（專家學者4人+學校委員3人），採最有利標序位法，及格門檻 75 分。服務建議書上限 60 頁，簡報 15 分鐘、統問統答 10 分鐘。</p>
+      </div>
+      <div class="flags">
+        <span class="flag blue">序位法最有利標</span>
+        <span class="flag amber">及格門檻 75 分</span>
+        <span class="flag coral">上限 60 頁</span>
+        <span class="flag green">簡報 15m ＋ 統答 10m</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th style="width:8%;">項次</th>
+              <th style="width:28%;">評選項目</th>
+              <th style="width:50%;">評選審查核心重點</th>
+              <th class="num" style="width:14%;">配分權重</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="ctr"><strong>一</strong></td>
+              <td><strong>公司規模、履約能力及實績</strong></td>
+              <td>公司概況、財務狀況、類似工程實績、主要工作人員證照（計畫主持人、建築師、電機技師、土木/結構技師、消防設備師等）。</td>
+              <td class="num"><strong>15 %</strong></td>
+            </tr>
+            <tr class="hl-row">
+              <td class="ctr"><strong>二</strong></td>
+              <td><strong>規劃設計功能說明、執行進度規劃</strong></td>
+              <td><strong>【最高分項目】</strong>微電網連接風雨球場介面規劃、主要設備設計理念、現況環境了解、標的完成後使用維護與全生命週期成本、進度甘特圖。</td>
+              <td class="num"><strong style="color:var(--blue); font-size:1.05rem;">25 %</strong></td>
+            </tr>
+            <tr>
+              <td class="ctr"><strong>三</strong></td>
+              <td><strong>施工技術能力、設備型號、品質與保固</strong></td>
+              <td>施工技術、主要材料設備廠牌規格表、品質穩定度、5年保固年限、緊急搶修SLA、設備零件供應鏈、每年維運費用估算。</td>
+              <td class="num"><strong>10 %</strong></td>
+            </tr>
+            <tr>
+              <td class="ctr"><strong>四</strong></td>
+              <td><strong>微電網運轉管理、節能、教學運維</strong></td>
+              <td>併網/孤島調度邏輯、自主運轉4h以上、通訊監控設計、FAT/SAT測試驗證計畫、EMS整合既有系統擴充空間、節能效益分析、教學規劃。</td>
+              <td class="num"><strong>10 %</strong></td>
+            </tr>
+            <tr class="hl-row">
+              <td class="ctr"><strong>五</strong></td>
+              <td><strong>價格合理性及完整性</strong></td>
+              <td>標單項目價格成本分析之正確性、合理性、報價競爭力與預算編列完整度（總預算 9,200 萬元）。</td>
+              <td class="num"><strong>20 %</strong></td>
+            </tr>
+            <tr>
+              <td class="ctr"><strong>六</strong></td>
+              <td><strong>創意與企業社會責任 (CSR)</strong></td>
+              <td>工程創意方案、綠能減碳附加價值、廠商推動企業社會責任（CSR/ESG）實績與承諾。</td>
+              <td class="num"><strong>10 %</strong></td>
+            </tr>
+            <tr>
+              <td class="ctr"><strong>七</strong></td>
+              <td><strong>簡報與答詢</strong></td>
+              <td>簡報專業性、對校方主要痛點與問題之認知、現場答詢邏輯、應對處置妥適度（統問統答10分鐘）。</td>
+              <td class="num"><strong>10 %</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="three-col">
+        <div class="tip">
+          <strong>致勝點 1：掌握第 2 項（25%）</strong> 聚焦風雨球場光電介面、西子灣鹽蝕防護對策與全生命週期成本，此項為序位拉鋸關鍵。
+        </div>
+        <div class="tip">
+          <strong>致勝點 2：價格合理性（20%）</strong> 清楚交代 3MWh 儲能、1200kW PCS 與高壓配電改建成本結構，展現進能服供應鏈採購優勢。
+        </div>
+        <div class="tip">
+          <strong>致勝點 3：頁數嚴格控管</strong> 服務建議書不得超過 60 頁（A3摺A4納入編碼），12 份裝訂與電子檔，精確提煉精華。
+        </div>
+      </div>
+    </div>
+    <div class="slide-foot">
+      <span>Part 1 · 專案背景與評選</span>
+      <span class="pageno">P1.5 / 5</span>
+    </div>
+  </section>
+
+</div>
+
+<!-- ================= PART 2: 系統架構與機電 ================= -->
+<div class="view" id="view-p2">
+
+  <!-- P2.1 -->
+  <section class="slide">
+    <div class="slide-header">
+      <div>
+        <div class="eyebrow">Part 2 · 系統架構與機電 2.1</div>
+        <h1>微電網總體架構與單線拓撲</h1>
+        <p class="sub">整合「創能（光電）、儲能（BESS）、控能（PCS/MGC/EMS）、耗能（國研實驗室/EV）與備能（柴發）」，以國研大樓高壓電氣室為併接樞紐，實現高度自給自足與電壓源支撐。</p>
+      </div>
+      <div class="flags">
+        <span class="flag blue">微電網單線架構</span>
+        <span class="flag teal">高壓側併接</span>
+        <span class="flag amber">創儲控耗備五位一體</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <div class="split-img-right">
+        <div style="display:flex; flex-direction:column; gap:12px;">
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>系統設備項目</th>
+                  <th>現有規格</th>
+                  <th>本案建置後規格</th>
+                  <th>調度功能定位</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="hl-row">
+                  <td><strong>儲能系統 (BESS)</strong></td>
+                  <td>無</td>
+                  <td><strong>3 MWh 或以上</strong></td>
+                  <td>削峰填谷、孤島供電、需量反應</td>
+                </tr>
+                <tr class="hl-row">
+                  <td><strong>功率調節器 (PCS)</strong></td>
+                  <td>無</td>
+                  <td><strong>1,200 kW 或以上</strong></td>
+                  <td>電壓源/電流源 Seamless 切換</td>
+                </tr>
+                <tr>
+                  <td><strong>國研大樓自用光電</strong></td>
+                  <td>30 kWp (規劃拆除)</td>
+                  <td><strong>118 kWp (新設)</strong></td>
+                  <td>自願性高效能 VPC 模組自發自用</td>
+                </tr>
+                <tr>
+                  <td><strong>海工停車場自用光電</strong></td>
+                  <td>172.38 kWp (拆除)</td>
+                  <td><strong>295 kWp (新設)</strong></td>
+                  <td>擴建高發電容量自用微網綠電</td>
+                </tr>
+                <tr>
+                  <td><strong>國研大樓躉售光電</strong></td>
+                  <td>51.92 kWp (既有)</td>
+                  <td><strong>51.92 kWp (保留)</strong></td>
+                  <td>保留後續併入微電網調度彈性</td>
+                </tr>
+                <tr>
+                  <td><strong>柴油發電機組</strong></td>
+                  <td>400 kW (既有)</td>
+                  <td><strong>400 kW (增設併聯盤)</strong></td>
+                  <td>SOC&lt;30% 輔助供電，長時孤島備援</td>
+                </tr>
+                <tr>
+                  <td><strong>電動車充電樁</strong></td>
+                  <td>無</td>
+                  <td><strong>6 座 (一般充電樁)</strong></td>
+                  <td>光電綠電優先充，支援校內電巴</td>
+                </tr>
+                <tr>
+                  <td><strong>風雨球場光電</strong></td>
+                  <td>規劃新建</td>
+                  <td><strong>1,475 ~ 2,000 kWp</strong></td>
+                  <td>未來併入國研大樓微網擴充調度</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="card">
+            <h3>🔌 核心微網控制器 (MGC) 邊界職責</h3>
+            <p>MGC 定位為 OT 安全邊界節點，獨立執行毫秒至秒級即時功率控制，即便上層雲端中斷，微網孤島依然自主維持穩定頻率與電壓。</p>
+          </div>
+        </div>
+
+        <div class="fig clickable" onclick="openLightbox('assets/img/fig1-5_microgrid_architecture.jpeg', '圖1-5：國立中山大學微電網規劃架構示意圖', '微電網高壓側併接單線拓撲：PV、BESS、PCS、柴油發電機、充電樁與 EMS 架構')">
+          <div class="figtitle">
+            <span>圖1-5 中山大學微電網規劃架構示意圖</span>
+            <span class="hint-zoom">🔍 點擊放大</span>
+          </div>
+          <img src="assets/img/fig1-5_microgrid_architecture.jpeg" alt="微電網總體架構圖" loading="lazy">
+          <div class="cap">整合台電 GCB6、BESS、PCS、光電、柴發與關鍵負載之完整單線架構</div>
+        </div>
+      </div>
+    </div>
+    <div class="slide-foot">
+      <span>Part 2 · 系統架構與機電</span>
+      <span class="pageno">P2.1 / 6</span>
+    </div>
+  </section>
+
+  <!-- P2.2 -->
+  <section class="slide">
+    <div class="slide-header">
+      <div>
+        <div class="eyebrow">Part 2 · 系統架構與機電 2.2</div>
+        <h1>儲能系統 (BESS) 規格與五層防護體系</h1>
+        <p class="sub">3MWh 儲能櫃採用耐強風抗震結構，具備 C5M 最高等級耐鹽蝕與 IP65 防護，並通過 UL9540A 燃燒測試與標準檢驗局儲能 VPC 自願性產品驗證。</p>
+      </div>
+      <div class="flags">
+        <span class="flag blue">3MWh 儲能櫃</span>
+        <span class="flag teal">C5M / IP65</span>
+        <span class="flag green">標檢局 VPC 認證</span>
+        <span class="flag coral">五層縱向安全防護</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <div class="split-img-left">
+        <div class="fig clickable" onclick="openLightbox('assets/img/fig7-2_bess_site.jpeg', '圖7-2：儲能系統設置區域圖示', '儲能貨櫃基礎配置、配電室距離 200m、排球場與行人動線安排')">
+          <div class="figtitle">
+            <span>圖7-2 儲能系統設置區域與配置圖</span>
+            <span class="hint-zoom">🔍 點擊放大</span>
+          </div>
+          <img src="assets/img/fig7-2_bess_site.jpeg" alt="儲能設置區域圖示" loading="lazy">
+          <div class="cap">儲能系統基礎與國研大樓高壓電氣室相對位置，兼顧消防安全指引與景觀維護</div>
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap:12px;">
+          <div class="card">
+            <h3>🛡️ 五層縱向安全防護矩陣</h3>
+            <ul>
+              <li><strong>第 1 層（電芯級）：</strong> 全電芯電壓與溫度即時毫秒監控，前置預防熱失控擴散。</li>
+              <li><strong>第 2 層（模組級）：</strong> 多重環境感測（雙組煙霧、溫度、有毒氣體備援），異常主動告警。</li>
+              <li><strong>第 3 層（櫃體級）：</strong> 雙層鋼板＋防火岩棉三層強固結構（防火 1 小時），自動排風防爆防壓。</li>
+              <li><strong>第 4 層（系統級）：</strong> 各櫃獨立氣體消防與內建撒水管路，通過 UL9540A 國際測試。</li>
+              <li><strong>第 5 層（場域級）：</strong> 儲能場域配置細水霧全域消防，並與 EPO 緊急斷電鈕橫向連動。</li>
+            </ul>
+          </div>
+
+          <div class="card teal">
+            <h3>📜 國際法規認證標準遵循表</h3>
+            <p><strong>電芯與模組：</strong> UL 1973, IEC 62619, CNS 62619, UL 9540A, UN 38.3, IEC 60730-1<br>
+            <strong>電池櫃體：</strong> UL 9540A, IEC 60529, EN 61000-6-2/4, IP55 / UL 50E Type 3R<br>
+            <strong>消防合規：</strong> 內政部消防署「提升儲能系統消防安全管理指引」火災風險評估。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slide-foot">
+      <span>Part 2 · 系統架構與機電</span>
+      <span class="pageno">P2.2 / 6</span>
+    </div>
+  </section>
+
+  <!-- P2.3 -->
+  <section class="slide">
+    <div class="slide-header">
+      <div>
+        <div class="eyebrow">Part 2 · 系統架構與機電 2.3</div>
+        <h1>功率調節器 (PCS) 與微網控制器 (MGC)</h1>
+        <p class="sub">1,200kW PCS 具備電網自主響應與電壓源/電流源毫秒級切換；微電網控制器 MGC 作為 OT 安全防護邊界，實施控制指令白名單，確保孤島絕對獨立。</p>
+      </div>
+      <div class="flags">
+        <span class="flag blue">PCS &ge; 1,200 kW</span>
+        <span class="flag teal">OT 安全邊界</span>
+        <span class="flag purple">指令白名單</span>
+        <span class="flag green">UL 1741SB / IEEE 1547</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <div class="two-col">
+        <div class="card">
+          <h3>⚡ 1,200kW 功率調節器 (PCS) 重點規格</h3>
+          <ul>
+            <li><strong>額定容量：</strong> 1,200 kW 或以上，滿足國研 584kW 尖峰與充電樁滿載需求</li>
+            <li><strong>環境耐受：</strong> 戶外防蝕等級 C5-M 塗裝，防護等級 IP65 以上</li>
+            <li><strong>電網調控：</strong> 具備電壓自主調控響應功能，支援虛功補償（PF 調整）與主動調頻</li>
+            <li><strong>雙模式支持：</strong> 併網時電流源（Current Source）、孤島時電壓源（Voltage Source）瞬切</li>
+            <li><strong>國際安規：</strong> UL 1741, UL 1741SB, FCC Class A, IEEE 1547 認證</li>
+          </ul>
+        </div>
+
+        <div class="card purple">
+          <h3>🛡️ 微網控制器 (MGC / Gateway) 核心責任</h3>
+          <ul>
+            <li><strong>OT 安全邊界節點：</strong> 為地端即時控制層與上層 EMS/雲端之間唯一授權通道</li>
+            <li><strong>毫秒級即時控制：</strong> 執行 ms 至秒級即時功率調度，不仰賴雲端計算</li>
+            <li><strong>資安與白名單：</strong> 具備身分驗證、通訊完整性驗證，拒絕未授權不合理指令</li>
+            <li><strong>失效自主維持：</strong> 當外部網路或雲端 EMS 失聯中斷時，MGC 地端獨立控制，孤島完全不受影響</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="fig clickable" onclick="openLightbox('assets/img/fig7-3_diesel_generator.jpeg', '圖7-3：微電網區域內既有柴油發電機組', '國研大樓半導體實驗室 400kW 備用柴油發電機組，本案增設並聯控制盤與通訊接口')">
+        <div class="figtitle">
+          <span>圖7-3 微電網區域內既有 400kW 柴油發電機組</span>
+          <span class="hint-zoom">🔍 點擊放大</span>
+        </div>
+        <img src="assets/img/fig7-3_diesel_generator.jpeg" alt="既有柴油發電機組" loading="lazy" style="max-height:240px;">
+        <div class="cap">沿用 2015 年添購之 400kW 柴油發電機，本案增設並聯控制盤與通訊控制，納入長時孤島調度</div>
+      </div>
+    </div>
+    <div class="slide-foot">
+      <span>Part 2 · 系統架構與機電</span>
+      <span class="pageno">P2.3 / 6</span>
+    </div>
+  </section>
+
+  <!-- P2.4 -->
+  <section class="slide">
+    <div class="slide-header">
+      <div>
+        <div class="eyebrow">Part 2 · 系統架構與機電 2.4</div>
+        <h1>太陽光電創能佈局與風雨球場擴充</h1>
+        <p class="sub">國研大樓屋頂新設 118kWp 自願性高效能 VPC 模組（年發電 172,462 kWh），海工停車場擴建 295kWp；遠期規劃 1,475~2,000kWp 風雨球場併入微網調度。</p>
+      </div>
+      <div class="flags">
+        <span class="flag blue">國研新設 118kWp</span>
+        <span class="flag teal">海工新設 295kWp</span>
+        <span class="flag amber">風雨球場 &le;2,000kWp</span>
+        <span class="flag green">綠電憑證 T-REC</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <div class="split-img-right">
+        <div style="display:flex; flex-direction:column; gap:12px;">
+          <div class="card green">
+            <h3>☀️ 本案新設自發自用光電陣列</h3>
+            <ul>
+              <li><strong>國研大樓屋頂：</strong> 拆除舊 30kWp，改建 <strong>118 kWp</strong> 高效 VPC 模組，年發電量約 172,462 kWh。</li>
+              <li><strong>海工館停車場：</strong> 拆除舊 172kWp，改建為 <strong>295 kWp</strong> 自發自用光電棚架。</li>
+              <li><strong>國研既有躉售：</strong> 保留 51.92 kWp 躉售光電，預留合約到期併入微電網調度。</li>
+              <li><strong>智慧變流器：</strong> 更新為標檢局 VPC 認證機種，支援電網電壓自主調控與 MGC 雙向通訊。</li>
+            </ul>
+          </div>
+
+          <div class="card amber">
+            <h3>🏟️ 風雨球場 1,475 ~ 2,000 kWp 整合藍圖</h3>
+            <p>學校將規劃新建風雨球場太陽能租用系統（1,475 kWp，最高可達 2,000 kWp）。本工程之微網控制器與配電盤預留雙向通訊與併接介面，未來可擴充作為全校削峰填谷之巨量綠電來源。</p>
+          </div>
+        </div>
+
+        <div class="fig clickable" onclick="openLightbox('assets/img/fig7-1_solar_aerial.jpeg', '圖7-1：國研大樓屋頂太陽能與風雨球場實際空拍圖', '國研大樓頂樓光電鋪設區與鄰近風雨球場預定基地空拍')">
+          <div class="figtitle">
+            <span>圖7-1 國研大樓屋頂光電與風雨球場實際空拍圖</span>
+            <span class="hint-zoom">🔍 點擊放大</span>
+          </div>
+          <img src="assets/img/fig7-1_solar_aerial.jpeg" alt="國研大樓屋頂光電空拍圖" loading="lazy">
+          <div class="cap">透過 PVSyst 建立 3D 陰影模型，結合 NASA 大氣日照模擬，實現最佳光電效益</div>
+        </div>
+      </div>
+
+      <!-- Collapsible table of campus solar -->
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>建築物名稱</th>
+              <th>建置年份 (民國)</th>
+              <th>發電處理方式</th>
+              <th class="num">建置容量 (kWp)</th>
+              <th>微電網調度規劃</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="hl-row">
+              <td><strong>國研大樓屋頂 (自用)</strong></td>
+              <td>102 / 本案改建</td>
+              <td>自發自用</td>
+              <td class="num"><strong>118.00</strong></td>
+              <td>本案核心微網供電</td>
+            </tr>
+            <tr class="hl-row">
+              <td><strong>海工館停車場 (自用)</strong></td>
+              <td>103 / 本案改建</td>
+              <td>自發自用</td>
+              <td class="num"><strong>295.00</strong></td>
+              <td>本案核心微網供電</td>
+            </tr>
+            <tr>
+              <td>國研大樓屋頂 (躉售)</td>
+              <td>106</td>
+              <td>躉售台電</td>
+              <td class="num">51.92</td>
+              <td>保留後續納入微網</td>
+            </tr>
+            <tr>
+              <td>海工館牆面 (自用)</td>
+              <td>99</td>
+              <td>自用</td>
+              <td class="num">56.63</td>
+              <td>既有系統監測</td>
+            </tr>
+            <tr>
+              <td>電資大樓屋頂</td>
+              <td>106</td>
+              <td>躉售</td>
+              <td class="num">111.51</td>
+              <td>既有躉售</td>
+            </tr>
+            <tr>
+              <td>社管大樓屋頂</td>
+              <td>108</td>
+              <td>躉售</td>
+              <td class="num">153.72</td>
+              <td>既有躉售</td>
+            </tr>
+            <tr>
+              <td>文學院屋頂</td>
+              <td>106</td>
+              <td>躉售</td>
+              <td class="num">155.76</td>
+              <td>既有躉售</td>
+            </tr>
+            <tr>
+              <td>海資館 / 藝術大樓 / 理工大樓</td>
+              <td>104~106</td>
+              <td>躉售/自用</td>
+              <td class="num">212.24</td>
+              <td>既有系統監測</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="slide-foot">
+      <span>Part 2 · 系統架構與機電</span>
+      <span class="pageno">P2.4 / 6</span>
+    </div>
+  </section>
+
+  <!-- P2.5 -->
+  <section class="slide">
+    <div class="slide-header">
+      <div>
+        <div class="eyebrow">Part 2 · 系統架構與機電 2.5</div>
+        <h1>雲地協同 EMS 能源管理平台</h1>
+        <p class="sub">雲地協同、地端優先架構：上層 EMS 負責需量預測、策略排程與視覺化；開放 RESTful API 提供校方研究團隊演算法注入（Algorithm Injection），本地資料庫同步 NAS 保障維運與研究互不干擾。</p>
+      </div>
+      <div class="flags">
+        <span class="flag blue">雲地協同</span>
+        <span class="flag purple">演算法注入 (API)</span>
+        <span class="flag teal">Modbus 跨設備匯流</span>
+        <span class="flag coral">資通安全管理法</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <div class="three-col">
+        <div class="card purple">
+          <h3>🧠 策略定位與失聯降級</h3>
+          <p>EMS 定位為排程、分析與視覺化中樞，<strong>不承擔即時電力保護職責</strong>。EMS 視為可失聯元件，雲端中斷絕不影響微網底層孤島運轉與安全保護。</p>
+        </div>
+        <div class="card teal">
+          <h3>🔬 演算法注入 (Algorithm Injection)</h3>
+          <p>系統透過標準 RESTful API 開放校方電機、資工研究團隊掛入自研最佳化調度模型；地端資料庫自動同步新設 NAS，學術研究與電網運維實體分流。</p>
+        </div>
+        <div class="card green">
+          <h3>📊 跨領域設備全協議匯流</h3>
+          <p>底層針對全校水表、太陽能、空調、熱泵、各迴路電表採用國際標準 Modbus RTU/TCP 串接，即時呈現各節點潮流流向與 PUE/發電曲線。</p>
+        </div>
+      </div>
+
+      <div class="split-55">
+        <div class="card">
+          <h3>🖥️ 能源管理系統核心監控介面功能清單</h3>
+          <ul>
+            <li><strong>儲能監控：</strong> 即時充放電功率、電池儲量、今日累計度數、SOC / SOH、溫控狀態、火警警報</li>
+            <li><strong>太陽能監控：</strong> 各區即時發電功率、本日/本月/本年累積發電量、變流器電壓響應狀態</li>
+            <li><strong>柴油發電機：</strong> 運轉狀態、輸出功率、油位監測、並聯投入狀態</li>
+            <li><strong>饋線與用電：</strong> GCB6 淨負載功率、各主要大樓即時用電、超約預警告警</li>
+            <li><strong>充電樁營運：</strong> 6 座 EV 充電樁充電狀態、度數統計、綠電優先分配比率</li>
+          </ul>
+        </div>
+        <div class="warn">
+          <strong>🔒 國家級資安防護要求：</strong><br>
+          本案 EMS 必須符合《資通安全管理法》，竣工驗收前必須由第三方公證單位提送：
+          <ul style="margin-top:6px;">
+            <li>原碼掃描報告 (Source Code Scanning)</li>
+            <li>主機及 Web 弱點掃描報告 (Vulnerability Assessment)</li>
+            <li>滲透測試報告 (Penetration Testing)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="slide-foot">
+      <span>Part 2 · 系統架構與機電</span>
+      <span class="pageno">P2.5 / 6</span>
+    </div>
+  </section>
+
+  <!-- P2.6 -->
+  <section class="slide">
+    <div class="slide-header">
+      <div>
+        <div class="eyebrow">Part 2 · 系統架構與機電 2.6</div>
+        <h1>全校保護電驛協調與避雷接地優化</h1>
+        <p class="sub">解決中山大學雷雨天弱電設備常態性受損痛點：委由專業技師進行全校保護電驛協調分析並更新 5 台 ABB REF-615；全面檢討避雷接地、汰換 11 台消導雷器並裝設 32 台雷擊突波吸收器。</p>
+      </div>
+      <div class="flags">
+        <span class="flag blue">ABB REF-615 5台</span>
+        <span class="flag teal">消導雷器 11台</span>
+        <span class="flag amber">突波吸收器 32台</span>
+        <span class="flag coral">雷害痛點根治</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <div class="two-col">
+        <div class="card blue">
+          <h3>⚡ 1. 全校保護電驛優化與檢討作業</h3>
+          <ul>
+            <li><strong>專業電力設計軟體建模：</strong> 委聘專業電機技師運用 ETAP / PSS-E 電力軟體，重新審視全校高低壓饋線短路容量與保護協調曲線。</li>
+            <li><strong>保護協調設計報告書：</strong> 提送全校保護電驛整定報告書予校方審查，杜絕越級跳脫。</li>
+            <li><strong>電驛採購規格：</strong> 依校方審查會議指定採用 <strong>ABB REF-615</strong>（上限 5 台），具備高可靠數位通訊與微網保護能力。</li>
+          </ul>
+        </div>
+
+        <div class="card coral">
+          <h3>🌩️ 2. 全校避雷與接地系統全面優化</h3>
+          <ul>
+            <li><strong>弱電損壞痛點：</strong> 中山大學臨海靠山，雷暴頻率高，過往常因感應雷突波導致校內弱電主機受損。</li>
+            <li><strong>消導雷器更新：</strong> 評估現有避雷針妥適性，採購安裝多針中和消/導雷器（上限 11 台）。</li>
+            <li><strong>接地電阻量測改善：</strong> 全面量測既設接地電阻，施作降阻工程符合法規標準。</li>
+            <li><strong>雷擊突波吸收器 (SPD)：</strong> 於指定弱電與機電節點裝設 SPD（上限 32 台），徹底攔截突波。</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="big-callout" style="background:linear-gradient(120deg,#0C3A63,#1968AD);">
+        <div class="label">韌性雙保險價值</div>
+        <div class="answer">「既防內線跳脫、又禦雷擊天災」的全校電網體質大升級</div>
+        <div class="more">本統包工程不單純建造 GCB6 局域微電網，更藉由全校保護電驛重構與防雷接地工程，從根源提升全中山大學對外來雷擊與內部短路故障的免疫力，落實台電電力韌性推動示範宗旨。</div>
+      </div>
+    </div>
+    <div class="slide-foot">
+      <span>Part 2 · 系統架構與機電</span>
+      <span class="pageno">P2.6 / 6</span>
+    </div>
+  </section>
+
+</div>
+
+<!-- ================= PART 3: 運轉調度與維運 ================= -->
+<div class="view" id="view-p3">
+
+  <!-- P3.1 -->
+  <section class="slide">
+    <div class="slide-header">
+      <div>
+        <div class="eyebrow">Part 3 · 運轉調度與維運 3.1</div>
+        <h1>併網運轉調度：抑制超約與尖離峰轉移</h1>
+        <p class="sub">平常處於併網模式，透過淨負載門檻精準調控 PCS 充放電，實現尖峰削峰、離峰填谷、負載平滑化；並具備參與需量反應、聚合型輔助服務與全校契約容量降低 1,000 kW 之巨大經濟價值。</p>
+      </div>
+      <div class="flags">
+        <span class="flag blue">抑制超約</span>
+        <span class="flag teal">尖峰轉移</span>
+        <span class="flag amber">降契約容量 -1,000kW</span>
+        <span class="flag green">聚合輔助服務</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <div class="three-col">
+        <div class="fig clickable" onclick="openLightbox('assets/img/fig7-4a_peak_shaving_flow.png', '圖7-4(a)：併網模式抑制超約調度流程', '以淨負載量為基準，超過調度工作點 PCS 開始放電，低於觸發點啟動充電')">
+          <div class="figtitle">
+            <span>圖7-4(a) 抑制超約調度流程</span>
+            <span class="hint-zoom">🔍 點擊放大</span>
+          </div>
+          <img src="assets/img/fig7-4a_peak_shaving_flow.png" alt="抑制超約調度流程" loading="lazy">
+          <div class="cap">淨負載超過設定值啟動放電，離峰且電量足夠時自動低價充電</div>
+        </div>
+
+        <div class="fig clickable" onclick="openLightbox('assets/img/fig7-4b_peak_shifting_flow.png', '圖7-4(b)：併網模式尖峰轉移調度流程圖', '大數據預測負載與光電發電，調度儲能使全校對外呈現恆定負載')">
+          <div class="figtitle">
+            <span>圖7-4(b) 尖峰轉移調度流程</span>
+            <span class="hint-zoom">🔍 點擊放大</span>
+          </div>
+          <img src="assets/img/fig7-4b_peak_shifting_flow.png" alt="尖峰轉移調度流程" loading="lazy">
+          <div class="cap">收集歷史大數據建模，負載平滑化，對台電而言趨近固定功耗</div>
+        </div>
+
+        <div class="fig clickable" onclick="openLightbox('assets/img/fig7-4c_operating_range.png', '圖7-4(c)：抑制超約/尖峰轉移模式之運轉範圍與其限制關係式', '運轉功率區間上下限關係式，尖峰轉移模式變幅遠小於抑制超約模式')">
+          <div class="figtitle">
+            <span>圖7-4(c) 運轉範圍限制關係</span>
+            <span class="hint-zoom">🔍 點擊放大</span>
+          </div>
+          <img src="assets/img/fig7-4c_operating_range.png" alt="運轉範圍與限制關係式" loading="lazy">
+          <div class="cap">淨負載波動大幅收窄，電力系統穩定度與效率達到最優化</div>
+        </div>
+      </div>
+
+      <div class="three-col">
+        <div class="card green">
+          <h3>💰 契約容量下修節費效益</h3>
+          <p>全校契約容量目標自 <strong>7,550 kW 降至 6,550 kW</strong>（調降 1,000 kW）。每月大幅降低台電高額基本電費支出，年節省基本電費逾數百萬元。</p>
+        </div>
+        <div class="card teal">
+          <h3>⚡ 需量反應與聚合輔助服務</h3>
+          <p>3MWh 儲能結合 1,200kW PCS，可依 EMS 指令直接以電流源模式併網放電支援台電電網，參與台電電力交易平台輔助服務獲取營運收益。</p>
+        </div>
+        <div class="card blue">
+          <h3>🔄 功因優化與主動調頻 (Regulation)</h3>
+          <p>PCS 具備高動態響應能力，可作為電力品質改善設備，即時注入或吸收虛功，優化區域功因並支援電網頻率波動調節。</p>
+        </div>
+      </div>
+    </div>
+    <div class="slide-foot">
+      <span>Part 3 · 運轉調度與維運</span>
+      <span class="pageno">P3.1 / 5</span>
+    </div>
+  </section>
+
+  <!-- P3.2 -->
+  <section class="slide">
+    <div class="slide-header">
+      <div>
+        <div class="eyebrow">Part 3 · 運轉調度與維運 3.2</div>
+        <h1>孤島與防災模式：4h 實驗保供與 48h 防災留置</h1>
+        <p class="sub">市電中斷時自動轉為孤島模式：純儲能夜間支撐國研大樓 584kW 達 4 小時以上；SOC&lt;30% 喚醒柴發雙源併行；遇外力災難更可啟動防災模式，限縮負載 &le;250kW，連續供電 48 小時以上！</p>
+      </div>
+      <div class="flags">
+        <span class="flag coral">三階孤島運轉邏輯</span>
+        <span class="flag blue">夜間純儲能 &ge; 4h</span>
+        <span class="flag green">防災留置 &ge; 48h</span>
+        <span class="flag amber">柴發 SOC&lt;30% 輔助</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <div class="split-img-left">
+        <div class="fig clickable" onclick="openLightbox('assets/img/fig7-5_island_flow.png', '圖7-5：微電網孤島模式運轉流程', '儲能獨立孤島 -> 雙源孤島 (SOC<30%) -> 發電機孤島 (SOC<10%) 三階完整判定邏輯')">
+          <div class="figtitle">
+            <span>圖7-5 微電網孤島模式運轉完整流程</span>
+            <span class="hint-zoom">🔍 點擊放大</span>
+          </div>
+          <img src="assets/img/fig7-5_island_flow.png" alt="孤島模式運轉流程" loading="lazy">
+          <div class="cap">市電中斷後，PCS 建立電壓源，依 SOC 梯度依序啟動柴發與卸載機制</div>
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap:12px;">
+          <div class="card">
+            <h3>🏝️ 三階孤島運轉接力機制</h3>
+            <ul>
+              <li><strong>第 1 階（儲能孤島）：</strong> 市電中斷，PCS 瞬轉電壓源，全額承擔國研大樓 584kW 重要負載。純儲能夜間支撐 &ge;4 小時；白天搭配光電大幅延長。</li>
+              <li><strong>第 2 階（雙源孤島）：</strong> 當儲能 <strong>SOC &lt; 30%</strong>，EMS 喚醒 400kW 柴油發電機以電流源輔助供電，並逐步切離可棄負載。</li>
+              <li><strong>第 3 階（柴發單獨孤島）：</strong> 若 <strong>SOC &lt; 10%</strong>，柴發切換為主電源電壓源接手，PCS 轉待機，確保關鍵半導體設備供電不中斷。</li>
+            </ul>
+          </div>
+
+          <div class="card coral">
+            <h3>🚨 防災緊急留置模式（48 小時保供）</h3>
+            <p>當發生地震颱風等重大天災，系統轉入「防災微電網」：</p>
+            <ul>
+              <li><strong>限縮範圍：</strong> 僅保留國研大樓作為全校緊急防災留置中心（圖1-6）。</li>
+              <li><strong>功耗上限：</strong> 負載嚴格限制在 <strong>250 kW 以下</strong>。</li>
+              <li><strong>長時供電：</strong> 結合 3MWh 儲能與屋頂光電，保證提供 <strong>48 小時以上</strong> 不斷電防災運轉！</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slide-foot">
+      <span>Part 3 · 運轉調度與維運</span>
+      <span class="pageno">P3.2 / 5</span>
+    </div>
+  </section>
+
+  <!-- P3.3 -->
+  <section class="slide">
+    <div class="slide-header">
+      <div>
+        <div class="eyebrow">Part 3 · 運轉調度與維運 3.3</div>
+        <h1>Seamless 電力無縫接軌架構與波形分析</h1>
+        <p class="sub">市電故障與復電全過程無縫接軌：市電異常時 PCS 於 15% 畸變範圍內瞬建電網電壓；市電恢復時即時同步電壓與相位平滑併網，全過程負載與半導體設備零感知、零中斷！</p>
+      </div>
+      <div class="flags">
+        <span class="flag teal">Seamless 瞬切</span>
+        <span class="flag coral">電壓畸變 &lt; 15%</span>
+        <span class="flag blue">相位精確同步</span>
+        <span class="flag green">免二次停電</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <div class="two-col">
+        <div class="fig clickable" onclick="openLightbox('assets/img/fig7-6_seamless_outage_waveform.jpeg', '圖7-6：市電發生異常時PCS與市電端的電壓與電流示意圖', '(a) 不具備無縫功能（電壓迅速歸零導致設備停機） vs (b) 具備無縫功能（PCS 瞬時重建電壓，設備不中斷）')">
+          <div class="figtitle">
+            <span>圖7-6 市電異常時電壓與電流波形對照</span>
+            <span class="hint-zoom">🔍 點擊放大</span>
+          </div>
+          <img src="assets/img/fig7-6_seamless_outage_waveform.jpeg" alt="市電異常時無縫波形對照" loading="lazy">
+          <div class="cap">(a)傳統系統中斷歸零停機 ； (b)本案具備 Seamless，PCS 在 15% 畸變內重建電網</div>
+        </div>
+
+        <div class="fig clickable" onclick="openLightbox('assets/img/fig7-7_seamless_reconnect_waveform.jpeg', '圖7-7：微電網併網時PCS與市電端的電壓與電流示意圖', '(a) 不具備無縫功能（併網需二次停電重新投入） vs (b) 具備無縫功能（無須中斷負載，市電開關直接投入併聯）')">
+          <div class="figtitle">
+            <span>圖7-7 市電恢復併網波形對照</span>
+            <span class="hint-zoom">🔍 點擊放大</span>
+          </div>
+          <img src="assets/img/fig7-7_seamless_reconnect_waveform.jpeg" alt="市電恢復無縫併網波形對照" loading="lazy">
+          <div class="cap">(a)傳統併網必須再次斷電同步 ； (b)本案無感同步併網，負載全程持續運轉</div>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>技術指標</th>
+              <th>傳統微電網（不具備 Seamless）</th>
+              <th>進能服方案（具備 Seamless 無縫功能）</th>
+              <th>對國研半導體實驗室之價值</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>市電突發斷電情境</strong></td>
+              <td class="bad-row">電壓急速崩潰至零，實驗設備斷電當機</td>
+              <td class="good-row">PCS 毫秒內轉電壓源，電壓畸變控制在 15% 內</td>
+              <td>晶圓加工設備不停機、製程實驗數據零損失</td>
+            </tr>
+            <tr>
+              <td><strong>市電復電併聯情境</strong></td>
+              <td class="bad-row">必須先停電切開開關，二次斷電重啟併網</td>
+              <td class="good-row">PCS 與市電電壓、相位自動同步，平滑切電流源</td>
+              <td>師生完全無感知，省去繁瑣二次重啟校正作業</td>
+            </tr>
+            <tr>
+              <td><strong>分散式能源衝擊</strong></td>
+              <td class="bad-row">屋頂太陽能因防孤島保護跳脫停機</td>
+              <td class="good-row">PCS 維持電壓與頻率，太陽能變流器持續發電</td>
+              <td>綠電不中斷，最大化孤島續航能力</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="slide-foot">
+      <span>Part 3 · 運轉調度與維運</span>
+      <span class="pageno">P3.3 / 5</span>
+    </div>
+  </section>
+
+  <!-- P3.4 -->
+  <section class="slide">
+    <div class="slide-header">
+      <div>
+        <div class="eyebrow">Part 3 · 運轉調度與維運 3.4</div>
+        <h1>商業模式驗證與多重經濟效益</h1>
+        <p class="sub">微電網具備 5 大商業模式延伸空間：從自發自用綠電憑證、台電聚合式輔助服務、電動車充電營運、時間電價差套利，到極端海島型微網示範外銷樣板。</p>
+      </div>
+      <div class="flags">
+        <span class="flag blue">5大商業模式</span>
+        <span class="flag green">綠電憑證 T-REC</span>
+        <span class="flag teal">時間電價差套利</span>
+        <span class="flag amber">外銷樣板</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <div class="five-col">
+        <div class="card green">
+          <h3>📜 1. 綠電憑證 (T-REC)</h3>
+          <p>自發自用光電申請國家標檢局綠電憑證，累積校內綠電使用比例，亦可對接國內科技大廠進行 ESG 憑證交易。</p>
+        </div>
+        <div class="card blue">
+          <h3>⚡ 2. 聚合輔助服務</h3>
+          <p>儲能 3MWh 搭配契約容量參與台電電力交易平台聚合式輔助服務（dReg/E-dReg），創造穩定收益。</p>
+        </div>
+        <div class="card teal">
+          <h3>🚗 3. EV 充電樁營運</h3>
+          <p>設置 6 座充電樁對外與校內電動車營運收費，平時優先消納太陽能綠電，降低電網用電衝擊。</p>
+        </div>
+        <div class="card amber">
+          <h3>📊 4. 時間電價套利</h3>
+          <p>利用尖峰與離峰時間電價顯著價差（夜間超離峰充電、白天尖峰放電），達成每日電力資產套利。</p>
+        </div>
+        <div class="card purple">
+          <h3>🌏 5. 極端海島外銷示範</h3>
+          <p>在西子灣高溫、高濕、高鹽分嚴苛環境通過實證，即可打包一站式微網方案外銷至離島與偏遠山區。</p>
+        </div>
+      </div>
+
+      <div class="split-img-left" style="margin-top:4px;">
+        <div class="fig clickable" onclick="openLightbox('assets/img/fig1-6_emergency_shelter.jpeg', '圖1-6：緊急模式下防災微電網區域空拍圖', '國研大樓作為全校緊急防災留置中心，限縮供電區域實現 48 小時長時續航')">
+          <div class="figtitle">
+            <span>圖1-6 緊急模式下防災微電網區域空拍圖</span>
+            <span class="hint-zoom">🔍 點擊放大</span>
+          </div>
+          <img src="assets/img/fig1-6_emergency_shelter.jpeg" alt="緊急防災留置中心空拍圖" loading="lazy">
+          <div class="cap">緊急防災模式僅保留國研大樓核心，集中有限儲能與光電，最大化留置保障時間</div>
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap:12px;">
+          <div class="big-callout">
+            <div class="label">ESG 與學術示範效益</div>
+            <div class="answer">「教學研究 × 防災韌性 × 商業收益」多軸驅動標竿</div>
+            <div class="more">本案將中山大學自「單純受電用戶」升級為「具備電網支撐能力的微電網營運示範基地」，結合雙語大學教育、半導體人才培育與海島極端環境實證，創造無可取代之學術與社會價值。</div>
+          </div>
+          <div class="card">
+            <h3>🤝 偕同廠商商業推廣</h3>
+            <p>得標廠商可與中山大學產學合作，將全案之控制策略、C5M防蝕技術與微網演算法作為國內外微電網統包工程的旗艦示範樣板。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slide-foot">
+      <span>Part 3 · 運轉調度與維運</span>
+      <span class="pageno">P3.4 / 5</span>
+    </div>
+  </section>
+
+  <!-- P3.5 -->
+  <section class="slide">
+    <div class="slide-header">
+      <div>
+        <div class="eyebrow">Part 3 · 運轉調度與維運 3.5</div>
+        <h1>里程碑甘特圖、驗收與 5 年全責保固</h1>
+        <p class="sub">嚴格依招標時程管控：決標+14天簽約與送計畫書、+40天細設審查、116年6月30日完工報竣工；驗收合格起提供 5 年全責維護保固，落實 24/72 搶修 SLA 閉環。</p>
+      </div>
+      <div class="flags">
+        <span class="flag blue">決標+14天簽約/計畫書</span>
+        <span class="flag teal">決標+40天細設報告</span>
+        <span class="flag coral">116/06/30 報竣工</span>
+        <span class="flag purple">5年全責保固 (24/72 SLA)</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <div class="two-col">
+        <div class="card blue">
+          <h3>📅 工程執行關鍵里程碑管控</h3>
+          <div class="table-wrap" style="margin-top:8px;">
+            <table>
+              <thead>
+                <tr>
+                  <th>管制節點</th>
+                  <th>時程期限</th>
+                  <th>交付成果與成果標準</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>合約簽訂</strong></td>
+                  <td>決標日起 <strong>14 日曆天</strong> 內</td>
+                  <td>完成統包工程合約簽署與履約保證</td>
+                </tr>
+                <tr>
+                  <td><strong>工作計畫</strong></td>
+                  <td>決標日起 <strong>14 日曆天</strong> 內</td>
+                  <td>提送「工作執行計畫書」送校審查</td>
+                </tr>
+                <tr>
+                  <td><strong>細部設計</strong></td>
+                  <td>決標日起 <strong>40 日曆天</strong> 內</td>
+                  <td>提送「細部設計成果報告書」、施工圖說</td>
+                </tr>
+                <tr class="hl-row">
+                  <td><strong>全案竣工</strong></td>
+                  <td><strong>116 年 6 月 30 日 前</strong></td>
+                  <td>完成現場運轉測試並<strong>正式報竣工</strong></td>
+                </tr>
+                <tr>
+                  <td><strong>驗收測試</strong></td>
+                  <td>竣工後法定時限內</td>
+                  <td>完成 FAT/SAT 試驗、消防與台電審查</td>
+                </tr>
+                <tr class="good-row">
+                  <td><strong>保固維運</strong></td>
+                  <td>驗收合格次日起 <strong>5 年</strong></td>
+                  <td><strong>5 年全責保固</strong>，保固 1 年出具節能報告</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card purple">
+          <h3>🛡️ 5 年全責保固與 SLA 服務承諾</h3>
+          <ul>
+            <li><strong>全責保固範圍：</strong> 包含一切耗材、零組件、清洗保養、定期巡檢與人工費用，無隱形衍生費用。</li>
+            <li><strong>24 小時服務專線：</strong> 設置 24 小時專屬受理保固服務窗口與電話。</li>
+            <li><strong>24 / 72 搶修 SLA：</strong> 接獲故障通知次日起 <strong>24 小時內派員到校</strong>，<strong>72 小時內完修</strong> 回復正常運轉。</li>
+            <li><strong>每年至少一次會同健檢：</strong> 每年會同校方人員進行全系統維護保養檢測，檢測後 10 日內提供正式檢測報告。</li>
+            <li><strong>節能效益報告：</strong> 保固起算滿 1 年後，出具專業節能效益分析驗證報告。</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>驗證階段</th>
+              <th>受驗設備項目</th>
+              <th>試驗內容與交付查核依據</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>工廠試驗 (FAT)</strong></td>
+              <td>儲能系統、PCS、變壓器、比壓比流器、電力開關、充電樁、光電變流器、柴油發電機</td>
+              <td>提供原廠測試報告、出廠檢驗證明、VPC 與相關國際認證證書正本。</td>
+            </tr>
+            <tr>
+              <td><strong>現場試驗 (SAT)</strong></td>
+              <td>PCS+儲能、柴發、光電變流器、充電樁、MGC、EMS</td>
+              <td>現場實測併網運轉、離網運轉、啟停控制、市電瞬停 Seamless 無縫切換、負載平滑化調度。</td>
+            </tr>
+            <tr>
+              <td><strong>法規執照憑證</strong></td>
+              <td>太陽光電、儲能消防、資安驗證</td>
+              <td>取得再生能源設備登記、雜項使用執照/免照證明、消防署安全評估審查通過、資安滲透測試報告。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="slide-foot">
+      <span>Part 3 · 運轉調度與維運</span>
+      <span class="pageno">P3.5 / 5</span>
+    </div>
+  </section>
+
+</div>
+
+<!-- ================= LIGHTBOX MODAL ================= -->
+<div class="lightbox-modal" id="lightbox-modal" onclick="closeLightbox(event)">
+  <div class="lightbox-content">
+    <button class="lightbox-close" onclick="closeLightboxDirect()">&times;</button>
+    <img id="lightbox-img" src="" alt="放大檢視圖資">
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+  </div>
+</div>
+
+<!-- ================= BOTTOM CONTROLS ================= -->
+<div class="deckbar" id="deckbar">
+  <div class="progress"><div class="fill" id="pfill"></div></div>
+  <div class="hint">按 &larr; &rarr; 鍵翻頁 ｜ Home 鍵回首頁 ｜ F 鍵全螢幕</div>
+  <div class="ctrl">
+    <div class="counter" id="pnum">1 / 16</div>
+    <button id="btnPrev" aria-label="上一頁">&larr;</button>
+    <button id="btnNext" aria-label="下一頁">&rarr;</button>
+  </div>
+</div>
+
+<!-- ================= JAVASCRIPT ================= -->
+<script>
+/* ---------- View / Slide Router ---------- */
+(function(){
+  var parts = {
+    p1: Array.prototype.slice.call(document.querySelectorAll('#view-p1 .slide')),
+    p2: Array.prototype.slice.call(document.querySelectorAll('#view-p2 .slide')),
+    p3: Array.prototype.slice.call(document.querySelectorAll('#view-p3 .slide'))
+  };
+  var order = ['p1','p2','p3'];
+  var state = { view:'home', idx:0 };
+  var last = { p1:0, p2:0, p3:0 };
+
+  var viewHome = document.getElementById('view-home');
+  var deckbar = document.getElementById('deckbar');
+  var pfill = document.getElementById('pfill');
+  var pnum = document.getElementById('pnum');
+  var navLinks = document.querySelectorAll('.topnav a');
+
+  function getGlobalIndices(){
+    var total = 0, current = 0;
+    for(var k=0; k<order.length; k++){
+      var p = order[k];
+      if(state.view === p){
+        current = total + state.idx + 1;
+      }
+      total += parts[p].length;
+    }
+    return { current: current, total: total };
+  }
+
+  function render(){
+    // top nav active state
+    for(var i=0; i<navLinks.length; i++){
+      var a = navLinks[i];
+      var key = a.getAttribute('data-nav');
+      if(key === state.view) a.classList.add('active');
+      else a.classList.remove('active');
+    }
+
+    if(state.view === 'home'){
+      viewHome.classList.add('active');
+      document.getElementById('view-p1').classList.remove('active');
+      document.getElementById('view-p2').classList.remove('active');
+      document.getElementById('view-p3').classList.remove('active');
+      deckbar.style.display = 'none';
+    } else {
+      viewHome.classList.remove('active');
+      for(var j=0; j<order.length; j++){
+        var vk = order[j];
+        var el = document.getElementById('view-' + vk);
+        if(vk === state.view){
+          el.classList.add('active');
+          var slides = parts[vk];
+          for(var s=0; s<slides.length; s++){
+            if(s === state.idx) slides[s].classList.add('active');
+            else slides[s].classList.remove('active');
+          }
+        } else {
+          el.classList.remove('active');
+          var otherSlides = parts[vk];
+          for(var os=0; os<otherSlides.length; os++) otherSlides[os].classList.remove('active');
+        }
+      }
+      deckbar.style.display = 'block';
+      var g = getGlobalIndices();
+      var pct = Math.round((g.current / g.total) * 100);
+      pfill.style.width = pct + '%';
+      pnum.textContent = state.view.toUpperCase() + '.' + (state.idx + 1) + ' (' + g.current + '/' + g.total + ')';
+      last[state.view] = state.idx;
+    }
+    window.scrollTo(0,0);
+  }
+
+  function goHash(hash){
+    hash = (hash||'#home').replace('#','');
+    if(hash==='home'||hash===''){ state.view='home'; render(); return; }
+    var m = hash.match(/^(p1|p2|p3)-(\d+)$/);
+    if(m){
+      var v=m[1], i=parseInt(m[2],10)-1;
+      if(parts[v] && parts[v][i]){ state.view=v; state.idx=i; render(); return; }
+    }
+    if(parts[hash]){ state.view=hash; state.idx=last[hash]||0; render(); return; }
+    state.view='home'; render();
+  }
+
+  function setHash(){
+    var h = state.view==='home' ? '#home' : '#'+state.view+'-'+(state.idx+1);
+    if(location.hash!==h) history.replaceState(null,'',h);
+  }
+
+  function move(d){
+    if(state.view==='home'){
+      if(d>0){ state.view='p1'; state.idx=0; render(); setHash(); }
+      return;
+    }
+    var slides = parts[state.view];
+    var n = state.idx + d, pos = order.indexOf(state.view);
+    if(n < 0){
+      if(pos > 0){ state.view=order[pos-1]; state.idx=parts[state.view].length-1; }
+      else { state.view='home'; }
+    } else if(n >= slides.length){
+      if(pos < order.length-1){ state.view=order[pos+1]; state.idx=0; }
+      else { state.view='home'; }
+    } else {
+      state.idx=n;
+    }
+    render(); setHash();
+  }
+
+  document.getElementById('btnPrev').addEventListener('click',function(){move(-1)});
+  document.getElementById('btnNext').addEventListener('click',function(){move(1)});
+
+  document.addEventListener('keydown',function(e){
+    var t=e.target;
+    if(t&&(t.tagName==='INPUT'||t.tagName==='TEXTAREA'||t.tagName==='SELECT')) return;
+    if(e.key==='ArrowRight'||e.key===' '||e.key==='PageDown'){ e.preventDefault(); move(1); }
+    else if(e.key==='ArrowLeft'||e.key==='PageUp'){ e.preventDefault(); move(-1); }
+    else if(e.key==='Home'){ e.preventDefault(); state.view='home'; render(); setHash(); }
+    else if(e.key==='End'&&state.view!=='home'){ e.preventDefault(); state.idx=parts[state.view].length-1; render(); setHash(); }
+    else if(e.key==='f'||e.key==='F'){
+      if(document.fullscreenElement) document.exitFullscreen();
+      else document.documentElement.requestFullscreen();
+    }
+  });
+
+  window.addEventListener('hashchange',function(){ goHash(location.hash); });
+  goHash(location.hash);
+})();
+
+/* ---------- Table Expand / Collapse ---------- */
+document.querySelectorAll('.table-wrap').forEach(function(wrap){
+  var rows = Array.prototype.slice.call(wrap.querySelectorAll('tbody tr'));
+  if(rows.length <= 5) return;
+  rows.slice(5).forEach(function(row){ row.classList.add('table-extra'); });
+  var button = document.createElement('button');
+  button.type = 'button';
+  button.className = 'table-toggle';
+  button.textContent = '展開完整資料（共 ' + rows.length + ' 筆）';
+  button.addEventListener('click', function(){
+    var open = wrap.classList.toggle('expanded');
+    button.textContent = open ? '收合資料' : '展開完整資料（共 ' + rows.length + ' 筆）';
+  });
+  wrap.appendChild(button);
+});
+
+/* ---------- Lightbox Modal ---------- */
+function openLightbox(src, title, desc){
+  var modal = document.getElementById('lightbox-modal');
+  var img = document.getElementById('lightbox-img');
+  var cap = document.getElementById('lightbox-caption');
+  img.src = src;
+  cap.innerHTML = '<strong>' + title + '</strong><br>' + desc;
+  modal.classList.add('active');
+}
+function closeLightbox(e){
+  if(e.target === document.getElementById('lightbox-modal') || e.target.classList.contains('lightbox-close')){
+    document.getElementById('lightbox-modal').classList.remove('active');
+  }
+}
+function closeLightboxDirect(){
+  document.getElementById('lightbox-modal').classList.remove('active');
+}
+
+/* ---------- Simulator Mode Switcher ---------- */
+var simModes = {
+  grid: {
+    grid: '450 kW', gridSub: '主電網正常併聯',
+    pv: '210 kW', pvSub: '自發自用優先',
+    bess: '+180 kW', bessSub: '放電削峰中 ｜ SOC 85%',
+    load: '584 kW', loadSub: '國研大樓滿載保供',
+    gridClass: 'active', pvClass: 'active', bessClass: 'active', loadClass: 'active',
+    desc: '<strong>【併網超約抑制模式】</strong> 當國研大樓用電負載激增、淨用電高於調度工作點時，PCS 控制 3MWh 儲能系統啟動放電，及時介入微網作為輔助電力，確保校內不發生超約罰款；離峰時段若淨負載偏低，則由電網或剩餘光電回充儲備。'
+  },
+  shift: {
+    grid: '300 kW', gridSub: '恆定平滑供電',
+    pv: '280 kW', pvSub: '正午光電尖峰',
+    bess: '-120 kW', bessSub: '剩餘綠電充電中 ｜ SOC 70%',
+    load: '460 kW', loadSub: '平日一般用電負載',
+    gridClass: 'active', pvClass: 'active', bessClass: 'active', loadClass: 'active',
+    desc: '<strong>【併網尖離峰轉移模式】</strong> 結合歷史負載大數據與日照預測模型，正午光電尖峰時段將多餘電能充入 3MWh 儲能櫃；傍晚高價用電時段全力放電，使微網對外電網呈現一條近乎恆定的平滑消耗曲線，有效提高全系統能效。'
+  },
+  island_bess: {
+    grid: '0 kW', gridSub: '⚡ 市電中斷孤島隔離',
+    pv: '0 kW', pvSub: '夜間無日照',
+    bess: '+584 kW', bessSub: 'PCS 建立電壓源 ｜ SOC 90%',
+    load: '584 kW', loadSub: '國研半導體實驗核心保供',
+    gridClass: 'alert', pvClass: 'standby', bessClass: 'active', loadClass: 'active',
+    desc: '<strong>【儲能單獨孤島模式（&ge;4小時）】</strong> 突發電網故障斷電時，PCS 立即以電壓源重建電網微網電壓，夜間純儲能全額支撐國研大樓 584kW 關鍵實驗負載至少 4 小時以上；若在白天結合太陽能發電，更可大幅延長供電時間。'
+  },
+  island_dual: {
+    grid: '0 kW', gridSub: '⚡ 外部市電維持中斷',
+    pv: '150 kW', pvSub: '光電局部出力',
+    bess: '+84 kW', bessSub: '放電支援 ｜ SOC < 30%',
+    load: '584 kW', loadSub: '柴發+儲能雙源保供',
+    gridClass: 'alert', pvClass: 'active', bessClass: 'active', loadClass: 'active',
+    desc: '<strong>【儲能＋柴發雙源孤島模式】</strong> 當長時間停電使儲能 SOC 降至 30% 以下時，EMS 自動喚醒既有 400kW 柴油發電機以電流源輔助供電，同時切離部分次要負載；若負載小於發電量，PCS 還可調控由柴油發電機對儲能系統充電。'
+  },
+  disaster: {
+    grid: '0 kW', gridSub: '🚨 重大天災市電癱瘓',
+    pv: '180 kW', pvSub: '日間光電全開',
+    bess: '+70 kW', bessSub: '微功率持久維運 ｜ SOC 95%',
+    load: '250 kW', loadSub: '國研防災中心限縮運轉',
+    gridClass: 'alert', pvClass: 'active', bessClass: 'active', loadClass: 'active',
+    desc: '<strong>【防災緊急模式（&ge;48小時留置中心）】</strong> 重大不可抗力外力下，微電網轉入防災留置模式：非關鍵區域全數切離，僅保留國研大樓作為留置指揮中心，負載嚴格限制在 250kW 以下，搭配 3MWh 儲能與光電，提供連續 48 小時以上防災用電！'
+  },
+  seamless: {
+    grid: '瞬切過渡', gridSub: '市電電壓異常跌落',
+    pv: '210 kW', pvSub: '變流器持續運作',
+    bess: '+584 kW', bessSub: '瞬建電網電壓畸變 <15%',
+    load: '584 kW', loadSub: '半導體設備零中斷運轉',
+    gridClass: 'alert', pvClass: 'active', bessClass: 'active', loadClass: 'active',
+    desc: '<strong>【Seamless 電力無縫接軌模式】</strong> 市電發生故障時，PCS 於電壓 15% 畸變容許範圍內毫秒重建電壓源，負載設備不受異常干擾；市電復電時，PCS 自動同步市電電壓與相位平滑併網，全過程免二次停電，半導體實驗晶圓零損壞！'
+  }
+};
+
+function setSimMode(modeKey){
+  var m = simModes[modeKey];
+  if(!m) return;
+  document.querySelectorAll('.sim-btn').forEach(function(b){ b.classList.remove('active'); });
+  event.target.classList.add('active');
+
+  document.getElementById('val-grid').textContent = m.grid;
+  document.getElementById('sub-grid').textContent = m.gridSub;
+  document.getElementById('val-pv').textContent = m.pv;
+  document.getElementById('sub-pv').textContent = m.pvSub;
+  document.getElementById('val-bess').textContent = m.bess;
+  document.getElementById('sub-bess').textContent = m.bessSub;
+  document.getElementById('val-load').textContent = m.load;
+  document.getElementById('sub-load').textContent = m.loadSub;
+
+  document.getElementById('node-grid').className = 'sim-node ' + m.gridClass;
+  document.getElementById('node-pv').className = 'sim-node ' + m.pvClass;
+  document.getElementById('node-bess').className = 'sim-node ' + m.bessClass;
+  document.getElementById('node-load').className = 'sim-node ' + m.loadClass;
+
+  document.getElementById('sim-desc').innerHTML = m.desc;
+}
+
+/* ---------- Leaflet Map Initialization ---------- */
+document.addEventListener("DOMContentLoaded", function() {
+  if(!document.getElementById('campus-map')) return;
+
+  // Center on NSYSU Sizihwan Campus (22.6256, 120.2642)
+  var map = L.map('campus-map', {zoomControl: true, scrollWheelZoom: false}).setView([22.6265, 120.2648], 16);
+
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  }).addTo(map);
+
+  function makeIcon(bg, label, sub) {
+    var h = '<div style="background:'+bg+';color:#fff;padding:5px 10px;border-radius:6px;font-weight:800;white-space:nowrap;border:2px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,0.35);font-size:12px;line-height:1.35;text-align:center;">'+label+(sub?'<br><small style="font-weight:600;opacity:0.9;font-size:10px;">'+sub+'</small>':'')+'</div>';
+    return L.divIcon({className:'custom-pin', html:h, iconSize:[170,46], iconAnchor:[85,46]});
+  }
+
+  var bessPos   = [22.6256, 120.2638]; // 排球場儲能場地
+  var guoyanPos = [22.6268, 120.2647]; // 國研大樓 (電氣室高壓併接)
+  var solarPos  = [22.6280, 120.2640]; // 海工停車場光電
+  var gymPos    = [22.6245, 120.2655]; // 風雨球場預定地
+  var dgPos     = [22.6265, 120.2642]; // 既有400kW柴發
+  var gcb6Pos   = [22.6275, 120.2660]; // 社管大樓 / GCB6 區域
+
+  var bessIcon   = makeIcon('#1968AD', '🔋 3MWh 儲能＋PCS預定地', '國研旁排球場側 ｜ C5M/IP65');
+  var guoyanIcon = makeIcon('#D95F45', '🔬 國研大樓 (584kW)', '半導體實驗核心 ｜ 高壓併接點');
+  var solarIcon  = makeIcon('#2E7D32', '☀️ 海工停車場光電 (295kWp)', '拆舊換新自用光電陣列');
+  var gymIcon    = makeIcon('#E09A2B', '🏟️ 風雨球場光電預定地', '1,475 ~ 2,000 kWp 租用擴充');
+  var dgIcon     = makeIcon('#6B46C1', '⚙️ 既有 400kW 柴油發電機', '增設並聯盤 ｜ SOC<30% 輔助');
+  var gcb6Icon   = makeIcon('#12818C', '🏢 社管大樓 / GCB6 迴路', 'A水池 / 管理學院 / 社科院');
+
+  L.marker(bessPos,   {icon: bessIcon,   zIndexOffset: 1000}).addTo(map).bindPopup('<strong>儲能預定設置點</strong><br>國研大樓旁排球場側空地（約13.2m×5.8m），配置 3MWh 儲能貨櫃與 1200kW PCS，距國研電氣室約 200m。');
+  L.marker(guoyanPos, {icon: guoyanIcon, zIndexOffset: 950}).addTo(map).bindPopup('<strong>國研大樓（國際研究大樓）</strong><br>尖峰負載 584 kW，工學院半導體實驗重鎮。儲能併接於國研高壓側，為孤島保供必保核心。');
+  L.marker(solarPos,  {icon: solarIcon,  zIndexOffset: 900}).addTo(map).bindPopup('<strong>海工館停車場太陽光電</strong><br>拆除既有 172.38kWp，新建 295kWp 自發自用光電陣列，納入微電網調度。');
+  L.marker(gymPos,    {icon: gymIcon,    zIndexOffset: 850}).addTo(map).bindPopup('<strong>風雨球場太陽光電預定地</strong><br>規劃新建 1,475kWp（最高2,000kWp）太陽能租用系統，未來規劃併入微電網國研大樓使用。');
+  L.marker(dgPos,     {icon: dgIcon,     zIndexOffset: 800}).addTo(map).bindPopup('<strong>既有 400kW 柴油發電機組</strong><br>2015年添購，本案增設並聯控制盤，當儲能 SOC<30% 啟動輔助供電。');
+  L.marker(gcb6Pos,   {icon: gcb6Icon,   zIndexOffset: 750}).addTo(map).bindPopup('<strong>GCB6 饋線供電大樓群</strong><br>社科院、管院與 A水池，電網事故時配合卸載分級調度。');
+
+  // 200m Connection line between BESS and Guoyan
+  L.polyline([bessPos, guoyanPos], {color: '#1968AD', weight: 3.5, dashArray: '6,6', opacity: 0.85}).addTo(map);
+
+  // Radius zones around BESS
+  L.circle(bessPos, {radius: 200, color: '#1968AD', fillColor: '#1968AD', fillOpacity: 0.08, weight: 1.5}).addTo(map);
+
+  map.fitBounds([bessPos, guoyanPos, solarPos, gymPos, gcb6Pos], {padding: [40, 40]});
+});
+</script>
+</body>
+</html>
