@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2712%27 fill=%27%230C3A63%27/%3E%3Cpath d=%27M12 48h10V30H12zm15 0h10V18H27zm15 0h10V8H42z%27 fill=%27%231BB1BF%27/%3E%3Cpath d=%27M12 24l15-10 15 6 10-12%27 stroke=%27%23E09A2B%27 stroke-width=%273%27 fill=%27none%27 stroke-linecap=%27round%27/%3E%3C/svg%3E">
-<title>國立中山大學微電網建置統包工程 投標決策與規格中樞｜進能服 6692</title>
-<meta name="description" content="國立中山大學微電網建置統包工程（9,200萬元）投標決策與工程規格中樞：涵蓋西子灣天然孤島環境、GCB6饋線拓撲、3MWh儲能櫃(C5M/IP65/細水霧/VPC)、1200kW PCS Seamless無縫切換、國研大樓半導體實驗保供、全校ABB保護電驛與避雷接地優化、最有利標7大評選指標及5年全責保固。">
+<title>國立中山大學微電網建置統包工程 投標決策與可行性評估中樞｜進能服 6692</title>
+<meta name="description" content="國立中山大學微電網建置統包工程（9,200萬~9,500萬）高階主管可行性評估中樞：涵蓋西子灣天然孤島環境、GCB6饋線拓撲、3MWh儲能櫃(C5M/IP65/細水霧/VPC)、1200kW PCS Seamless無縫切換、國研半導體實驗保供、全校ABB保護電驛與避雷接地優化，以及四大面向致命風險、三選項可行性評估、五大釋疑談判底線與5年全責保固。">
 
 <style>
 :root{
@@ -39,32 +39,32 @@ body{
 .topnav{display:flex; gap:4px; flex:1; min-width:0; overflow-x:auto; scrollbar-width:none}
 .topnav::-webkit-scrollbar{display:none}
 .topnav a{
-  text-decoration:none; color:var(--muted); font-size:.84rem; font-weight:600;
-  padding:6px 13px; border-radius:4px; white-space:nowrap; border:1px solid transparent;
+  text-decoration:none; color:var(--muted); font-size:.82rem; font-weight:600;
+  padding:5px 11px; border-radius:4px; white-space:nowrap; border:1px solid transparent;
   transition:all .15s ease;
 }
 .topnav a:hover{color:var(--blue); background:var(--blue-soft)}
 .topnav a.active{color:#fff; background:var(--blue); font-weight:700}
 .topbar .meta{font-size:.74rem; color:var(--muted); white-space:nowrap; font-weight:600}
-@media(max-width:1160px){.topbar .meta{display:none}}
+@media(max-width:1250px){.topbar .meta{display:none}}
 @media(max-width:860px){.topbar .brand .tx{font-size:.78rem}}
 
 /* ---------- views / slides ---------- */
 .view{display:none}
 .view.active{display:block}
 .slide{
-  display:none; min-height:100vh; padding:78px 48px 88px;
-  max-width:1360px; margin:0 auto; flex-direction:column;
+  display:none; min-height:100vh; padding:76px 48px 88px;
+  max-width:1380px; margin:0 auto; flex-direction:column;
 }
 .slide.active{display:flex}
 .slide-header{display:flex; justify-content:space-between; align-items:flex-start; gap:16px; margin-bottom:18px}
 .eyebrow{font-size:.76rem; font-weight:800; letter-spacing:.14em; color:var(--teal-d); text-transform:uppercase; margin-bottom:6px}
-.slide-header h1,.slide-header h2{font-size:clamp(1.35rem,2.8vw,1.95rem); line-height:1.3; font-weight:800; max-width:32em; color:var(--ink)}
+.slide-header h1,.slide-header h2{font-size:clamp(1.35rem,2.8vw,1.95rem); line-height:1.3; font-weight:800; max-width:34em; color:var(--ink)}
 .slide-header h1::after,.slide-header h2::after{
   content:""; display:block; width:64px; height:4px; margin-top:10px;
   background:linear-gradient(90deg,var(--blue),var(--teal));
 }
-.slide-header .sub{margin-top:10px; color:var(--muted); font-size:.92rem; max-width:60em; line-height:1.58}
+.slide-header .sub{margin-top:10px; color:var(--muted); font-size:.92rem; max-width:62em; line-height:1.58}
 .flags{display:flex; gap:8px; flex-wrap:wrap; justify-content:flex-end}
 .flag{font-size:.72rem; font-weight:700; padding:5px 12px; border-radius:3px; white-space:nowrap}
 .flag.blue{background:var(--blue-soft); color:var(--blue-d)}
@@ -107,7 +107,7 @@ body{
 .card ul li{margin-bottom:4px}
 
 .metric{border-radius:4px; padding:14px 16px; border:1px solid var(--line); background:#fff; border-left:5px solid var(--blue); box-shadow:0 2px 8px rgba(18,41,61,.03)}
-.metric .k{font-size:clamp(1.4rem,2.4vw,1.95rem); font-weight:900; line-height:1.1; color:var(--blue); font-variant-numeric:tabular-nums}
+.metric .k{font-size:clamp(1.35rem,2.3vw,1.9rem); font-weight:900; line-height:1.1; color:var(--blue); font-variant-numeric:tabular-nums}
 .metric .t{font-size:.8rem; color:var(--muted); margin-top:6px; line-height:1.45}
 .metric.teal{border-left-color:var(--teal)} .metric.teal .k{color:var(--teal-d)}
 .metric.amber{border-left-color:var(--amber)} .metric.amber .k{color:#9a6a10}
@@ -120,6 +120,9 @@ body{
   background:linear-gradient(120deg,var(--blue-dd),var(--blue) 62%,var(--teal-d)); color:#fff;
   border-radius:4px; padding:20px 24px; position:relative; overflow:hidden;
 }
+.big-callout.alert{
+  background:linear-gradient(120deg,#5B1E12,#B4432C 60%,#D95F45);
+}
 .big-callout .label{font-size:.72rem; letter-spacing:.14em; opacity:.85; font-weight:800; margin-bottom:6px}
 .big-callout .answer{font-size:clamp(1.1rem,2.2vw,1.45rem); font-weight:800; line-height:1.38}
 .big-callout .more{margin-top:8px; font-size:.88rem; opacity:.92; line-height:1.55}
@@ -128,6 +131,8 @@ body{
 table{width:100%; border-collapse:collapse; font-size:.85rem; min-width:560px}
 th{background:var(--blue); color:#fff; text-align:left; font-weight:700; padding:9px 12px; white-space:nowrap; font-size:.82rem}
 th.sub{background:var(--blue-d)}
+th.coral{background:var(--coral)}
+th.amber{background:var(--amber)}
 td{padding:8px 12px; border-bottom:1px solid #EDF1F5; vertical-align:top}
 tr:last-child td{border-bottom:none}
 tbody tr:nth-child(even){background:#FAFCFE}
@@ -161,7 +166,7 @@ td.ctr,th.ctr{text-align:center}
 .fig .cap{font-size:.78rem; color:var(--muted); margin-top:8px; text-align:center; line-height:1.4}
 .fig .figtitle{font-size:.86rem; font-weight:800; margin-bottom:8px; color:var(--blue-dd); display:flex; justify-content:space-between; align-items:center}
 .fig .figtitle .hint-zoom{font-size:.7rem; font-weight:600; color:var(--teal-d); background:var(--teal-soft); padding:2px 6px; border-radius:3px; cursor:pointer}
-.fig img{display:block; width:100%; height:auto; border-radius:3px; object-fit:contain; background:#0b1d30; max-height:420px; cursor:zoom-in; transition:transform .2s ease}
+.fig img{display:block; width:100%; height:auto; border-radius:3px; object-fit:contain; background:#0b1d30; max-height:400px; cursor:zoom-in; transition:transform .2s ease}
 .fig img:hover{transform:scale(1.01)}
 
 /* ---------- home view ---------- */
@@ -171,31 +176,38 @@ td.ctr,th.ctr{text-align:center}
   background:linear-gradient(115deg,var(--blue-dd) 0%,var(--blue) 55%,#1580A8 100%);
   padding:96px 48px 52px;
 }
-.hero .inner{max-width:1360px; margin:0 auto; position:relative; z-index:2}
+.hero .inner{max-width:1380px; margin:0 auto; position:relative; z-index:2}
 .hero .kicker{font-size:.8rem; font-weight:800; letter-spacing:.16em; color:#8FD9E4}
-.hero h1{font-size:clamp(1.75rem,4.2vw,2.75rem); font-weight:900; line-height:1.24; margin-top:12px; max-width:28em}
-.hero .lede{margin-top:14px; max-width:54em; font-size:.98rem; opacity:.93; line-height:1.68}
+.hero h1{font-size:clamp(1.75rem,4vw,2.7rem); font-weight:900; line-height:1.24; margin-top:12px; max-width:32em}
+.hero .lede{margin-top:14px; max-width:56em; font-size:.98rem; opacity:.93; line-height:1.68}
 .hero .herometa{margin-top:20px; display:flex; gap:8px; flex-wrap:wrap}
 .hero .herometa span{font-size:.74rem; font-weight:700; background:rgba(255,255,255,.16); padding:5px 12px; border-radius:3px}
+.hero .herometa span.highlight{background:#D95F45; color:#fff; box-shadow:0 0 10px rgba(217,95,69,.4)}
 .hero .deco{position:absolute; right:-60px; top:-40px; width:840px; opacity:.36; pointer-events:none; z-index:1}
 @media(max-width:1000px){.hero{padding:80px 18px 40px} .hero .deco{width:560px; right:-140px; opacity:.24}}
-.homebody{max-width:1360px; margin:0 auto; padding:30px 48px 56px}
+.homebody{max-width:1380px; margin:0 auto; padding:30px 48px 56px}
 @media(max-width:1000px){.homebody{padding:24px 18px 46px}}
 
-.part-cards{display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:18px}
+.part-cards{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:16px}
 .part-card{
   display:block; text-decoration:none; color:var(--ink); background:#fff;
-  border:1px solid var(--line); border-top:4px solid var(--blue); border-radius:4px; padding:22px;
+  border:1px solid var(--line); border-top:4px solid var(--blue); border-radius:4px; padding:20px;
   transition:transform .15s ease, box-shadow .15s ease; position:relative; overflow:hidden;
 }
 .part-card:hover{transform:translateY(-4px); box-shadow:0 12px 28px rgba(18,41,61,.12)}
-.part-card.c2{border-top-color:var(--teal)} .part-card.c3{border-top-color:var(--amber)}
+.part-card.c2{border-top-color:var(--teal)}
+.part-card.c3{border-top-color:var(--amber)}
+.part-card.c4{border-top-color:var(--coral)}
+.part-card.c5{border-top-color:var(--purple)}
 .part-card .pc-eyebrow{font-size:.72rem; font-weight:800; letter-spacing:.14em; color:var(--blue)}
-.part-card.c2 .pc-eyebrow{color:var(--teal-d)} .part-card.c3 .pc-eyebrow{color:#9a6a10}
-.part-card h2{font-size:1.22rem; font-weight:800; margin:8px 0 6px; line-height:1.35}
-.part-card p{color:var(--muted); font-size:.87rem; line-height:1.58}
+.part-card.c2 .pc-eyebrow{color:var(--teal-d)}
+.part-card.c3 .pc-eyebrow{color:#9a6a10}
+.part-card.c4 .pc-eyebrow{color:#b4432c}
+.part-card.c5 .pc-eyebrow{color:var(--purple)}
+.part-card h2{font-size:1.15rem; font-weight:800; margin:8px 0 6px; line-height:1.35}
+.part-card p{color:var(--muted); font-size:.85rem; line-height:1.55}
 .part-card .pc-flags{margin-top:12px; display:flex; gap:6px; flex-wrap:wrap}
-.part-card .pc-go{margin-top:14px; font-weight:800; color:var(--blue); font-size:.85rem}
+.part-card .pc-go{margin-top:14px; font-weight:800; color:var(--blue); font-size:.84rem}
 .part-card .pc-icon{position:absolute; right:14px; top:14px; opacity:.85}
 
 .quick-spec-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:12px; margin-top:24px}
@@ -206,7 +218,7 @@ td.ctr,th.ctr{text-align:center}
 .map-header{display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; flex-wrap:wrap; gap:8px}
 .map-title{font-size:1.05rem; font-weight:800; color:var(--blue-dd)}
 .map-tags{display:flex; gap:6px; flex-wrap:wrap}
-#campus-map{height:460px; width:100%; border-radius:4px; border:1px solid var(--line); z-index:10}
+#campus-map{height:440px; width:100%; border-radius:4px; border:1px solid var(--line); z-index:10}
 
 /* ---------- interactive simulator ---------- */
 .sim-container{background:#fff; border:1px solid var(--line); border-radius:4px; padding:18px; box-shadow:0 3px 14px rgba(18,41,61,.04); margin-bottom:18px}
@@ -273,8 +285,10 @@ td.ctr,th.ctr{text-align:center}
     <a href="#p1" data-nav="p1">Part 1 專案背景與評選 (5 頁)</a>
     <a href="#p2" data-nav="p2">Part 2 系統架構與機電 (6 頁)</a>
     <a href="#p3" data-nav="p3">Part 3 運轉調度與維運 (5 頁)</a>
+    <a href="#p4" data-nav="p4">Part 4 契約與關鍵風險 (5 頁)</a>
+    <a href="#p5" data-nav="p5">Part 5 可行性決策建議 (4 頁)</a>
   </nav>
-  <div class="meta">預算：NT$ 9,200 萬 (含稅) ｜ 履約期限：116/06/30 ｜ 最有利標序位法</div>
+  <div class="meta">初判：有條件投標 ｜ 預算：9,200萬~9,500萬 ｜ 履約期限：116/06/30</div>
 </div>
 
 <!-- ================= HOME VIEW ================= -->
@@ -298,38 +312,38 @@ td.ctr,th.ctr{text-align:center}
       </g>
     </svg>
     <div class="inner">
-      <div class="kicker">進能服 6692 · 統包投標決策與技術工程規格中樞</div>
-      <h1>西子灣饋線末端電力韌性示範：3MWh 儲能 × 1.2MW PCS × 國研半導體不斷電</h1>
+      <div class="kicker">進能服 6692 · 統包工程內部可行性評估與高階決策中樞</div>
+      <h1>西子灣饋線末端微網工程：技術全規格拆解 × 四面向致命風險 × 有條件投標決策</h1>
       <p class="lede">
-        本中樞完整解構「國立中山大學微電網建置統包工程」需求說明書與評選全規範：西子灣靠山面海天然孤島地形、GCB6 饋線拓撲、國研大樓 584kW 半導體關鍵實驗保供；落地配置 3MWh C5M 級耐鹽蝕防護儲能櫃、1200kW PCS Seamless 無縫瞬切、MGC 毫秒級 OT 安全邊界、雲地協同 EMS 演算法注入空間、全校 ABB REF-615 電驛協調與消導雷突波優化，以及最有利標 7 大評選指標 (100分) 與 5 年全責保固閉環。
+        本決策中樞專為向公司高階主管匯報設計，深度整合《中山大學微電網建置統包工程需求說明書》全 16 份正式招標文件與內部可行性評估報告：技術規格我方具備完全交付能力（3MWh C5M 儲能、1200kW PCS Seamless 瞬切、國研 584kW 半導體不斷電）；惟契約條款存在三大致命硬傷（損害賠償無上限、無物價調整、預算前後矛盾）與極端緊繃工期（40天細設扣減、116/6/30硬工期）。經綜合權衡，提出「選項 B：有條件投標」作為核心決策建言，明訂投標前 5 大釋疑談判底線與風控閉環。
       </p>
       <div class="herometa">
-        <span>工程預算：NT$ 9,200 萬 (含稅全包)</span>
-        <span>儲能 3MWh ＋ PCS 1,200kW (VPC認證)</span>
-        <span>國研半導體實驗核心 584kW 保供</span>
-        <span>孤島運轉 ≥ 4h ｜ 防災留置 ≥ 48h</span>
-        <span>Seamless 瞬切 (<15% 畸變無感接軌)</span>
-        <span>履約期限：116年6月30日</span>
-        <span>評選序位法 (滿分 100 分)</span>
-        <span>保固 5 年全責維護 (24/72 SLA)</span>
+        <span class="highlight">可行性初判：有條件投標</span>
+        <span>預算金額：9,500萬 vs 9,200萬含稅（待釋疑）</span>
+        <span>儲能 3MWh ＋ PCS 1,200kW（VPC認證）</span>
+        <span>國研半導體實驗 584kW 孤島保供</span>
+        <span>Seamless 瞬切（<15%畸變零感知）</span>
+        <span class="highlight">致命風險：損害賠償無上限</span>
+        <span>履約期限：116年6月30日（工期約7個月）</span>
+        <span>最有利標序位法（上限60頁）</span>
       </div>
     </div>
   </div>
 
   <div class="homebody">
-    <!-- 3 Chapter Cards -->
+    <!-- 5 Chapter Cards -->
     <div class="part-cards">
       <a class="part-card" href="#p1-1">
-        <svg class="pc-icon" width="30" height="30" viewBox="0 0 30 30"><rect x="1" y="1" width="12" height="12" rx="2" fill="#1968AD" opacity=".2"/><rect x="17" y="1" width="12" height="12" rx="2" fill="#1968AD" opacity=".45"/><rect x="1" y="17" width="12" height="12" rx="2" fill="#1968AD" opacity=".45"/><rect x="17" y="17" width="12" height="12" rx="2" fill="#1968AD"/></svg>
+        <svg class="pc-icon" width="28" height="28" viewBox="0 0 30 30"><rect x="1" y="1" width="12" height="12" rx="2" fill="#1968AD" opacity=".2"/><rect x="17" y="1" width="12" height="12" rx="2" fill="#1968AD" opacity=".45"/><rect x="1" y="17" width="12" height="12" rx="2" fill="#1968AD" opacity=".45"/><rect x="17" y="17" width="12" height="12" rx="2" fill="#1968AD"/></svg>
         <div class="pc-eyebrow">PART 1</div>
         <h2>專案背景與評選</h2>
-        <p>西子灣台電末端天然屏障、校園十大饋線與 GCB6 供電區、排球場儲能實勘場址、統包工作權責邊界與最有利標 7 大評選維度（100分）。</p>
+        <p>西子灣台電末端天然屏障、全校十大饋線與 GCB6 供電區、排球場儲能場址、統包工作權責邊界與最有利標 7 大評選維度（100分）。</p>
         <div class="pc-flags"><span class="chip blue">5 頁</span><span class="chip teal">西子灣孤島</span><span class="chip coral">最有利標 100分</span><span class="chip amber">限 60 頁</span></div>
         <div class="pc-go">進入專案背景與評選 &rarr;</div>
       </a>
 
       <a class="part-card c2" href="#p2-1">
-        <svg class="pc-icon" width="30" height="30" viewBox="0 0 30 30"><path d="M4 26 L4 17 L10 17 L10 26 M12 26 L12 11 L18 11 L18 26 M20 26 L20 4 L26 4 L26 26" stroke="#1BB1BF" stroke-width="2.4" fill="none"/></svg>
+        <svg class="pc-icon" width="28" height="28" viewBox="0 0 30 30"><path d="M4 26 L4 17 L10 17 L10 26 M12 26 L12 11 L18 11 L18 26 M20 26 L20 4 L26 4 L26 26" stroke="#1BB1BF" stroke-width="2.4" fill="none"/></svg>
         <div class="pc-eyebrow">PART 2</div>
         <h2>系統架構與機電</h2>
         <p>3MWh C5M 儲能櫃五層縱向防護、1200kW PCS、國研+海工光電改建與風雨球場擴充、MGC 毫秒級 OT 安全邊界、雲地協同 EMS 與 ABB 電驛避雷優化。</p>
@@ -338,40 +352,58 @@ td.ctr,th.ctr{text-align:center}
       </a>
 
       <a class="part-card c3" href="#p3-1">
-        <svg class="pc-icon" width="30" height="30" viewBox="0 0 30 30"><path d="M15 3l6 6-6 6-6-6z" fill="#E09A2B" opacity=".5"/><path d="M15 15l6 6-6 6-6-6z" fill="#E09A2B"/></svg>
+        <svg class="pc-icon" width="28" height="28" viewBox="0 0 30 30"><path d="M15 3l6 6-6 6-6-6z" fill="#E09A2B" opacity=".5"/><path d="M15 15l6 6-6 6-6-6z" fill="#E09A2B"/></svg>
         <div class="pc-eyebrow">PART 3</div>
         <h2>運轉調度與維運</h2>
         <p>併網超約抑制與尖離峰轉移、孤島保供 4h 與防災中心 48h、Seamless 電源瞬切波形、5大商業模式驗證、116/6/30 里程碑與 5 年全責保固 SLA。</p>
         <div class="pc-flags"><span class="chip amber">5 頁</span><span class="chip coral">Seamless 瞬切</span><span class="chip green">48h 防災</span><span class="chip purple">5年全責保固</span></div>
         <div class="pc-go">進入運轉調度與維運 &rarr;</div>
       </a>
+
+      <a class="part-card c4" href="#p4-1">
+        <svg class="pc-icon" width="28" height="28" viewBox="0 0 30 30"><circle cx="15" cy="15" r="13" stroke="#D95F45" stroke-width="2" fill="none"/><path d="M15 8v9M15 21v2" stroke="#D95F45" stroke-width="2.5" stroke-linecap="round"/></svg>
+        <div class="pc-eyebrow">PART 4</div>
+        <h2>契約與關鍵風險</h2>
+        <p>向主管匯報四大面向風險清單：損害賠償無上限、無物價調整、消防新制審查、工期不可壓縮外部關鍵路徑、尾款綁台電補助撥付與現金流缺口。</p>
+        <div class="pc-flags"><span class="chip coral">5 頁</span><span class="chip coral">無賠償上限</span><span class="chip amber">無物調</span><span class="chip purple">工期無浮時</span></div>
+        <div class="pc-go">進入契約與關鍵風險 &rarr;</div>
+      </a>
+
+      <a class="part-card c5" href="#p5-1">
+        <svg class="pc-icon" width="28" height="28" viewBox="0 0 30 30"><path d="M5 15l7 7L25 7" stroke="#6B46C1" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+        <div class="pc-eyebrow">PART 5</div>
+        <h2>可行性決策建議</h2>
+        <p>A/B/C 三選項決策矩陣（建議採選項 B 有條件投標）、5 大前置門檻檢核表、往上向上董事會匯報 × 往下執行責任矩陣、5 大必提書面釋疑底線。</p>
+        <div class="pc-flags"><span class="chip purple">4 頁</span><span class="chip green">建議選項 B</span><span class="chip blue">5大釋疑清單</span><span class="chip teal">RACI 矩陣</span></div>
+        <div class="pc-go">進入可行性決策建議 &rarr;</div>
+      </a>
     </div>
 
     <!-- Quick Spec Grid -->
     <div class="quick-spec-grid">
-      <div class="metric blue">
-        <div class="k">9,200 萬</div>
-        <div class="t">統包總預算（含稅，技師建築師簽證/審查規費/職安衛全包）</div>
-      </div>
-      <div class="metric teal">
-        <div class="k">3 MWh</div>
-        <div class="t">儲能系統容量（1200kW PCS、C5M 抗鹽蝕、細水霧消防）</div>
+      <div class="metric coral">
+        <div class="k">有條件投標</div>
+        <div class="t">可行性評估初判（技術可達成，契約條款含 3 大致命項須釋疑）</div>
       </div>
       <div class="metric amber">
+        <div class="k">9,200 vs 9,500萬</div>
+        <div class="t">預算數字不一致（需求書 9,200萬含稅 vs 須知 9,500萬，標價超額即廢標）</div>
+      </div>
+      <div class="metric blue">
+        <div class="k">3 MWh / 1.2 MW</div>
+        <div class="t">儲能系統容量與 PCS（C5-M 耐鹽蝕、IP65、UL9540A、細水霧消防）</div>
+      </div>
+      <div class="metric teal">
         <div class="k">584 kW</div>
-        <div class="t">國研大樓尖峰負載（工學院半導體實驗重點，孤島保供首選）</div>
+        <div class="t">國研半導體實驗尖峰保供（斷電損失不可計量，夜間純儲能 &ge; 4h）</div>
       </div>
       <div class="metric coral">
-        <div class="k">&ge; 48 小時</div>
-        <div class="t">防災留置中心供電（國研負載限縮 &le;250kW，儲能+光電長時運轉）</div>
-      </div>
-      <div class="metric green">
-        <div class="k">&lt; 15%</div>
-        <div class="t">Seamless 電壓畸變（市電異常與復電無感瞬切，設備零中斷）</div>
+        <div class="k">無上限求償</div>
+        <div class="t">契約第 19 條未勾選上限，微網切換失誤恐遭無限追償所失利益</div>
       </div>
       <div class="metric purple">
-        <div class="k">5 年全責</div>
-        <div class="t">維護保固服務（24h 受理窗口、24h 到場、72h 完修回復）</div>
+        <div class="k">116/06/30</div>
+        <div class="t">硬性竣工報竣日（扣除 40 天細設，施工僅約 7 個月，無浮時緩衝）</div>
       </div>
     </div>
 
@@ -435,10 +467,11 @@ td.ctr,th.ctr{text-align:center}
     </div>
 
     <div class="home-foot">
-      進能服（6692）微電網統包工程決策中樞 ｜ 國立中山大學微電網建置統包工程（案號：115YL004-01）專案決策 ｜ 支援鍵盤 &larr; &rarr; 鍵翻頁、Home 回首頁、F 鍵全螢幕
+      進能服（6692）微電網統包工程內部可行性評估中樞 ｜ 國立中山大學微電網建置統包工程（案號：115YL004-01）高階匯報 ｜ 支援鍵盤 &larr; &rarr; 鍵翻頁、Home 回首頁、F 鍵全螢幕
     </div>
   </div>
 </div>
+
 
 <!-- ================= PART 1: 專案背景與評選 ================= -->
 <div class="view" id="view-p1">
@@ -449,7 +482,7 @@ td.ctr,th.ctr{text-align:center}
       <div>
         <div class="eyebrow">Part 1 · 專案背景與評選 1.1</div>
         <h1>專案起源與西子灣天然孤島環境</h1>
-        <p class="sub">因地處西子灣為台電饋線末端，一旦饋線事故再加柴山天然屏障阻隔，校園即成孤島。中山大學獲選台電「大學節能及電力韌性推動計畫」南部示範代表，總預算 9,200 萬元含稅統包建置。</p>
+        <p class="sub">地處西子灣為台電饋線末端，一旦饋線事故再加柴山天然屏障阻隔，校園即成孤島。中山大學獲選台電「大學節能及電力韌性推動計畫」南部示範代表，總預算 9,200 萬元含稅統包建置。</p>
       </div>
       <div class="flags">
         <span class="flag blue">台電節能韌性示範</span>
@@ -465,18 +498,38 @@ td.ctr,th.ctr{text-align:center}
             <div class="answer">「靠山面海、末端饋線、天然孤島」之最佳微網驗證場域</div>
             <div class="more">中山大學校地 73.4 公頃（可用 29 公頃），建物 35 處。西子灣因地理阻隔無法由鄰近電網靈活轉供，非常適合透過「光電 ＋ 儲能 ＋ 柴發 ＋ 智慧微網調度」實現孤島與韌性運轉驗證。</div>
           </div>
-          <div class="two-col">
-            <div class="card">
-              <h3>🏫 學校規模與用電量體</h3>
-              <p>總建物樓地板面積 337,275 m²，師生約 1.2 萬人，設有醫學院、半導體學院與國際金融學院，對高可靠電力需求極為嚴苛。</p>
-            </div>
-            <div class="card teal">
-              <h3>💰 統包建置經費與全包責任</h3>
-              <p>總預算 NT$ 9,200 萬元（含稅）。費用包含電機/土木/結構技師、建築師、消防設備師各項簽證、台電公會行政規費、職安衛、保險與稅什。</p>
-            </div>
-          </div>
-          <div class="note">
-            <strong>採購招標資訊：</strong> 採購機關為國立中山大學，採政府採購法第 24 條統包方式辦理，決標方式為最有利標（序位法），投標文件限提送服務建議書 12 份及光碟 1 片。
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>指標類別</th>
+                  <th>現況量化數據</th>
+                  <th>微電網工程意涵</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>校園規模</strong></td>
+                  <td>校地 73.4 公頃 / 建物 35 處 / 樓地板 33.7 萬 m²</td>
+                  <td>用電量體龐大，具備多棟建築負載調度空間</td>
+                </tr>
+                <tr>
+                  <td><strong>重點用電</strong></td>
+                  <td>醫學院、半導體學院、國際金融學院、工學院</td>
+                  <td>實驗負載極度敏感，停電將造成不可逆數據毀損</td>
+                </tr>
+                <tr>
+                  <td><strong>經費性質</strong></td>
+                  <td>預算 9,200 萬元（含稅全包，台電補助案）</td>
+                  <td>含建築師、技師各項法定簽證、審查規費與職安衛</td>
+                </tr>
+                <tr>
+                  <td><strong>地理約束</strong></td>
+                  <td>西子灣台電末端，單一高壓進線無互轉饋線</td>
+                  <td>天然微電網孤島示範點，獲台電選定為南部唯一示範</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
         <div class="fig clickable" onclick="openLightbox('assets/img/fig1-1_campus_map.jpeg', '圖1-1：國立中山大學建築物與主要用電分布', '全校 35 處主要建築用電場所，沿西子灣海岸線與柴山山麓狹長分布')">
@@ -530,19 +583,48 @@ td.ctr,th.ctr{text-align:center}
         </div>
       </div>
 
-      <div class="three-col">
-        <div class="card coral">
-          <h3>🔬 國研大樓半導體實驗保供</h3>
-          <p>國研大樓尖峰負載 <strong>584 kW</strong>，為工學院半導體實驗重鎮。若突發斷電，將造成昂貴晶圓試樣與實驗數據永久損壞，損失無法計量，為微網孤島必保核心。</p>
-        </div>
-        <div class="card amber">
-          <h3>📉 離峰用電特性與調度裕度</h3>
-          <p>依學校行事曆與寒暑假作業情況，國研大樓離峰負載約為尖峰的 40% 以下（&le; 240 kW）。夜間 3MWh 儲能可提供充裕的長時間孤島放電支撐。</p>
-        </div>
-        <div class="card green">
-          <h3>🛡️ A水池與社管大樓負載分級</h3>
-          <p>GCB6 饋線包含 A水池與社管大樓。系統在電網事故時可執行分級卸載，將非必要負載迅速切離，最大化保留電力資源給予半導體中心。</p>
-        </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>GCB6 饋線建築物</th>
+              <th>負載性質與敏感度</th>
+              <th class="num">尖峰負載值 (kW)</th>
+              <th class="num">離峰負載估算 (kW)</th>
+              <th>孤島調度優先權</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="hl-row">
+              <td><strong>國研大樓（國際研究大樓）</strong></td>
+              <td>工學院半導體精密晶圓製程、關鍵實驗主機</td>
+              <td class="num"><strong style="color:var(--coral); font-size:1rem;">584 kW</strong></td>
+              <td class="num">約 230 kW (&le;40%)</td>
+              <td><span class="chip coral">第一優先保供（絕對不斷電）</span></td>
+            </tr>
+            <tr>
+              <td><strong>管理學院大樓</strong></td>
+              <td>行政教學、電腦教室、空調與照明負載</td>
+              <td class="num">約 320 kW</td>
+              <td class="num">約 120 kW</td>
+              <td><span class="chip amber">次要負載（孤島依SOC分級卸載）</span></td>
+            </tr>
+            <tr>
+              <td><strong>社會科學院大樓</strong></td>
+              <td>研究室、課堂教室、一般辦公用電</td>
+              <td class="num">約 260 kW</td>
+              <td class="num">約 90 kW</td>
+              <td><span class="chip amber">次要負載（孤島依SOC分級卸載）</span></td>
+            </tr>
+            <tr>
+              <td><strong>A 水池抽水加壓站</strong></td>
+              <td>校區民生給水與景觀抽水系統</td>
+              <td class="num">約 80 kW</td>
+              <td class="num">約 30 kW</td>
+              <td><span class="chip teal">可控負載（避開尖峰抽水）</span></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
     <div class="slide-foot">
@@ -578,21 +660,46 @@ td.ctr,th.ctr{text-align:center}
         </div>
 
         <div style="display:flex; flex-direction:column; gap:12px;">
-          <div class="card">
-            <h3>📐 基地尺寸與動線約束</h3>
-            <p>現場勘查量測基地尺寸約 <strong>13.2m &times; 5.8m &times; 5.1m &times; 7.2m</strong>，需容納 3MWh 儲能貨櫃與 1200kW PCS。必須保留至少 <strong>2 米行人通道</strong>供師生往返排球場，施工過程不得影響師生活動動線。</p>
-          </div>
-          <div class="card teal">
-            <h3>🌊 海岸堤邊極端環境挑戰</h3>
-            <p>設置點正對西子灣海岸堤邊，常年處於高溫、高濕、高鹽霧飛沫環境：</p>
-            <ul>
-              <li><strong>防腐等級：</strong> 儲能外殼與 PCS 必須達到 <strong>C5-M</strong> 最高抗鹽蝕防腐塗裝</li>
-              <li><strong>防護等級：</strong> 戶外箱體必須達到 <strong>IP65</strong> / IP55 防水防塵標準</li>
-              <li><strong>結構強度：</strong> 須通過耐強風與抗震結構計算，防止颱風鹽霧侵蝕</li>
-            </ul>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>工程現勘限制項目</th>
+                  <th>現場量測 / 規範要求</th>
+                  <th>工程應對與設計防護策略</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>基礎可用尺寸</strong></td>
+                  <td>約 13.2m &times; 5.8m &times; 5.1m &times; 7.2m</td>
+                  <td>模組化緊湊型儲能櫃佈局，精確計算安全防護間距</td>
+                </tr>
+                <tr>
+                  <td><strong>行人通行限制</strong></td>
+                  <td>必須保留至少 2 米行人通道</td>
+                  <td>預留圍籬緩衝區，確保師生往返排球場動線安全</td>
+                </tr>
+                <tr>
+                  <td><strong>高壓併接距離</strong></td>
+                  <td>距國研大樓電氣室高壓側約 200 米</td>
+                  <td>沿既有管溝或開挖鋪設 24kV 級特高壓遮蔽電纜，抑制壓降</td>
+                </tr>
+                <tr>
+                  <td><strong>嚴苛鹽霧氣候</strong></td>
+                  <td>臨西子灣海堤第一排，高溫高濕高鹽</td>
+                  <td>櫃體全面要求 <strong>C5-M 防腐塗裝</strong>、戶外 <strong>IP65 防水防塵</strong></td>
+                </tr>
+                <tr>
+                  <td><strong>風災防護等級</strong></td>
+                  <td>西子灣正面迎擊夏季颱風暴潮</td>
+                  <td>基礎座採高強度 RC 筏基，錨定強度達 17 級強陣風標準</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
           <div class="tip">
-            <strong>現場配線優勢：</strong> 儲能併接點位於國研大樓電氣室高壓側，距離僅約 200 米，地下管溝施工期程短，線損低，能有效保障高可用性。
+            <strong>高壓併聯優勢：</strong> 儲能系統直接併入國研大樓電氣室高壓側（GCB6），省去跨饋線繁複架空跳線，降低諧波干擾並確保 PCS 毫秒級電壓響應。
           </div>
         </div>
       </div>
@@ -618,49 +725,63 @@ td.ctr,th.ctr{text-align:center}
       </div>
     </div>
     <div class="slide-body">
-      <div class="four-col">
-        <div class="card">
-          <h3>📐 1. 規劃與細部設計</h3>
-          <ul>
-            <li>土木、電力及消防施工詳圖</li>
-            <li>電機、土木/結構、建築師、消防設備師各項法定簽證</li>
-            <li>執照申請與消防安全審查（含火災風險評估報告）</li>
-            <li>決標日+40天提送細部設計成果</li>
-          </ul>
+      <div class="split-img-right">
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>統包工作分項</th>
+                <th>工作內容細目</th>
+                <th>法定簽證 / 合規交付項目</th>
+                <th>權責歸屬</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>1. 規劃與細部設計</strong></td>
+                <td>細部設計、數量計算、施工詳圖、材料規範</td>
+                <td>電機、土木、結構技師、建築師簽證，消防圖審</td>
+                <td><span class="chip blue">統包廠商全責</span></td>
+              </tr>
+              <tr>
+                <td><strong>2. 設備採購供應</strong></td>
+                <td>3MWh儲能櫃、1200kW PCS、光電、電驛、EMS</td>
+                <td>VPC認證證書、非中國製原產地證明、出廠試驗報告</td>
+                <td><span class="chip blue">統包廠商全責</span></td>
+              </tr>
+              <tr>
+                <td><strong>3. 土木機電施工</strong></td>
+                <td>基礎土建、200m電纜管溝、設備吊裝、細水霧消防</td>
+                <td>雜項使用執照、消防竣工查驗、職安衛計畫書</td>
+                <td><span class="chip blue">統包廠商全責</span></td>
+              </tr>
+              <tr>
+                <td><strong>4. 全校防護優化</strong></td>
+                <td>全校保護協調計算、ABB電驛5台、避雷器與SPD</td>
+                <td>保護協調設計報告書、接地電阻量測合格證明</td>
+                <td><span class="chip blue">統包廠商全責</span></td>
+              </tr>
+              <tr>
+                <td><strong>5. 保固與維運</strong></td>
+                <td>驗收合格起 5 年全責維護（含耗材/零組件/人力）</td>
+                <td>24h窗口、24h到場、72h完修SLA、滿1年節能報告</td>
+                <td><span class="chip purple">5年全責保固</span></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <div class="card teal">
-          <h3>📦 2. 設備採購供應</h3>
-          <ul>
-            <li>3MWh BESS 儲能電池系統</li>
-            <li>1,200kW PCS 功率調節器</li>
-            <li>國研(118kWp)+海工(295kWp) 光電</li>
-            <li>6座 EV 充電樁、ABB 電驛5台</li>
-            <li>微電網控制器 MGC、EMS 軟硬體</li>
-          </ul>
-        </div>
-        <div class="card amber">
-          <h3>🏗️ 3. 土木機電施工</h3>
-          <ul>
-            <li>基礎座土木基礎與耐震水保</li>
-            <li>高低壓機電管路與電纜工程</li>
-            <li>儲能貨櫃吊裝與防蝕安裝</li>
-            <li>消防細水霧與 EPO 緊急連動</li>
-            <li>全校消導雷器11台與SPD32台安裝</li>
-          </ul>
-        </div>
-        <div class="card purple">
-          <h3>🛠️ 4. 5年全責保固維運</h3>
-          <ul>
-            <li>驗收次日起 5 年全責維護保養</li>
-            <li>耗材、零件、清洗、人力全包</li>
-            <li>24h 受理窗口、24h 內派員到場</li>
-            <li>72h 內完修回復系統運作</li>
-            <li>保固起算1年出具節能效益報告</li>
-          </ul>
+
+        <div class="fig clickable" onclick="openLightbox('assets/img/poxa_layout_1.jpg', '工程設備配置詳圖 1', 'POXA 儲能貨櫃、PCS 機櫃、變壓器與電氣室高壓配電盤實體配置工程圖說')">
+          <div class="figtitle">
+            <span>POXA 微電網設備實體配置圖說</span>
+            <span class="hint-zoom">🔍 點擊放大</span>
+          </div>
+          <img src="assets/img/poxa_layout_1.jpg" alt="設備配置圖1" loading="lazy">
+          <div class="cap">現場設備配置詳圖：包含 BESS 櫃體基礎、PCS 變壓器、維修走道與消防防護間距</div>
         </div>
       </div>
 
-      <div class="two-col" style="margin-top:4px;">
+      <div class="two-col" style="margin-top:2px;">
         <div class="warn">
           <strong>⚠️ 國安資通與產地硬約束：</strong> 本案資通訊設備、伺服器、EMS、儲能控制元件、太陽能變流器「嚴格禁止採用中國製產品」，並須全面符合《資通安全管理法》規範，提供原碼掃描、弱點掃描與滲透測試報告。
         </div>
@@ -900,15 +1021,43 @@ td.ctr,th.ctr{text-align:center}
         </div>
 
         <div style="display:flex; flex-direction:column; gap:12px;">
-          <div class="card">
-            <h3>🛡️ 五層縱向安全防護矩陣</h3>
-            <ul>
-              <li><strong>第 1 層（電芯級）：</strong> 全電芯電壓與溫度即時毫秒監控，前置預防熱失控擴散。</li>
-              <li><strong>第 2 層（模組級）：</strong> 多重環境感測（雙組煙霧、溫度、有毒氣體備援），異常主動告警。</li>
-              <li><strong>第 3 層（櫃體級）：</strong> 雙層鋼板＋防火岩棉三層強固結構（防火 1 小時），自動排風防爆防壓。</li>
-              <li><strong>第 4 層（系統級）：</strong> 各櫃獨立氣體消防與內建撒水管路，通過 UL9540A 國際測試。</li>
-              <li><strong>第 5 層（場域級）：</strong> 儲能場域配置細水霧全域消防，並與 EPO 緊急斷電鈕橫向連動。</li>
-            </ul>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>縱向安全防護層級</th>
+                  <th>偵測與保護機制</th>
+                  <th>連動處置措施</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>第 1 層（電芯級）</strong></td>
+                  <td>電芯即時毫秒級電壓與溫度偵測</td>
+                  <td>前置預防熱失控，主動平衡充電</td>
+                </tr>
+                <tr>
+                  <td><strong>第 2 層（模組級）</strong></td>
+                  <td>BMS 煙霧、可燃氣體雙備援感測</td>
+                  <td>觸發告警，隔離異常串聯電池組</td>
+                </tr>
+                <tr>
+                  <td><strong>第 3 層（櫃體級）</strong></td>
+                  <td>雙層鋼板＋防火岩棉三層結構（防火 1 小時）</td>
+                  <td>主動排風系統排出有毒氣體，防止爆壓</td>
+                </tr>
+                <tr>
+                  <td><strong>第 4 層（系統級）</strong></td>
+                  <td>各櫃獨立氣體滅火＋內建撒水管路</td>
+                  <td>通過 UL9540A 燃燒蔓延驗證，自動抑燃</td>
+                </tr>
+                <tr>
+                  <td><strong>第 5 層（場域級）</strong></td>
+                  <td>儲能場域細水霧消防系統 ＋ EPO 連動</td>
+                  <td>手動/自動觸發 EPO 緊急斷電，全域細水霧冷卻</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
 
           <div class="card teal">
@@ -943,35 +1092,48 @@ td.ctr,th.ctr{text-align:center}
     </div>
     <div class="slide-body">
       <div class="two-col">
-        <div class="card">
-          <h3>⚡ 1,200kW 功率調節器 (PCS) 重點規格</h3>
-          <ul>
-            <li><strong>額定容量：</strong> 1,200 kW 或以上，滿足國研 584kW 尖峰與充電樁滿載需求</li>
-            <li><strong>環境耐受：</strong> 戶外防蝕等級 C5-M 塗裝，防護等級 IP65 以上</li>
-            <li><strong>電網調控：</strong> 具備電壓自主調控響應功能，支援虛功補償（PF 調整）與主動調頻</li>
-            <li><strong>雙模式支持：</strong> 併網時電流源（Current Source）、孤島時電壓源（Voltage Source）瞬切</li>
-            <li><strong>國際安規：</strong> UL 1741, UL 1741SB, FCC Class A, IEEE 1547 認證</li>
-          </ul>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>設備名稱</th>
+                <th>關鍵技術規範要求</th>
+                <th>系統控制核心職責</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>1,200kW PCS 功率調節器</strong></td>
+                <td>容量 &ge;1200kW、外殼 C5M 防蝕、IP65、UL1741SB、IEEE 1547</td>
+                <td>電網電壓自主調控響應、無縫雙模式切換（電壓源/電流源）、虛功調頻補償</td>
+              </tr>
+              <tr>
+                <td><strong>微網控制器 (MGC)</strong></td>
+                <td>OT 安全邊界硬體閘道器、獨立嵌入式實時作業系統</td>
+                <td>毫秒至秒級即時功率控制、指令白名單過濾、身分驗證、異常指令拒絕紀錄</td>
+              </tr>
+              <tr>
+                <td><strong>400kW 柴油發電機改造</strong></td>
+                <td>沿用既有 2015 年機組，新設自動並聯控制盤與通訊卡</td>
+                <td>SOC&lt;30% 輔助供電、SOC&lt;10% 主電源接手、支援由發電機向儲能回充</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
-        <div class="card purple">
-          <h3>🛡️ 微網控制器 (MGC / Gateway) 核心責任</h3>
-          <ul>
-            <li><strong>OT 安全邊界節點：</strong> 為地端即時控制層與上層 EMS/雲端之間唯一授權通道</li>
-            <li><strong>毫秒級即時控制：</strong> 執行 ms 至秒級即時功率調度，不仰賴雲端計算</li>
-            <li><strong>資安與白名單：</strong> 具備身分驗證、通訊完整性驗證，拒絕未授權不合理指令</li>
-            <li><strong>失效自主維持：</strong> 當外部網路或雲端 EMS 失聯中斷時，MGC 地端獨立控制，孤島完全不受影響</li>
-          </ul>
+        <div class="fig clickable" onclick="openLightbox('assets/img/fig7-3_diesel_generator.jpeg', '圖7-3：微電網區域內既有柴油發電機組', '國研大樓半導體實驗室 400kW 備用柴油發電機組，本案增設並聯控制盤與通訊接口')">
+          <div class="figtitle">
+            <span>圖7-3 微電網既有 400kW 柴油發電機組</span>
+            <span class="hint-zoom">🔍 點擊放大</span>
+          </div>
+          <img src="assets/img/fig7-3_diesel_generator.jpeg" alt="既有柴油發電機組" loading="lazy">
+          <div class="cap">沿用 2015 年添購之 400kW 柴油發電機，本案增設並聯控制盤與通訊控制，納入長時孤島調度</div>
         </div>
       </div>
 
-      <div class="fig clickable" onclick="openLightbox('assets/img/fig7-3_diesel_generator.jpeg', '圖7-3：微電網區域內既有柴油發電機組', '國研大樓半導體實驗室 400kW 備用柴油發電機組，本案增設並聯控制盤與通訊接口')">
-        <div class="figtitle">
-          <span>圖7-3 微電網區域內既有 400kW 柴油發電機組</span>
-          <span class="hint-zoom">🔍 點擊放大</span>
-        </div>
-        <img src="assets/img/fig7-3_diesel_generator.jpeg" alt="既有柴油發電機組" loading="lazy" style="max-height:240px;">
-        <div class="cap">沿用 2015 年添購之 400kW 柴油發電機，本案增設並聯控制盤與通訊控制，納入長時孤島調度</div>
+      <div class="card purple">
+        <h3>🛡️ MGC 斷網失聯自主安全邊界</h3>
+        <p>當校園網路斷線或雲端 EMS 失聯時，MGC 不得中斷微電網即時控制與安全保護功能；地端維持預設安全狀態，確保孤島運轉與保護機制絕對獨立不受上層軟體影響。</p>
       </div>
     </div>
     <div class="slide-foot">
@@ -997,26 +1159,81 @@ td.ctr,th.ctr{text-align:center}
     </div>
     <div class="slide-body">
       <div class="split-img-right">
-        <div style="display:flex; flex-direction:column; gap:12px;">
-          <div class="card green">
-            <h3>☀️ 本案新設自發自用光電陣列</h3>
-            <ul>
-              <li><strong>國研大樓屋頂：</strong> 拆除舊 30kWp，改建 <strong>118 kWp</strong> 高效 VPC 模組，年發電量約 172,462 kWh。</li>
-              <li><strong>海工館停車場：</strong> 拆除舊 172kWp，改建為 <strong>295 kWp</strong> 自發自用光電棚架。</li>
-              <li><strong>國研既有躉售：</strong> 保留 51.92 kWp 躉售光電，預留合約到期併入微電網調度。</li>
-              <li><strong>智慧變流器：</strong> 更新為標檢局 VPC 認證機種，支援電網電壓自主調控與 MGC 雙向通訊。</li>
-            </ul>
-          </div>
-
-          <div class="card amber">
-            <h3>🏟️ 風雨球場 1,475 ~ 2,000 kWp 整合藍圖</h3>
-            <p>學校將規劃新建風雨球場太陽能租用系統（1,475 kWp，最高可達 2,000 kWp）。本工程之微網控制器與配電盤預留雙向通訊與併接介面，未來可擴充作為全校削峰填谷之巨量綠電來源。</p>
-          </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>建築物名稱</th>
+                <th>建置年份 (民國)</th>
+                <th>發電處理方式</th>
+                <th class="num">建置容量 (kWp)</th>
+                <th>微電網調度規劃</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="hl-row">
+                <td><strong>國研大樓屋頂 (自用)</strong></td>
+                <td>102 / 本案改建</td>
+                <td>自發自用</td>
+                <td class="num"><strong>118.00</strong></td>
+                <td>本案核心微網供電 (年發電 17.2萬度)</td>
+              </tr>
+              <tr class="hl-row">
+                <td><strong>海工館停車場 (自用)</strong></td>
+                <td>103 / 本案改建</td>
+                <td>自發自用</td>
+                <td class="num"><strong>295.00</strong></td>
+                <td>本案核心微網供電</td>
+              </tr>
+              <tr>
+                <td>國研大樓屋頂 (躉售)</td>
+                <td>106</td>
+                <td>躉售台電</td>
+                <td class="num">51.92</td>
+                <td>保留後續納入微網彈性</td>
+              </tr>
+              <tr>
+                <td>海工館牆面 (自用)</td>
+                <td>99</td>
+                <td>自用</td>
+                <td class="num">56.63</td>
+                <td>既有系統監測</td>
+              </tr>
+              <tr>
+                <td>電資大樓屋頂</td>
+                <td>106</td>
+                <td>躉售</td>
+                <td class="num">111.51</td>
+                <td>既有躉售</td>
+              </tr>
+              <tr>
+                <td>社管大樓屋頂</td>
+                <td>108</td>
+                <td>躉售</td>
+                <td class="num">153.72</td>
+                <td>既有躉售</td>
+              </tr>
+              <tr>
+                <td>文學院屋頂</td>
+                <td>106</td>
+                <td>躉售</td>
+                <td class="num">155.76</td>
+                <td>既有躉售</td>
+              </tr>
+              <tr>
+                <td>海資館 / 藝術大樓 / 理工大樓</td>
+                <td>104~106</td>
+                <td>躉售/自用</td>
+                <td class="num">212.24</td>
+                <td>既有系統監測</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
         <div class="fig clickable" onclick="openLightbox('assets/img/fig7-1_solar_aerial.jpeg', '圖7-1：國研大樓屋頂太陽能與風雨球場實際空拍圖', '國研大樓頂樓光電鋪設區與鄰近風雨球場預定基地空拍')">
           <div class="figtitle">
-            <span>圖7-1 國研大樓屋頂光電與風雨球場實際空拍圖</span>
+            <span>圖7-1 國研屋頂光電與風雨球場實際空拍圖</span>
             <span class="hint-zoom">🔍 點擊放大</span>
           </div>
           <img src="assets/img/fig7-1_solar_aerial.jpeg" alt="國研大樓屋頂光電空拍圖" loading="lazy">
@@ -1024,77 +1241,9 @@ td.ctr,th.ctr{text-align:center}
         </div>
       </div>
 
-      <!-- Collapsible table of campus solar -->
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>建築物名稱</th>
-              <th>建置年份 (民國)</th>
-              <th>發電處理方式</th>
-              <th class="num">建置容量 (kWp)</th>
-              <th>微電網調度規劃</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="hl-row">
-              <td><strong>國研大樓屋頂 (自用)</strong></td>
-              <td>102 / 本案改建</td>
-              <td>自發自用</td>
-              <td class="num"><strong>118.00</strong></td>
-              <td>本案核心微網供電</td>
-            </tr>
-            <tr class="hl-row">
-              <td><strong>海工館停車場 (自用)</strong></td>
-              <td>103 / 本案改建</td>
-              <td>自發自用</td>
-              <td class="num"><strong>295.00</strong></td>
-              <td>本案核心微網供電</td>
-            </tr>
-            <tr>
-              <td>國研大樓屋頂 (躉售)</td>
-              <td>106</td>
-              <td>躉售台電</td>
-              <td class="num">51.92</td>
-              <td>保留後續納入微網</td>
-            </tr>
-            <tr>
-              <td>海工館牆面 (自用)</td>
-              <td>99</td>
-              <td>自用</td>
-              <td class="num">56.63</td>
-              <td>既有系統監測</td>
-            </tr>
-            <tr>
-              <td>電資大樓屋頂</td>
-              <td>106</td>
-              <td>躉售</td>
-              <td class="num">111.51</td>
-              <td>既有躉售</td>
-            </tr>
-            <tr>
-              <td>社管大樓屋頂</td>
-              <td>108</td>
-              <td>躉售</td>
-              <td class="num">153.72</td>
-              <td>既有躉售</td>
-            </tr>
-            <tr>
-              <td>文學院屋頂</td>
-              <td>106</td>
-              <td>躉售</td>
-              <td class="num">155.76</td>
-              <td>既有躉售</td>
-            </tr>
-            <tr>
-              <td>海資館 / 藝術大樓 / 理工大樓</td>
-              <td>104~106</td>
-              <td>躉售/自用</td>
-              <td class="num">212.24</td>
-              <td>既有系統監測</td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="card amber">
+        <h3>🏟️ 風雨球場 1,475 ~ 2,000 kWp 租用系統之介面界定</h3>
+        <p>評選項目二（配分 25%）重點考核「微電網連接光電風雨球場場域介面規劃」。本案統包工程需預留雙向數位通訊與高壓配電併接點，未來可將全校高達 2,000kWp 的綠電匯入微電網，發揮全校級平滑調度效益。</p>
       </div>
     </div>
     <div class="slide-foot">
@@ -1119,41 +1268,78 @@ td.ctr,th.ctr{text-align:center}
       </div>
     </div>
     <div class="slide-body">
-      <div class="three-col">
-        <div class="card purple">
-          <h3>🧠 策略定位與失聯降級</h3>
-          <p>EMS 定位為排程、分析與視覺化中樞，<strong>不承擔即時電力保護職責</strong>。EMS 視為可失聯元件，雲端中斷絕不影響微網底層孤島運轉與安全保護。</p>
+      <div class="two-col">
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>EMS 系統分層</th>
+                <th>核心功能定位</th>
+                <th>資料傳輸與可靠度要求</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>雲端策略層 (Cloud)</strong></td>
+                <td>全校能源大數據分析、長期負載預測、需量競價策略</td>
+                <td>可中斷、可失聯，中斷不得影響微網運行</td>
+              </tr>
+              <tr>
+                <td><strong>地端管理層 (Local EMS)</strong></td>
+                <td>當日調度排程、圖形化人機介面、告警派工、數據儲存</td>
+                <td>同步導向新設 NAS，提供校方安全唯讀介面</td>
+              </tr>
+              <tr>
+                <td><strong>演算法掛入層 (API)</strong></td>
+                <td>標準 RESTful API，支援校方自研最佳化調度模型注入</td>
+                <td>學術研究與電網運維實體分流，互不干擾</td>
+              </tr>
+              <tr>
+                <td><strong>現場控制層 (MGC/OT)</strong></td>
+                <td>Modbus RTU/TCP 串接水表/光電/空調/開關，即時控制</td>
+                <td>指令白名單過濾，獨立執行毫秒級保護控制</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <div class="card teal">
-          <h3>🔬 演算法注入 (Algorithm Injection)</h3>
-          <p>系統透過標準 RESTful API 開放校方電機、資工研究團隊掛入自研最佳化調度模型；地端資料庫自動同步新設 NAS，學術研究與電網運維實體分流。</p>
-        </div>
-        <div class="card green">
-          <h3>📊 跨領域設備全協議匯流</h3>
-          <p>底層針對全校水表、太陽能、空調、熱泵、各迴路電表採用國際標準 Modbus RTU/TCP 串接，即時呈現各節點潮流流向與 PUE/發電曲線。</p>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>PCM / 監造額外檢驗要求</th>
+                <th>檢驗驗證內容</th>
+                <th>合格標準</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>第三方可接手性查核</strong></td>
+                <td>交付完整系統架構、客製化區塊程式原始碼、API規格書</td>
+                <td>校方可交由指定第三方接續維運</td>
+              </tr>
+              <tr>
+                <td><strong>API 開放性與功能驗證</strong></td>
+                <td>以 Postman 等工具實測 API 調用與現場數據一致性</td>
+                <td>回傳資料無延遲且數值完全吻合</td>
+              </tr>
+              <tr>
+                <td><strong>資安弱點掃描 (OWASP/Nessus)</strong></td>
+                <td>原碼掃描、主機及 Web 弱點掃描</td>
+                <td><strong style="color:var(--coral);">Medium 以上弱點全數修補完畢</strong></td>
+              </tr>
+              <tr>
+                <td><strong>滲透測試 (Penetration Test)</strong></td>
+                <td>第三方資安公司實施滲透入侵測試</td>
+                <td>出具無重大資安漏洞合格報告</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
 
-      <div class="split-55">
-        <div class="card">
-          <h3>🖥️ 能源管理系統核心監控介面功能清單</h3>
-          <ul>
-            <li><strong>儲能監控：</strong> 即時充放電功率、電池儲量、今日累計度數、SOC / SOH、溫控狀態、火警警報</li>
-            <li><strong>太陽能監控：</strong> 各區即時發電功率、本日/本月/本年累積發電量、變流器電壓響應狀態</li>
-            <li><strong>柴油發電機：</strong> 運轉狀態、輸出功率、油位監測、並聯投入狀態</li>
-            <li><strong>饋線與用電：</strong> GCB6 淨負載功率、各主要大樓即時用電、超約預警告警</li>
-            <li><strong>充電樁營運：</strong> 6 座 EV 充電樁充電狀態、度數統計、綠電優先分配比率</li>
-          </ul>
-        </div>
-        <div class="warn">
-          <strong>🔒 國家級資安防護要求：</strong><br>
-          本案 EMS 必須符合《資通安全管理法》，竣工驗收前必須由第三方公證單位提送：
-          <ul style="margin-top:6px;">
-            <li>原碼掃描報告 (Source Code Scanning)</li>
-            <li>主機及 Web 弱點掃描報告 (Vulnerability Assessment)</li>
-            <li>滲透測試報告 (Penetration Testing)</li>
-          </ul>
-        </div>
+      <div class="note">
+        <strong>新舊 EMS 整合風險：</strong> 需求說明書規定「優先整合舊系統，無法整合時須新建全新 EMS」。在預算固定前提下，報價規劃應以新建高規格系統編列，避免因舊系統 API 不開放導致履約糾紛。
       </div>
     </div>
     <div class="slide-foot">
@@ -1178,31 +1364,58 @@ td.ctr,th.ctr{text-align:center}
       </div>
     </div>
     <div class="slide-body">
-      <div class="two-col">
-        <div class="card blue">
-          <h3>⚡ 1. 全校保護電驛優化與檢討作業</h3>
-          <ul>
-            <li><strong>專業電力設計軟體建模：</strong> 委聘專業電機技師運用 ETAP / PSS-E 電力軟體，重新審視全校高低壓饋線短路容量與保護協調曲線。</li>
-            <li><strong>保護協調設計報告書：</strong> 提送全校保護電驛整定報告書予校方審查，杜絕越級跳脫。</li>
-            <li><strong>電驛採購規格：</strong> 依校方審查會議指定採用 <strong>ABB REF-615</strong>（上限 5 台），具備高可靠數位通訊與微網保護能力。</li>
-          </ul>
+      <div class="split-img-right">
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>工程改善項目</th>
+                <th>規範設備數量限制</th>
+                <th>改善工法與成果標準</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>保護電驛檢討優化</strong></td>
+                <td>全校保護協調設計報告書 1 式</td>
+                <td>專業電力軟體（ETAP）模擬短路容量，出具全校保護協調曲線報告</td>
+              </tr>
+              <tr class="hl-row">
+                <td><strong>保護電驛採購更新</strong></td>
+                <td>指定採購 <strong>ABB REF-615</strong><br>（上限購買 <strong>5 台</strong>）</td>
+                <td>微電網專用數位式保護電驛，具備高速通訊與自適應保護協調設定</td>
+              </tr>
+              <tr>
+                <td><strong>避雷針系統汰換</strong></td>
+                <td>多針中和消/導雷器<br>（上限購買 <strong>11 台</strong>）</td>
+                <td>評估現有避雷針妥適性，於高雷擊風險建物屋頂安裝多針消雷裝置</td>
+              </tr>
+              <tr>
+                <td><strong>接地電阻量測改善</strong></td>
+                <td>全校指定接地迴路</td>
+                <td>量測各節點接地電阻，施作降阻劑與深埋銅棒工程，達法規規定值</td>
+              </tr>
+              <tr>
+                <td><strong>雷擊突波吸收器 (SPD)</strong></td>
+                <td>指定弱電與機電節點<br>（上限購買 <strong>32 台</strong>）</td>
+                <td>於關鍵弱電配電盤裝設 Class I/II 突波吸收器，徹底杜絕感應雷害</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
-        <div class="card coral">
-          <h3>🌩️ 2. 全校避雷與接地系統全面優化</h3>
-          <ul>
-            <li><strong>弱電損壞痛點：</strong> 中山大學臨海靠山，雷暴頻率高，過往常因感應雷突波導致校內弱電主機受損。</li>
-            <li><strong>消導雷器更新：</strong> 評估現有避雷針妥適性，採購安裝多針中和消/導雷器（上限 11 台）。</li>
-            <li><strong>接地電阻量測改善：</strong> 全面量測既設接地電阻，施作降阻工程符合法規標準。</li>
-            <li><strong>雷擊突波吸收器 (SPD)：</strong> 於指定弱電與機電節點裝設 SPD（上限 32 台），徹底攔截突波。</li>
-          </ul>
+        <div class="fig clickable" onclick="openLightbox('assets/img/poxa_layout_2.jpg', '工程設備配置詳圖 2', 'POXA 機電設備配線詳圖、ABB 保護電驛安裝盤體與避雷突波保護配置')">
+          <div class="figtitle">
+            <span>POXA 機電配電盤與電驛配置</span>
+            <span class="hint-zoom">🔍 點擊放大</span>
+          </div>
+          <img src="assets/img/poxa_layout_2.jpg" alt="設備配置圖2" loading="lazy">
+          <div class="cap">現場機電管線接線圖：ABB REF-615 電驛、比壓比流器與避雷 SPD 實體配置盤體</div>
         </div>
       </div>
 
-      <div class="big-callout" style="background:linear-gradient(120deg,#0C3A63,#1968AD);">
-        <div class="label">韌性雙保險價值</div>
-        <div class="answer">「既防內線跳脫、又禦雷擊天災」的全校電網體質大升級</div>
-        <div class="more">本統包工程不單純建造 GCB6 局域微電網，更藉由全校保護電驛重構與防雷接地工程，從根源提升全中山大學對外來雷擊與內部短路故障的免疫力，落實台電電力韌性推動示範宗旨。</div>
+      <div class="warn">
+        <strong>⚠️ 條款衝突提醒：</strong> 需求說明書明列電驛採購上限 5 台、避雷器上限 11 台；但若全校檢討報告指出需要 8 台電驛方能保護協調，契約第 4 條「統包目的必須工程不得加價」可能產生爭議，必須於投標前書面釋疑釐清。
       </div>
     </div>
     <div class="slide-foot">
@@ -1212,6 +1425,7 @@ td.ctr,th.ctr{text-align:center}
   </section>
 
 </div>
+
 
 <!-- ================= PART 3: 運轉調度與維運 ================= -->
 <div class="view" id="view-p3">
@@ -1261,19 +1475,43 @@ td.ctr,th.ctr{text-align:center}
         </div>
       </div>
 
-      <div class="three-col">
-        <div class="card green">
-          <h3>💰 契約容量下修節費效益</h3>
-          <p>全校契約容量目標自 <strong>7,550 kW 降至 6,550 kW</strong>（調降 1,000 kW）。每月大幅降低台電高額基本電費支出，年節省基本電費逾數百萬元。</p>
-        </div>
-        <div class="card teal">
-          <h3>⚡ 需量反應與聚合輔助服務</h3>
-          <p>3MWh 儲能結合 1,200kW PCS，可依 EMS 指令直接以電流源模式併網放電支援台電電網，參與台電電力交易平台輔助服務獲取營運收益。</p>
-        </div>
-        <div class="card blue">
-          <h3>🔄 功因優化與主動調頻 (Regulation)</h3>
-          <p>PCS 具備高動態響應能力，可作為電力品質改善設備，即時注入或吸收虛功，優化區域功因並支援電網頻率波動調節。</p>
-        </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>調度功能情境</th>
+              <th>觸發條件與調度邏輯</th>
+              <th>系統動作行為</th>
+              <th>經濟與電力效益</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>抑制超約調度 (Peak Shaving)</strong></td>
+              <td>淨負載 &gt; 設定門檻工作點</td>
+              <td>PCS 控制 BESS 放電補足差額；離峰低載時由市電回充</td>
+              <td>杜絕台電超約罰款（高達契約單價 2~3 倍）</td>
+            </tr>
+            <tr class="hl-row">
+              <td><strong>尖峰轉移 (Peak Shifting)</strong></td>
+              <td>正午光電尖峰 / 夜間超離峰</td>
+              <td>吸收光電綠電儲存；於高電價時段全力放電平滑負載</td>
+              <td><strong>契約容量由 7,550kW 降至 6,550kW（-1,000kW）</strong></td>
+            </tr>
+            <tr>
+              <td><strong>需量反應與輔助服務</strong></td>
+              <td>台電電網告急或價格觸發</td>
+              <td>PCS 以電流源模式併網放電，配合內部負載切離</td>
+              <td>參與電力交易平台聚合輔助服務（dReg/E-dReg）</td>
+            </tr>
+            <tr>
+              <td><strong>功因優化與主動調頻</strong></td>
+              <td>局部饋線電壓波動或低功因</td>
+              <td>PCS 毫秒注入或吸收虛功，動態改善電力品質</td>
+              <td>提升全校供電效率，減少輸電線損</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
     <div class="slide-foot">
@@ -1298,7 +1536,7 @@ td.ctr,th.ctr{text-align:center}
       </div>
     </div>
     <div class="slide-body">
-      <div class="split-img-left">
+      <div class="two-col">
         <div class="fig clickable" onclick="openLightbox('assets/img/fig7-5_island_flow.png', '圖7-5：微電網孤島模式運轉流程', '儲能獨立孤島 -> 雙源孤島 (SOC<30%) -> 發電機孤島 (SOC<10%) 三階完整判定邏輯')">
           <div class="figtitle">
             <span>圖7-5 微電網孤島模式運轉完整流程</span>
@@ -1308,26 +1546,53 @@ td.ctr,th.ctr{text-align:center}
           <div class="cap">市電中斷後，PCS 建立電壓源，依 SOC 梯度依序啟動柴發與卸載機制</div>
         </div>
 
-        <div style="display:flex; flex-direction:column; gap:12px;">
-          <div class="card">
-            <h3>🏝️ 三階孤島運轉接力機制</h3>
-            <ul>
-              <li><strong>第 1 階（儲能孤島）：</strong> 市電中斷，PCS 瞬轉電壓源，全額承擔國研大樓 584kW 重要負載。純儲能夜間支撐 &ge;4 小時；白天搭配光電大幅延長。</li>
-              <li><strong>第 2 階（雙源孤島）：</strong> 當儲能 <strong>SOC &lt; 30%</strong>，EMS 喚醒 400kW 柴油發電機以電流源輔助供電，並逐步切離可棄負載。</li>
-              <li><strong>第 3 階（柴發單獨孤島）：</strong> 若 <strong>SOC &lt; 10%</strong>，柴發切換為主電源電壓源接手，PCS 轉待機，確保關鍵半導體設備供電不中斷。</li>
-            </ul>
+        <div class="fig clickable" onclick="openLightbox('assets/img/fig1-6_emergency_shelter.jpeg', '圖1-6：緊急模式下防災微電網區域空拍圖', '國研大樓作為全校緊急防災留置中心，限縮供電區域實現 48 小時長時續航')">
+          <div class="figtitle">
+            <span>圖1-6 緊急模式下防災微電網區域空拍圖</span>
+            <span class="hint-zoom">🔍 點擊放大</span>
           </div>
-
-          <div class="card coral">
-            <h3>🚨 防災緊急留置模式（48 小時保供）</h3>
-            <p>當發生地震颱風等重大天災，系統轉入「防災微電網」：</p>
-            <ul>
-              <li><strong>限縮範圍：</strong> 僅保留國研大樓作為全校緊急防災留置中心（圖1-6）。</li>
-              <li><strong>功耗上限：</strong> 負載嚴格限制在 <strong>250 kW 以下</strong>。</li>
-              <li><strong>長時供電：</strong> 結合 3MWh 儲能與屋頂光電，保證提供 <strong>48 小時以上</strong> 不斷電防災運轉！</li>
-            </ul>
-          </div>
+          <img src="assets/img/fig1-6_emergency_shelter.jpeg" alt="緊急防災留置中心空拍圖" loading="lazy">
+          <div class="cap">緊急防災模式僅保留國研大樓核心，集中有限儲能與光電，最大化留置保障時間</div>
         </div>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>孤島運轉模式</th>
+              <th>啟動條件與電源狀態</th>
+              <th>負載涵蓋與運轉時間</th>
+              <th>技術關鍵要求</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>第 1 階：儲能單獨孤島</strong></td>
+              <td>市電突發中斷，PCS 瞬轉電壓源，SOC &gt; 30%</td>
+              <td>國研大樓 584kW；<strong>夜間保證 &ge; 4 小時</strong>，白天日照大幅延長</td>
+              <td>PCS 建立電網頻率與電壓，太陽能變流器無縫跟隨發電</td>
+            </tr>
+            <tr>
+              <td><strong>第 2 階：雙源孤島模式</strong></td>
+              <td>儲能 <strong>SOC &lt; 30%</strong>，EMS 喚醒 400kW 柴油發電機</td>
+              <td>柴發以電流源輔助供電；逐步切離次要負載，延長續航</td>
+              <td>並聯控制盤快速投入，負載小於柴發出力時可由發電機回充儲能</td>
+            </tr>
+            <tr>
+              <td><strong>第 3 階：柴發接手孤島</strong></td>
+              <td>儲能 <strong>SOC &lt; 10%</strong>，BESS 轉入保護待機</td>
+              <td>柴發切換為主電壓源，僅供應國研大樓最關鍵半導體實驗主機</td>
+              <td>全面卸載非必要設備，柴發穩定輸出防過載跳脫</td>
+            </tr>
+            <tr class="hl-row">
+              <td><strong>防災緊急留置模式</strong></td>
+              <td>地震/颱風外力重大天災，校園電網癱瘓</td>
+              <td><strong>限縮負載 &le; 250 kW，保證連續供電 &ge; 48 小時以上</strong></td>
+              <td>國研大樓作留置中心，BESS(3MWh) + 屋頂光電能量平衡精算</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
     <div class="slide-foot">
@@ -1376,30 +1641,30 @@ td.ctr,th.ctr{text-align:center}
         <table>
           <thead>
             <tr>
-              <th>技術指標</th>
+              <th>技術指標項目</th>
               <th>傳統微電網（不具備 Seamless）</th>
               <th>進能服方案（具備 Seamless 無縫功能）</th>
-              <th>對國研半導體實驗室之價值</th>
+              <th>半導體實驗核心價值</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td><strong>市電突發斷電情境</strong></td>
-              <td class="bad-row">電壓急速崩潰至零，實驗設備斷電當機</td>
-              <td class="good-row">PCS 毫秒內轉電壓源，電壓畸變控制在 15% 內</td>
-              <td>晶圓加工設備不停機、製程實驗數據零損失</td>
+              <td class="bad-row">電壓迅速跌落至零，負載斷電停機</td>
+              <td class="good-row">PCS 瞬切電壓源，電壓畸變控制在 15% 範圍內</td>
+              <td>精密實驗儀器不停機、晶圓數據零損壞</td>
             </tr>
             <tr>
               <td><strong>市電復電併聯情境</strong></td>
-              <td class="bad-row">必須先停電切開開關，二次斷電重啟併網</td>
-              <td class="good-row">PCS 與市電電壓、相位自動同步，平滑切電流源</td>
-              <td>師生完全無感知，省去繁瑣二次重啟校正作業</td>
+              <td class="bad-row">必須先停電切開隔離，重新合閘二次斷電</td>
+              <td class="good-row">PCS 自動同步市電電壓與相位，平滑轉電流源</td>
+              <td>校園完全無感切換，免去二次重開機繁瑣流程</td>
             </tr>
             <tr>
-              <td><strong>分散式能源衝擊</strong></td>
-              <td class="bad-row">屋頂太陽能因防孤島保護跳脫停機</td>
-              <td class="good-row">PCS 維持電壓與頻率，太陽能變流器持續發電</td>
-              <td>綠電不中斷，最大化孤島續航能力</td>
+              <td><strong>光電變流器運作</strong></td>
+              <td class="bad-row">觸發 Anti-Islanding 防孤島跳脫中斷發電</td>
+              <td class="good-row">微網電壓頻率恆定，智慧變流器持續全額發電</td>
+              <td>最大化孤島續航時間，綠電不浪費</td>
             </tr>
           </tbody>
         </table>
@@ -1427,49 +1692,61 @@ td.ctr,th.ctr{text-align:center}
       </div>
     </div>
     <div class="slide-body">
-      <div class="five-col">
-        <div class="card green">
-          <h3>📜 1. 綠電憑證 (T-REC)</h3>
-          <p>自發自用光電申請國家標檢局綠電憑證，累積校內綠電使用比例，亦可對接國內科技大廠進行 ESG 憑證交易。</p>
-        </div>
-        <div class="card blue">
-          <h3>⚡ 2. 聚合輔助服務</h3>
-          <p>儲能 3MWh 搭配契約容量參與台電電力交易平台聚合式輔助服務（dReg/E-dReg），創造穩定收益。</p>
-        </div>
-        <div class="card teal">
-          <h3>🚗 3. EV 充電樁營運</h3>
-          <p>設置 6 座充電樁對外與校內電動車營運收費，平時優先消納太陽能綠電，降低電網用電衝擊。</p>
-        </div>
-        <div class="card amber">
-          <h3>📊 4. 時間電價套利</h3>
-          <p>利用尖峰與離峰時間電價顯著價差（夜間超離峰充電、白天尖峰放電），達成每日電力資產套利。</p>
-        </div>
-        <div class="card purple">
-          <h3>🌏 5. 極端海島外銷示範</h3>
-          <p>在西子灣高溫、高濕、高鹽分嚴苛環境通過實證，即可打包一站式微網方案外銷至離島與偏遠山區。</p>
-        </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>商業模式分項</th>
+              <th>實施路徑與營運機制</th>
+              <th>年收益 / 成本節省效益預估</th>
+              <th>後續推廣與擴展空間</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>1. 自發自用綠電憑證 (T-REC)</strong></td>
+              <td>新設光電 413kWp 申請標檢局綠電憑證</td>
+              <td>年發電約 55 萬度，創造 ESG 憑證價值</td>
+              <td>累積校內綠電比例，亦可對接企業出售憑證</td>
+            </tr>
+            <tr>
+              <td><strong>2. 台電聚合輔助服務</strong></td>
+              <td>3MWh 儲能參與電力交易平台聚合式服務</td>
+              <td>依調頻 dReg/E-dReg 規範獲取容量與電能費</td>
+              <td>搭配校內需量競價，放大非尖峰放電收益</td>
+            </tr>
+            <tr>
+              <td><strong>3. EV 充電樁收費營運</strong></td>
+              <td>設置 6 座充電樁，供校內外車輛與電巴充電</td>
+              <td>優先消納日間光電綠電，創造常態服務營收</td>
+              <td>配合未來校園接駁電動巴士專屬調度</td>
+            </tr>
+            <tr class="hl-row">
+              <td><strong>4. 時間電價差套利 (TOU)</strong></td>
+              <td>利用超離峰低價充入、尖峰高價釋放</td>
+              <td>每日充放 1~2 次，年轉移電量逾百萬度</td>
+              <td>結合基本電費降低 1,000kW，節費數百萬元</td>
+            </tr>
+            <tr>
+              <td><strong>5. 極端海島微網外銷樣板</strong></td>
+              <td>西子灣高鹽高濕高溫環境通過 5 年實證</td>
+              <td>建立進能服標準化交鑰匙（Turnkey）產品線</td>
+              <td>複製至澎湖、金門等離島及偏遠山區微電網</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
-      <div class="split-img-left" style="margin-top:4px;">
-        <div class="fig clickable" onclick="openLightbox('assets/img/fig1-6_emergency_shelter.jpeg', '圖1-6：緊急模式下防災微電網區域空拍圖', '國研大樓作為全校緊急防災留置中心，限縮供電區域實現 48 小時長時續航')">
-          <div class="figtitle">
-            <span>圖1-6 緊急模式下防災微電網區域空拍圖</span>
-            <span class="hint-zoom">🔍 點擊放大</span>
-          </div>
-          <img src="assets/img/fig1-6_emergency_shelter.jpeg" alt="緊急防災留置中心空拍圖" loading="lazy">
-          <div class="cap">緊急防災模式僅保留國研大樓核心，集中有限儲能與光電，最大化留置保障時間</div>
+      <div class="split-45">
+        <div class="big-callout">
+          <div class="label">產學合作綜效</div>
+          <div class="answer">「教學研究 × 防災韌性 × 商業回報」多軸驅動標竿</div>
+          <div class="more">本案使中山大學由單純用電戶轉型為高韌性電力節點。得標廠商後續可與校方共同發表技術論文、建立專利壁壘，並將實證架構作為國內外大專院校節能示範案場範本。</div>
         </div>
 
-        <div style="display:flex; flex-direction:column; gap:12px;">
-          <div class="big-callout">
-            <div class="label">ESG 與學術示範效益</div>
-            <div class="answer">「教學研究 × 防災韌性 × 商業收益」多軸驅動標竿</div>
-            <div class="more">本案將中山大學自「單純受電用戶」升級為「具備電網支撐能力的微電網營運示範基地」，結合雙語大學教育、半導體人才培育與海島極端環境實證，創造無可取代之學術與社會價值。</div>
-          </div>
-          <div class="card">
-            <h3>🤝 偕同廠商商業推廣</h3>
-            <p>得標廠商可與中山大學產學合作，將全案之控制策略、C5M防蝕技術與微網演算法作為國內外微電網統包工程的旗艦示範樣板。</p>
-          </div>
+        <div class="card green">
+          <h3>🤝 簡化複製工程（需求說明書四大指標）</h3>
+          <p>需求說明書明訂「簡化複製工程」為核心發展指標。本案所建構之標準化變流器控制、MGC 開源介面與防火抗鹽儲能櫃設計，可大幅降低下一代校園微電網前期設計與建置成本。</p>
         </div>
       </div>
     </div>
@@ -1496,62 +1773,82 @@ td.ctr,th.ctr{text-align:center}
     </div>
     <div class="slide-body">
       <div class="two-col">
-        <div class="card blue">
-          <h3>📅 工程執行關鍵里程碑管控</h3>
-          <div class="table-wrap" style="margin-top:8px;">
-            <table>
-              <thead>
-                <tr>
-                  <th>管制節點</th>
-                  <th>時程期限</th>
-                  <th>交付成果與成果標準</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><strong>合約簽訂</strong></td>
-                  <td>決標日起 <strong>14 日曆天</strong> 內</td>
-                  <td>完成統包工程合約簽署與履約保證</td>
-                </tr>
-                <tr>
-                  <td><strong>工作計畫</strong></td>
-                  <td>決標日起 <strong>14 日曆天</strong> 內</td>
-                  <td>提送「工作執行計畫書」送校審查</td>
-                </tr>
-                <tr>
-                  <td><strong>細部設計</strong></td>
-                  <td>決標日起 <strong>40 日曆天</strong> 內</td>
-                  <td>提送「細部設計成果報告書」、施工圖說</td>
-                </tr>
-                <tr class="hl-row">
-                  <td><strong>全案竣工</strong></td>
-                  <td><strong>116 年 6 月 30 日 前</strong></td>
-                  <td>完成現場運轉測試並<strong>正式報竣工</strong></td>
-                </tr>
-                <tr>
-                  <td><strong>驗收測試</strong></td>
-                  <td>竣工後法定時限內</td>
-                  <td>完成 FAT/SAT 試驗、消防與台電審查</td>
-                </tr>
-                <tr class="good-row">
-                  <td><strong>保固維運</strong></td>
-                  <td>驗收合格次日起 <strong>5 年</strong></td>
-                  <td><strong>5 年全責保固</strong>，保固 1 年出具節能報告</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>時程節點</th>
+                <th>法定期限要求</th>
+                <th>交付成果標準與罰則</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>契約簽署</strong></td>
+                <td>決標日起 <strong>14 日曆天</strong> 內</td>
+                <td>簽訂統包合約，繳交履約保證金 5%</td>
+              </tr>
+              <tr>
+                <td><strong>工作執行計畫書</strong></td>
+                <td>決標日起 <strong>14 日曆天</strong> 內</td>
+                <td>提送整體施工、品管、職安衛計畫送審</td>
+              </tr>
+              <tr class="bad-row">
+                <td><strong>細部設計報告書</strong></td>
+                <td>決標日起 <strong>40 日曆天</strong> 內</td>
+                <td><strong>修正逾1次期間仍計入工期</strong>，不得展延</td>
+              </tr>
+              <tr class="hl-row">
+                <td><strong>工程完工報竣</strong></td>
+                <td><strong>116 年 6 月 30 日 前</strong></td>
+                <td>全部設備安裝測試完成報竣工（日曆天）</td>
+              </tr>
+              <tr>
+                <td><strong>全責保固維護</strong></td>
+                <td>驗收合格次日起 <strong>5 年</strong></td>
+                <td>全責維護，保固滿 1 年出具節能效益報告</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
-        <div class="card purple">
-          <h3>🛡️ 5 年全責保固與 SLA 服務承諾</h3>
-          <ul>
-            <li><strong>全責保固範圍：</strong> 包含一切耗材、零組件、清洗保養、定期巡檢與人工費用，無隱形衍生費用。</li>
-            <li><strong>24 小時服務專線：</strong> 設置 24 小時專屬受理保固服務窗口與電話。</li>
-            <li><strong>24 / 72 搶修 SLA：</strong> 接獲故障通知次日起 <strong>24 小時內派員到校</strong>，<strong>72 小時內完修</strong> 回復正常運轉。</li>
-            <li><strong>每年至少一次會同健檢：</strong> 每年會同校方人員進行全系統維護保養檢測，檢測後 10 日內提供正式檢測報告。</li>
-            <li><strong>節能效益報告：</strong> 保固起算滿 1 年後，出具專業節能效益分析驗證報告。</li>
-          </ul>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>5 年保固維運 SLA 項目</th>
+                <th>承諾標準</th>
+                <th>違約處罰條件</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>專屬服務窗口</strong></td>
+                <td>設置 24 小時專屬受理電話窗口</td>
+                <td>專人全年無休受理通報</td>
+              </tr>
+              <tr>
+                <td><strong>到場處理時效</strong></td>
+                <td>接獲通知次日起 <strong>24 小時內派員到校</strong></td>
+                <td>逾期每日計罰 2,000 元違約金</td>
+              </tr>
+              <tr>
+                <td><strong>完修回復時效</strong></td>
+                <td>接獲通知起 <strong>72 小時內完修回復</strong></td>
+                <td>逾期每日計罰 2,000 元違約金</td>
+              </tr>
+              <tr>
+                <td><strong>每年定期巡檢</strong></td>
+                <td>每年至少 1 次會同校方人員全盤檢測</td>
+                <td>檢測完成後 10 工作日內提送報告</td>
+              </tr>
+              <tr>
+                <td><strong>全責涵蓋範圍</strong></td>
+                <td>一切耗材、零組件、清洗、檢測、人力全包</td>
+                <td>保固期內正常損壞一律免費換修</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
 
@@ -1559,26 +1856,21 @@ td.ctr,th.ctr{text-align:center}
         <table>
           <thead>
             <tr>
-              <th>驗證階段</th>
-              <th>受驗設備項目</th>
-              <th>試驗內容與交付查核依據</th>
+              <th>試驗類別</th>
+              <th>檢驗驗證項目</th>
+              <th>檢驗內容與交付查核文件</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td><strong>工廠試驗 (FAT)</strong></td>
-              <td>儲能系統、PCS、變壓器、比壓比流器、電力開關、充電樁、光電變流器、柴油發電機</td>
-              <td>提供原廠測試報告、出廠檢驗證明、VPC 與相關國際認證證書正本。</td>
+              <td>儲能系統、PCS、變壓器、比壓比流器、開關、充電樁、變流器、柴發</td>
+              <td>出具原廠測試報告、標檢局 VPC 認證證書、UL/IEC 國際認證合格證明。</td>
             </tr>
             <tr>
               <td><strong>現場試驗 (SAT)</strong></td>
-              <td>PCS+儲能、柴發、光電變流器、充電樁、MGC、EMS</td>
-              <td>現場實測併網運轉、離網運轉、啟停控制、市電瞬停 Seamless 無縫切換、負載平滑化調度。</td>
-            </tr>
-            <tr>
-              <td><strong>法規執照憑證</strong></td>
-              <td>太陽光電、儲能消防、資安驗證</td>
-              <td>取得再生能源設備登記、雜項使用執照/免照證明、消防署安全評估審查通過、資安滲透測試報告。</td>
+              <td>電能轉換器與儲能併聯/離網、柴發啟停併聯、充電樁滿載、EMS控制</td>
+              <td>現場會同監造實測市電斷電無縫切換、孤島保供、抑制超約及自動調頻。</td>
             </tr>
           </tbody>
         </table>
@@ -1587,6 +1879,695 @@ td.ctr,th.ctr{text-align:center}
     <div class="slide-foot">
       <span>Part 3 · 運轉調度與維運</span>
       <span class="pageno">P3.5 / 5</span>
+    </div>
+  </section>
+
+</div>
+
+<!-- ================= PART 4: 契約與關鍵風險 ================= -->
+<div class="view" id="view-p4">
+
+  <!-- P4.1 -->
+  <section class="slide">
+    <div class="slide-header">
+      <div>
+        <div class="eyebrow">Part 4 · 契約與關鍵風險 4.1</div>
+        <h1>核心風險總覽與三大優先釋疑致命項</h1>
+        <p class="sub">向高階主管匯報：本案技術規格我方可完全達成，價格空間偏緊但非不可行；真正的致命殺傷力在「契約條款」，其中三項屬投標前必須用「書面釋疑」處理掉的重大風險。</p>
+      </div>
+      <div class="flags">
+        <span class="flag coral">初判：有條件投標</span>
+        <span class="flag coral">損害賠償無上限</span>
+        <span class="flag amber">工程物價無調整</span>
+        <span class="flag blue">預算矛盾 92M vs 95M</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <div class="big-callout alert">
+        <div class="label">向董事長與總經理報告 · 初判結論</div>
+        <div class="answer">「初判：有條件投標」——技術能做，但契約條款存在致命曝險</div>
+        <div class="more">除逾期違約金 10% 上限外，損害賠償依民法 216 條含「所失利益」且無金額上限；國研大樓為半導體實驗場域，若微網切換失誤導致晶圓實驗中斷，理論上求償無上限！此三項致命點必須在投標前釋疑期內徹底釐清並設防。</div>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th style="width:6%;">#</th>
+              <th style="width:24%;">最需優先確認的致命風險</th>
+              <th style="width:50%;">為什麼對我方極度致命（法條出處與實務連動）</th>
+              <th style="width:20%;">處置時機與策略</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bad-row">
+              <td class="ctr"><strong>1</strong></td>
+              <td><strong>損害賠償無上限</strong><br><small style="color:var(--coral);">契約第19條(八)2</small></td>
+              <td><strong>契約四個上限選項全部未勾選〔查證〕。</strong><br>依民法 216 條賠償「所受損害＋所失利益」。國研大樓是工學院半導體重鎮，需求書自己寫「實驗數據毀損，損失無法計量」。若微網切換微秒偏差導致實驗跳機，求償金額恐吞掉全公司！</td>
+              <td><strong style="color:var(--coral);">投標前釋疑期內必提</strong><br>要求明訂以契約價金總額為賠償上限。</td>
+            </tr>
+            <tr class="hl-row">
+              <td class="ctr"><strong>2</strong></td>
+              <td><strong>工程物價調整：無</strong><br><small style="color:var(--amber);">契約第5條第1款7目</small></td>
+              <td><strong>明載「工程物價指數調整：無」〔查證〕。</strong><br>本案履約工期橫跨至 116 年 6 月 30 日（跨年度）。國際鋰電池原物料、銅線纜、鋼構在未來 9 個月若發生價格波動，全由廠商自行吸收，無任何補貼。</td>
+              <td><strong>投標前報價風險準備</strong><br>估算納入 5～8% 物價波動風險準備金。</td>
+            </tr>
+            <tr class="hl-row">
+              <td class="ctr"><strong>3</strong></td>
+              <td><strong>預算數字前後矛盾</strong><br><small style="color:var(--blue);">投標須知 vs 需求說明書</small></td>
+              <td><strong>投標須知載 9,500 萬 vs 需求書載 9,200 萬含稅〔查證〕。</strong><br>依投標須知第 50 點，廠商標價高於「公告之預算」即為不合規定廢標！若以 9,300 萬報價而機關認定上限為 9,200 萬，直接廢標出局。</td>
+              <td><strong style="color:var(--blue);">投標前釋疑期內必提</strong><br>釐清以何者為報價廢標上限。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="slide-foot">
+      <span>Part 4 · 契約與關鍵風險</span>
+      <span class="pageno">P4.1 / 5</span>
+    </div>
+  </section>
+
+  <!-- P4.2 -->
+  <section class="slide">
+    <div class="slide-header">
+      <div>
+        <div class="eyebrow">Part 4 · 契約與關鍵風險 4.2</div>
+        <h1>法規與審批風險：消防新制、台電併審與資安</h1>
+        <p class="sub">盤點本案四大不可壓縮之外部法規與行政審批風險：消防署 114/11/3 儲能新制審查、台電配電級併聯審查、資安禁用陸資產品要求，以及指定單一廠牌爭議。</p>
+      </div>
+      <div class="flags">
+        <span class="flag coral">儲能消防新制</span>
+        <span class="flag blue">台電併審關鍵路徑</span>
+        <span class="flag amber">禁用陸資產地證明</span>
+        <span class="flag teal">ABB 廠牌爭議</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>法規審批風險項目</th>
+              <th>觸發條件與法規出處</th>
+              <th>可能引發之後果</th>
+              <th>因應選項與評估代價</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>儲能消防新制審查</strong></td>
+              <td>內政部消防署 <strong>114/11/3 修正之「提升儲能系統消防安全管理指引」</strong>，須出具火災風險評估報告〔查證〕</td>
+              <td>高雄市消防局審查尺度若趨嚴，退件重審將直接吃掉本已極度緊繃之工期，無法如期動工。</td>
+              <td><strong>選項 A（建議）：</strong> 投標前先與高市消防局預諮詢審查要點。<br><strong>選項 B：</strong> 賭得標後再辦，退件恐損失 1~2 個月工期。</td>
+            </tr>
+            <tr>
+              <td><strong>台電儲能併聯審查</strong></td>
+              <td>依台電「配電級併網型暨用戶內線型儲能設備併聯審查作業須知」併接高壓側 3MWh 儲能與 DREAMS 介接〔查證〕</td>
+              <td>台電外審期程不可控；若延宕，非可歸責於廠商但須自行舉證申請免計工期展延。</td>
+              <td><strong>選項 A（建議）：</strong> 決標後立即啟動台電前置協商預審。<br><strong>選項 B：</strong> 等細設審定才送件，併審恐落入關鍵路徑導致工期逾期。</td>
+            </tr>
+            <tr>
+              <td><strong>資安法遵與禁用陸資</strong></td>
+              <td>《資通安全管理法》、投標須知第 16 點<strong>明文禁止陸資資通訊及太陽能產品</strong>〔查證〕</td>
+              <td>供應鏈任一通訊模組被判定為中國製或陸資廠牌，驗收直接不通過，重大可解約沒收保證金。</td>
+              <td><strong>全供應鏈非中國製聲明 ＋ 進口報單查驗</strong>；採購成本約上升 5～15%，但可根除被退件風險。</td>
+            </tr>
+            <tr>
+              <td><strong>指定 ABB REF-615 爭議</strong></td>
+              <td>需求說明書第 7 章明文指定電驛採用 ABB REF-615 單一廠牌〔查證〕</td>
+              <td>潛在未獲指定之競爭廠商可能於等標期內提出異議或申訴，導致招標程序延宕流標。</td>
+              <td>投標前於書面釋疑中建請機關敘明「或同等品」認定程序，預防廠商爭議影響進程。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="two-col">
+        <div class="card coral">
+          <h3>🚨 外部審查不可壓縮特性</h3>
+          <p>消防圖審、台電併聯審查與標準檢驗局 VPC 認證皆屬<strong>外部公權力審查</strong>，其法定辦理時程無法透過廠商單方面加班趕工壓縮，是本案工期最大潛在殺手。</p>
+        </div>
+        <div class="card teal">
+          <h3>📑 產地查核嚴格把關機制</h3>
+          <p>PCM 與校方將於竣工驗收嚴格查驗 EMS 主機、通訊 Gateway、變流器與電池管理系統（BMS）進口原產地證明，投標前必須鎖定非陸資供應鏈。</p>
+        </div>
+      </div>
+    </div>
+    <div class="slide-foot">
+      <span>Part 4 · 契約與關鍵風險</span>
+      <span class="pageno">P4.2 / 5</span>
+    </div>
+  </section>
+
+  <!-- P4.3 -->
+  <section class="slide">
+    <div class="slide-header">
+      <div>
+        <div class="eyebrow">Part 4 · 契約與關鍵風險 4.3</div>
+        <h1>技術規格風險評估：Seamless 驗收、柴發改造與鹽害</h1>
+        <p class="sub">分析工程落地四大技術陷阱：Seamless 切換時間未訂量化毫秒標準、既有柴發並聯通訊相容性、舊 EMS API 不開放改建成本，以及西子灣鹽害對 5 年保固之侵蝕。</p>
+      </div>
+      <div class="flags">
+        <span class="flag coral">Seamless 驗收標準模糊</span>
+        <span class="flag amber">舊柴發並聯介面</span>
+        <span class="flag purple">既有 EMS 整合盲區</span>
+        <span class="flag blue">西子灣鹽害保固成本</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>技術項目</th>
+              <th>招標規範記載內容</th>
+              <th>潛在工程爭議與風險評估</th>
+              <th>我方因應對策與建議</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bad-row">
+              <td><strong>Seamless 無縫驗收標準</strong></td>
+              <td>需求書載「電壓在 15% 畸變範圍內重新建立」；PCM 需求書寫「均不得有停電情形」〔查證〕</td>
+              <td><strong>未明訂切換時間數值標準（如 &lt;10ms 或 &lt;20ms）</strong>。驗收時半導體實驗室若要求達 UPS 級超高速切換，標準認定恐生爭端。</td>
+              <td><strong>服務建議書主動寫明技術承諾上限</strong>（如切換時間 &le; 20ms、電壓跌落 &le; 15%），並列為契約附件鎖定驗收依據。</td>
+            </tr>
+            <tr>
+              <td><strong>既有 400kW 柴油發電機改造</strong></td>
+              <td>2015 年添購機組，增設並聯控制盤與通訊卡，實現電流源輔助供電〔查證〕</td>
+              <td>機齡已達 11 年，原有控制器若老舊停產或不支援數位通訊，雙源孤島模式將無法聯動。</td>
+              <td>投標前務必實勘柴發銘牌與盤體；報價中編列 <strong>100~150 萬元</strong> 機組控制器整體更新備援費用。</td>
+            </tr>
+            <tr>
+              <td><strong>既有全校 EMS 整合不確定</strong></td>
+              <td>優先整合既有 EMS，無法整合時須建置全新新能源管理系統〔查證〕</td>
+              <td>既有原廠若不配合釋出資料庫架構或通訊 API，統包商被迫吸收全套新建成本（預算固定）。</td>
+              <td>報價直接以<strong>新建全新符合規範之 EMS</strong>編列，避免寄望舊廠商而造成進度與利潤失控。</td>
+            </tr>
+            <tr>
+              <td><strong>200 公尺高壓電纜路徑</strong></td>
+              <td>儲能設置點距國研大樓電氣室約 200 米，路徑穿越排球場周邊〔查證〕</td>
+              <td>地下可能遭遇既有未明管線、景觀林木根系或柴山地質岩層，開挖許可審查與土建變更。</td>
+              <td>投標前現勘詳查管線圖說，規劃明挖與管中管穿線兩套備案，費用納入直接工程費。</td>
+            </tr>
+            <tr>
+              <td><strong>西子灣高鹽害 5 年保固</strong></td>
+              <td>海岸第一排堤邊環境，驗收合格次日起 5 年全責維護保養〔查證〕</td>
+              <td>鹽霧沉降率高，PCS 散熱風扇、銅排接點老化加速，24/72 SLA 違約每日罰 2,000 元。</td>
+              <td>報價時<strong>調高保固維運海岸係數（上浮 20~30%）</strong>，儲能櫃與 PCS 採用雙道重防腐塗層。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="big-callout" style="background:linear-gradient(120deg,#12518A,#1968AD);">
+        <div class="label">技術可行性總結</div>
+        <div class="answer">「技術能做到，但驗收邊界必須由我方主動定義」</div>
+        <div class="more">本案技術難度集中在 Seamless 瞬切與發電機並聯；進能服配合台達電 PCS 與專屬微電網控制器，技術上可完全攻克，關鍵在於服務建議書中精確定義驗收量化邊界，防範業主無限上綱。</div>
+      </div>
+    </div>
+    <div class="slide-foot">
+      <span>Part 4 · 契約與關鍵風險</span>
+      <span class="pageno">P4.3 / 5</span>
+    </div>
+  </section>
+
+  <!-- P4.4 -->
+  <section class="slide">
+    <div class="slide-header">
+      <div>
+        <div class="eyebrow">Part 4 · 契約與關鍵風險 4.4</div>
+        <h1>履約工期壓力評估：40天細設扣減、儲能交期與竣工</h1>
+        <p class="sub">工期極端緊繃且無浮時：決標後僅 40 天需提送細部設計，審查修正期間計入工期；116/6/30 為硬性竣工日，實質施工期僅約 7 個月，儲能交期 16~24 週為關鍵路徑。</p>
+      </div>
+      <div class="flags">
+        <span class="flag coral">116/06/30 硬性竣工</span>
+        <span class="flag coral">40天細設修正計工期</span>
+        <span class="flag amber">儲能交期 16~24 週</span>
+        <span class="flag purple">落後 20% 即解約</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>關鍵里程碑節點</th>
+              <th>預定完成時程</th>
+              <th>工期壓力分析與關鍵路徑 (Critical Path)</th>
+              <th>落後風險與罰則</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>決標與簽約</strong></td>
+              <td>決標日 + 14 天</td>
+              <td>簽約並提送工作執行計畫書，同步展開各專業技師細部設計作業</td>
+              <td>逾期按日計罰違約金</td>
+            </tr>
+            <tr class="bad-row">
+              <td><strong>細部設計成果報告</strong></td>
+              <td>決標日 + <strong>40 日曆天</strong></td>
+              <td><strong>契約第7條(一)1明訂：同一項目修正逾1次，修正及複審期間仍計入履約期限！</strong>實務上極易因審查來回壓縮施工期。</td>
+              <td><strong style="color:var(--coral);">不得要求展延工期，直接吃掉施工時間</strong></td>
+            </tr>
+            <tr>
+              <td><strong>設備長料採購下單</strong></td>
+              <td>細設審查通過後即刻下單</td>
+              <td><strong>儲能櫃體與 PCS 交期通常長達 16～24 週（4~6個月）</strong>，需長料先行或取得原廠現貨承諾。</td>
+              <td>設備遲到將直接導致後端試驗與報竣逾期</td>
+            </tr>
+            <tr>
+              <td><strong>土建與管線施工</strong></td>
+              <td>決標後第 3 ~ 6 個月</td>
+              <td>儲能 RC 基礎、200m 高壓管溝、消導雷接地降阻、光電棚架改建</td>
+              <td>遇雨天西子灣施工動線泥濘延誤</td>
+            </tr>
+            <tr class="hl-row">
+              <td><strong>全案完工報竣</strong></td>
+              <td><strong>116 年 6 月 30 日 前</strong></td>
+              <td><strong>日曆天計算，所有日數均計入，為教育部與台電計畫之硬性結案日！</strong>扣除設計僅剩 6.5~7 個月施工試驗。</td>
+              <td><strong>逾期違約金 1‰/日（每日約 9.2 萬）</strong>，上限為總價 10%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="two-col">
+        <div class="warn">
+          <strong>⚠️ 契約第 22 條(一)5 終止條款：</strong> 本案屬未達巨額採購，<strong>履約進度落後達 20% 以上且逾 10 日未改善者，機關即得終止契約！</strong>若遭終止，將沒收履約保證金（約 460 萬）、扣發全部保留款，且面臨採購法第 101 條停權處分。
+        </div>
+        <div class="card teal">
+          <h3>⏱️ 工期化解關鍵：投標階段「設計搶跑」</h3>
+          <p>若要承接本案，必須在<strong>投標評選準備階段就把細部設計做到 7~8 成</strong>（單線圖、保護協調、儲能基礎與管溝路徑），決標後才能在 40 天內一次審定通過，為現場爭取充裕施工時間。</p>
+        </div>
+      </div>
+    </div>
+    <div class="slide-foot">
+      <span>Part 4 · 契約與關鍵風險</span>
+      <span class="pageno">P4.4 / 5</span>
+    </div>
+  </section>
+
+  <!-- P4.5 -->
+  <section class="slide">
+    <div class="slide-header">
+      <div>
+        <div class="eyebrow">Part 4 · 契約與關鍵風險 4.5</div>
+        <h1>商務財務與資金佔用：尾款延後、保留款與利潤</h1>
+        <p class="sub">向財務長匯報資金曝險：驗收尾款綁台電補助款撥付時程、每期扣 5% 保留款、保證金長期凍結約 1,200 萬元，且空白標單間接費僅編 4%，利潤空間需精準精算。</p>
+      </div>
+      <div class="flags">
+        <span class="flag coral">尾款綁台電補助款</span>
+        <span class="flag amber">保留款每期扣 5%</span>
+        <span class="flag blue">保證金凍結 1,200萬</span>
+        <span class="flag purple">標單管理利潤僅 4%</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>財務曝險環節</th>
+              <th>契約規範條款</th>
+              <th>資金佔用金額估算</th>
+              <th>財務風險分析與對策</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bad-row">
+              <td><strong>驗收尾款撥付條件</strong></td>
+              <td>契約第 5 條第 1 款 4 目明載：<strong>須俟台電補助款核撥到校後，始得支付</strong>〔查證〕</td>
+              <td><strong>約 1,380 ~ 1,840 萬元</strong><br>（契約總價之 15~20%）</td>
+              <td>若台電行政撥款延宕，尾款可能延遲 <strong>6～12 個月</strong> 收回且非機關違約！財務調度須備妥等額資金成本。</td>
+            </tr>
+            <tr class="hl-row">
+              <td><strong>工程保留款扣留</strong></td>
+              <td>契約第 5 條第 1 款 3 目：各期估驗款扣除 <strong>5% 保留款</strong>〔查證〕</td>
+              <td><strong>累計約 460 萬元</strong></td>
+              <td>初驗合格且無逾期僅能領回 50%，全部驗收合格才退還其餘 50%；施工期現金流遭實質壓縮。</td>
+            </tr>
+            <tr>
+              <td><strong>各階段保證金凍結</strong></td>
+              <td>押標金 5%、履約保證金 5%、保固保證金 3%（押 5 年 + 90 日）〔查證〕</td>
+              <td><strong>保固保證金約 276 萬元</strong><br>需長期凍結逾 5 年</td>
+              <td>一律爭取以<strong>銀行連帶保證書或保證保險單</strong>繳納，避免自有現金流長期凍結。</td>
+            </tr>
+            <tr>
+              <td><strong>標單間接費結構限制</strong></td>
+              <td>空白標單格式載：品管費 1%、工程管理+利潤+保險+空污費僅 <strong>4%</strong>〔查證〕</td>
+              <td>名目管理利潤僅約 360 萬</td>
+              <td>格式名目利潤極低；統包商實際利潤必須透過設備採購議價隱含於直接工程費中，否則單項難以反映真實管理成本。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="split-45">
+        <div class="card coral">
+          <h3>💰 現金流缺口峰值模擬</h3>
+          <p>專案施工高峰期（第 4~6 個月設備進場交貨），加上保留款與設備預付款，<strong>累計資金缺口峰值估計達 2,500 ~ 3,000 萬元</strong>，須向銀行申請專案工程融資額度支援。</p>
+        </div>
+
+        <div class="card amber">
+          <h3>📜 智財權條款爭議</h3>
+          <p>契約第 19 條 (三) 勾選「機關取得全部權利」；但 PCM 需求書載「不含自有核心平台原始碼」。釋疑期必須釐清<strong>自研核心平台智財權保留</strong>，僅交付客製化區塊與 API，確保公司核心數位資產不受侵害。</p>
+        </div>
+      </div>
+    </div>
+    <div class="slide-foot">
+      <span>Part 4 · 契約與關鍵風險</span>
+      <span class="pageno">P4.5 / 5</span>
+    </div>
+  </section>
+
+</div>
+
+
+<!-- ================= PART 5: 可行性決策建議 ================= -->
+<div class="view" id="view-p5">
+
+  <!-- P5.1 -->
+  <section class="slide">
+    <div class="slide-header">
+      <div>
+        <div class="eyebrow">Part 5 · 可行性決策建議 5.1</div>
+        <h1>三大可行性決策選項分析 (A / B / C 對照)</h1>
+        <p class="sub">向董事會與高階主管呈閱三種決策路徑：全面評估技術實力、合約致命曝險與策略收益，明確建言採取「選項 B：有條件投標」，透過釋疑與前置風控鎖定承攬邊界。</p>
+      </div>
+      <div class="flags">
+        <span class="flag green">核心建言：選項 B</span>
+        <span class="flag blue">選項 A 全力搶標</span>
+        <span class="flag coral">選項 C 放棄不標</span>
+        <span class="flag purple">董事會決策</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th style="width:16%;">決策選項</th>
+              <th style="width:28%;">決策理由與策略價值</th>
+              <th style="width:34%;">必須承擔之代價與重大曝險</th>
+              <th style="width:22%;">高階主管決策建言</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>選項 A<br>全力搶標</strong></td>
+              <td>技術能力完全匹配；台電補助示範案具指標性實績；搶佔南台灣微網龍頭地位，後續有風雨球場 2MW 及其他大學複製擴充龐大商機。</td>
+              <td>投標階段即需投入細部設計（成本約 150~300 萬）；承擔無上限賠償 ＋ 無物調 ＋ 尾款延宕三重財務曝險；7 個月硬工期下任何外部審查退件即翻轉獲利。</td>
+              <td><span class="chip amber">高風險 / 高實績</span><br>不建議盲目搶標，曝險敞口過大。</td>
+            </tr>
+            <tr class="good-row">
+              <td><strong>選項 B<br>有條件投標<br><span class="chip green" style="font-size:.8rem;">★ 最佳建議方案</span></strong></td>
+              <td><strong>以技術優勢搶標，但以合約防護為前提！</strong>於等標期內透過書面釋疑切除無上限賠償與條款衝突；以現勘鎖定電纜與柴發成本；鎖定台達電交期。</td>
+              <td>釋疑與現勘將消耗 2~3 週密集準備時間；釋疑公開可能提示競爭對手；<strong>若機關釋疑回覆不願設賠償上限，則立即啟動煞車轉為選項 C。</strong></td>
+              <td><strong style="color:var(--green); font-size:1.02rem;">優先推進路線</strong><br>守住底線前提下全力爭取決標。</td>
+            </tr>
+            <tr>
+              <td><strong>選項 C<br>不建議投標</strong></td>
+              <td>無上限損害賠償 &times; 半導體實驗場域 &times; 116/6/30 硬工期 &times; 無物調，五重疊加風險超載；單一跳電意外事故之賠償可能數倍於本案全部利潤。</td>
+              <td>放棄台電微電網指標案實績與後續全校擴充機會；競爭對手取得後將在未來大學微網標案形成領先地位。</td>
+              <td><span class="chip coral">保全資本底線</span><br>若釋疑未獲善意回應時之必然退路。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="split-55">
+        <div class="card green">
+          <h3>🎯 決策關鍵轉折點：釋疑結果決定走向</h3>
+          <p><strong>若機關書面釋疑回覆：</strong> 同意明訂賠償上限為契約總額、釐清預算以 9,500 萬或 9,200 萬為準、界定風雨球場僅留通訊介面 &rarr; <strong>全力啟動投標（執行選項 B）</strong>。<br>
+          <strong>若機關回覆：</strong> 堅持賠償無上限、且預算壓死在 9,200 萬 &rarr; <strong>轉為選項 C 放棄，或大幅上調 15% 風險準備金報價</strong>。</p>
+        </div>
+        <div class="card purple">
+          <h3>📊 評估向度量化雷達評分（滿分 5 分）</h3>
+          <p>技術可行性：<strong>4.8 分</strong>（我方完全勝任）<br>
+          商務條款合規：<strong>2.2 分</strong>（殺傷力大，需釋疑）<br>
+          財務資金獲利率：<strong>3.1 分</strong>（間接費緊繃，需專案融資）<br>
+          示範與戰略價值：<strong>4.9 分</strong>（全台微網指標首選）</p>
+        </div>
+      </div>
+    </div>
+    <div class="slide-foot">
+      <span>Part 5 · 可行性決策建議</span>
+      <span class="pageno">P5.1 / 4</span>
+    </div>
+  </section>
+
+  <!-- P5.2 -->
+  <section class="slide">
+    <div class="slide-header">
+      <div>
+        <div class="eyebrow">Part 5 · 可行性決策建議 5.2</div>
+        <h1>選項 B「有條件投標」五大前置門檻查核表</h1>
+        <p class="sub">落實選項 B 之具體行動清單：於投標日前必須完成 5 大前置風險閉環查核，由業務、設計、採購與法務分工並行，全數亮綠燈方得正式送件。</p>
+      </div>
+      <div class="flags">
+        <span class="flag green">5大前置門檻</span>
+        <span class="flag blue">風控查核矩陣</span>
+        <span class="flag coral">Go / No-Go 查核</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th style="width:6%;">門檻</th>
+              <th style="width:24%;">前置查核任務名稱</th>
+              <th style="width:40%;">查核標準與交付具體要求</th>
+              <th style="width:15%;">負責單位</th>
+              <th style="width:15%;">時程死線</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="hl-row">
+              <td class="ctr"><strong>1</strong></td>
+              <td><strong>提出書面釋疑函件</strong></td>
+              <td>預算上限確認、損害賠償上限設防、智財權原始碼邊界、風雨球場界面、電驛上限衝突等 5 大題提送校方。</td>
+              <td>業務部 / 法務室</td>
+              <td>等標期 1/4 內</td>
+            </tr>
+            <tr>
+              <td class="ctr"><strong>2</strong></td>
+              <td><strong>強制實地現勘與測量</strong></td>
+              <td>招標文件強制要求；確認 200m 高壓電纜管溝路徑、儲能場址地質與消防間距、400kW 柴發控制介面、既有 EMS API。</td>
+              <td>設計部 / 機電技師</td>
+              <td>投標前 10 天</td>
+            </tr>
+            <tr>
+              <td class="ctr"><strong>3</strong></td>
+              <td><strong>高市消防局預諮詢</strong></td>
+              <td>向高雄市消防局預先諮詢 3MWh 櫃式儲能「提升儲能系統消防安全管理指引」火災風險評估審查標準與細水霧細節。</td>
+              <td>消防設備師 / 設計部</td>
+              <td>投標前 7 天</td>
+            </tr>
+            <tr>
+              <td class="ctr"><strong>4</strong></td>
+              <td><strong>儲能設備商價格交期綁定</strong></td>
+              <td>取得台達電（已有 6/16 報價基礎）或一線大廠<strong>含交期承諾之固定價格報價單</strong>，確保 116 年 2 月前可交貨。</td>
+              <td>採購部 / 設備商</td>
+              <td>投標前 5 天</td>
+            </tr>
+            <tr>
+              <td class="ctr"><strong>5</strong></td>
+              <td><strong>報價風險準備金精算</strong></td>
+              <td>成本分析表內建置 <strong>5～8% 物價風險準備金</strong>及<strong>海岸高鹽害 5 年保固加乘係數</strong>，完成底價試算。</td>
+              <td>成本估算組 / 財務部</td>
+              <td>投標前 3 天</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="three-col">
+        <div class="note">
+          <strong>Go 條件：</strong> 5 項查核全部合格，且校方釋疑同意增列損害賠償上限（如以契約價金總額為限） &rarr; <strong>正式送件投標</strong>。
+        </div>
+        <div class="warn">
+          <strong>Hold 條件：</strong> 校方釋疑回覆模糊，但未完全拒絕 &rarr; <strong>報價上調風險準備金至上限，保守投標</strong>。
+        </div>
+        <div class="bad-row" style="padding:10px 14px; border-radius:3px; border-left:4px solid var(--coral);">
+          <strong>Stop 條件：</strong> 校方堅持賠償無上限、預算鎖死 9,200 萬且儲能原廠無法承諾交期 &rarr; <strong>啟動停損，放棄投標</strong>。
+        </div>
+      </div>
+    </div>
+    <div class="slide-foot">
+      <span>Part 5 · 可行性決策建議</span>
+      <span class="pageno">P5.2 / 4</span>
+    </div>
+  </section>
+
+  <!-- P5.3 -->
+  <section class="slide">
+    <div class="slide-header">
+      <div>
+        <div class="eyebrow">Part 5 · 可行性決策建議 5.3</div>
+        <h1>組織橫向與縱向聯動矩陣 (往上向上匯報 × 往下分工)</h1>
+        <p class="sub">本案履約期跨 9 個月且儲能不得分包，牽動公司事業經營、財務現金流與法務授權。依 RACI 矩陣明確劃分經營高層向上決策層級與專案執行團隊分工。</p>
+      </div>
+      <div class="flags">
+        <span class="flag purple">董事會資源排序</span>
+        <span class="flag blue">財務資金調度</span>
+        <span class="flag teal">RACI 權責分工</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <div class="two-col">
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>往上向上牽動（高階決策層）</th>
+                <th>核心牽動事項與決策層級</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>2.2 事業經營處</strong></td>
+                <td>儲能不得分包，未來 9 個月需鎖定主要工程與電力技師人力，<strong>需董事會層級專案優先序核定</strong>。</td>
+              </tr>
+              <tr>
+                <td><strong>3.5 財務部</strong></td>
+                <td>押標金 460 萬 + 履約保證金 460 萬 + 保留款 460 萬 + 尾款延後 6~12 個月，<strong>需預留約 3,000 萬流動性信用額度</strong>。</td>
+              </tr>
+              <tr>
+                <td><strong>3.8 法務室</strong></td>
+                <td>損害賠償無上限與智財權全歸機關條款，<strong>需出具正式法律風險意見書</strong>，作為投標底線依據。</td>
+              </tr>
+              <tr>
+                <td><strong>1.3 策略合作夥伴</strong></td>
+                <td>與台達電之合作由專案採購升級為<strong>策略夥伴層級協議</strong>，鎖定交期違約背對背（Back-to-Back）條款。</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>往下推動執行（專案小組）</th>
+                <th>具體執行任務與權責分工</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>4.1 業務開發部</strong></td>
+                <td>提送釋疑函件、實地勘查安排；嚴守採購法第 71 點利益衝突條款（與 PCM 廠商保持距離）。</td>
+              </tr>
+              <tr>
+                <td><strong>4.2 設計規劃組</strong></td>
+                <td><strong>投標階段設計搶跑（做到 8 成）</strong>：單線圖、保護協調初稿、儲能基礎配置、200m 電纜路徑三方案。</td>
+              </tr>
+              <tr>
+                <td><strong>4.3 資材採購組</strong></td>
+                <td>取得台達電含交期承諾報價單、確認 ABB REF-615 供貨管道、全供應鏈非中國製產地聲明備查。</td>
+              </tr>
+              <tr>
+                <td><strong>4.6 運維管理處</strong></td>
+                <td>建立<strong>高雄在地 24/72 SLA 維運能量</strong>，精算 5 年高鹽害保固成本並配置備品庫存。</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="card blue">
+        <h3>🔗 脈絡複利效應：設計成果可重用性</h3>
+        <p>4.2 設計規劃組於本案投標階段所產出之 3MWh 儲能基礎詳圖、西子灣抗鹽塗裝規範、MGC 安全邊界邏輯與單線拓撲，即使本案未得標，亦可<strong>100% 轉化為公司「8.3 微網工程」之標準化模組資產</strong>，持續複利運用於後續其他大學及工業微電網標案。</p>
+      </div>
+    </div>
+    <div class="slide-foot">
+      <span>Part 5 · 可行性決策建議</span>
+      <span class="pageno">P5.3 / 4</span>
+    </div>
+  </section>
+
+  <!-- P5.4 -->
+  <section class="slide">
+    <div class="slide-header">
+      <div>
+        <div class="eyebrow">Part 5 · 可行性決策建議 5.4</div>
+        <h1>投標前書面釋疑清單與關鍵談判底線</h1>
+        <p class="sub">於等標期四分之一內必須以書面正式向中山大學提送之五大釋疑題目：逐條引述招標文件依據、擬定我方主張文案，並預設機關可能回覆與談判退讓底線。</p>
+      </div>
+      <div class="flags">
+        <span class="flag coral">5大必提釋疑題目</span>
+        <span class="flag blue">招標文件衝突釐清</span>
+        <span class="flag green">談判退讓底線</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th style="width:6%;">題號</th>
+              <th style="width:20%;">釋疑主題</th>
+              <th style="width:34%;">引述招標文件衝突之處</th>
+              <th style="width:24%;">我方主張建議修訂文字</th>
+              <th style="width:16%;">我方談判退讓底線</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="hl-row">
+              <td class="ctr"><strong>1</strong></td>
+              <td><strong>預算上限確認</strong></td>
+              <td>投標須知第 9 點載預算 9,500 萬；但需求書第 4 章載 9,200 萬含稅。依須知第 50 點高於預算廢標。</td>
+              <td>建請機關函覆本案公告之報價廢標上限金額究為 9,200 萬元或 9,500 萬元。</td>
+              <td>若確認為 9,200 萬，報價不得逾 9,200 萬。</td>
+            </tr>
+            <tr class="bad-row">
+              <td class="ctr"><strong>2</strong></td>
+              <td><strong>損害賠償上限</strong></td>
+              <td>契約第 19 條 (八) 2 四個賠償上限選項全未勾選；國研實驗室損失無法計量。</td>
+              <td>建請依工程會統包契約範本，增訂「損害賠償總額以契約價金總額為上限」。</td>
+              <td>若堅持不設上限，轉選項 C 放棄或上浮保險。</td>
+            </tr>
+            <tr>
+              <td class="ctr"><strong>3</strong></td>
+              <td><strong>智財權核心源碼</strong></td>
+              <td>契約第 19 條 (三) 勾選機關取得全部權利；PCM 需求書載不含廠商自有核心平台原始碼。</td>
+              <td>建請澄清僅客製化區塊與 API 屬機關，廠商原有 EMS 核心底層原始碼保留智財權。</td>
+              <td>必須確保原有 EMS 不被整包收歸國有。</td>
+            </tr>
+            <tr>
+              <td class="ctr"><strong>4</strong></td>
+              <td><strong>風雨球場介面</strong></td>
+              <td>評選項目二含風雨球場介面規劃，需求書第 7 章提 1475~2000kWp 租用光電系統。</td>
+              <td>建請澄清該風雨球場光電工程非本案施工範圍，本案僅負責預留數位通訊併接介面。</td>
+              <td>防範被要求全包風雨球場施工。</td>
+            </tr>
+            <tr>
+              <td class="ctr"><strong>5</strong></td>
+              <td><strong>保護電驛數量上限</strong></td>
+              <td>需求書寫 ABB REF-615 上限購買 5 台；但契約第 4 條又寫統包必須工程不得加價。</td>
+              <td>建請確認全校保護協調若超出 5 台，超出部分由機關另案採購或辦理契約變更。</td>
+              <td>上限必須鎖定為 5 台，超出不吸收。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="split-img-left">
+        <div class="card purple">
+          <h3>📮 釋疑提出時效規定（採購法施行細則第 43 條）</h3>
+          <p>等標期若為 20 日曆天，<strong>必須在招標公告日起 5 日曆天內以書面正式遞交中山大學</strong>。釋疑公文提送越早，機關召開審查會修正招標公告之機會越大，對我方最有利。</p>
+        </div>
+        <div class="tip">
+          <strong>決策閉環總結：</strong> 經由 Part 1~3 之完整工程拆解，與 Part 4~5 之犀利風控評估，進能服已具備參與本案最完整的技術底氣與防護壁壘，建議依「選項 B：有條件投標」穩健推進！
+        </div>
+      </div>
+    </div>
+    <div class="slide-foot">
+      <span>Part 5 · 可行性決策建議</span>
+      <span class="pageno">P5.4 / 4</span>
     </div>
   </section>
 
@@ -1606,7 +2587,7 @@ td.ctr,th.ctr{text-align:center}
   <div class="progress"><div class="fill" id="pfill"></div></div>
   <div class="hint">按 &larr; &rarr; 鍵翻頁 ｜ Home 鍵回首頁 ｜ F 鍵全螢幕</div>
   <div class="ctrl">
-    <div class="counter" id="pnum">1 / 16</div>
+    <div class="counter" id="pnum">P1.1 (1 / 25)</div>
     <button id="btnPrev" aria-label="上一頁">&larr;</button>
     <button id="btnNext" aria-label="下一頁">&rarr;</button>
   </div>
@@ -1619,11 +2600,13 @@ td.ctr,th.ctr{text-align:center}
   var parts = {
     p1: Array.prototype.slice.call(document.querySelectorAll('#view-p1 .slide')),
     p2: Array.prototype.slice.call(document.querySelectorAll('#view-p2 .slide')),
-    p3: Array.prototype.slice.call(document.querySelectorAll('#view-p3 .slide'))
+    p3: Array.prototype.slice.call(document.querySelectorAll('#view-p3 .slide')),
+    p4: Array.prototype.slice.call(document.querySelectorAll('#view-p4 .slide')),
+    p5: Array.prototype.slice.call(document.querySelectorAll('#view-p5 .slide'))
   };
-  var order = ['p1','p2','p3'];
+  var order = ['p1','p2','p3','p4','p5'];
   var state = { view:'home', idx:0 };
-  var last = { p1:0, p2:0, p3:0 };
+  var last = { p1:0, p2:0, p3:0, p4:0, p5:0 };
 
   var viewHome = document.getElementById('view-home');
   var deckbar = document.getElementById('deckbar');
@@ -1654,9 +2637,9 @@ td.ctr,th.ctr{text-align:center}
 
     if(state.view === 'home'){
       viewHome.classList.add('active');
-      document.getElementById('view-p1').classList.remove('active');
-      document.getElementById('view-p2').classList.remove('active');
-      document.getElementById('view-p3').classList.remove('active');
+      for(var k=0; k<order.length; k++){
+        document.getElementById('view-' + order[k]).classList.remove('active');
+      }
       deckbar.style.display = 'none';
     } else {
       viewHome.classList.remove('active');
@@ -1689,7 +2672,7 @@ td.ctr,th.ctr{text-align:center}
   function goHash(hash){
     hash = (hash||'#home').replace('#','');
     if(hash==='home'||hash===''){ state.view='home'; render(); return; }
-    var m = hash.match(/^(p1|p2|p3)-(\d+)$/);
+    var m = hash.match(/^(p1|p2|p3|p4|p5)-(\d+)$/);
     if(m){
       var v=m[1], i=parseInt(m[2],10)-1;
       if(parts[v] && parts[v][i]){ state.view=v; state.idx=i; render(); return; }
@@ -1855,7 +2838,6 @@ function setSimMode(modeKey){
 document.addEventListener("DOMContentLoaded", function() {
   if(!document.getElementById('campus-map')) return;
 
-  // Center on NSYSU Sizihwan Campus (22.6256, 120.2642)
   var map = L.map('campus-map', {zoomControl: true, scrollWheelZoom: false}).setView([22.6265, 120.2648], 16);
 
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -1868,12 +2850,12 @@ document.addEventListener("DOMContentLoaded", function() {
     return L.divIcon({className:'custom-pin', html:h, iconSize:[170,46], iconAnchor:[85,46]});
   }
 
-  var bessPos   = [22.6256, 120.2638]; // 排球場儲能場地
-  var guoyanPos = [22.6268, 120.2647]; // 國研大樓 (電氣室高壓併接)
-  var solarPos  = [22.6280, 120.2640]; // 海工停車場光電
-  var gymPos    = [22.6245, 120.2655]; // 風雨球場預定地
-  var dgPos     = [22.6265, 120.2642]; // 既有400kW柴發
-  var gcb6Pos   = [22.6275, 120.2660]; // 社管大樓 / GCB6 區域
+  var bessPos   = [22.6256, 120.2638];
+  var guoyanPos = [22.6268, 120.2647];
+  var solarPos  = [22.6280, 120.2640];
+  var gymPos    = [22.6245, 120.2655];
+  var dgPos     = [22.6265, 120.2642];
+  var gcb6Pos   = [22.6275, 120.2660];
 
   var bessIcon   = makeIcon('#1968AD', '🔋 3MWh 儲能＋PCS預定地', '國研旁排球場側 ｜ C5M/IP65');
   var guoyanIcon = makeIcon('#D95F45', '🔬 國研大樓 (584kW)', '半導體實驗核心 ｜ 高壓併接點');
@@ -1889,13 +2871,13 @@ document.addEventListener("DOMContentLoaded", function() {
   L.marker(dgPos,     {icon: dgIcon,     zIndexOffset: 800}).addTo(map).bindPopup('<strong>既有 400kW 柴油發電機組</strong><br>2015年添購，本案增設並聯控制盤，當儲能 SOC<30% 啟動輔助供電。');
   L.marker(gcb6Pos,   {icon: gcb6Icon,   zIndexOffset: 750}).addTo(map).bindPopup('<strong>GCB6 饋線供電大樓群</strong><br>社科院、管院與 A水池，電網事故時配合卸載分級調度。');
 
-  // 200m Connection line between BESS and Guoyan
   L.polyline([bessPos, guoyanPos], {color: '#1968AD', weight: 3.5, dashArray: '6,6', opacity: 0.85}).addTo(map);
-
-  // Radius zones around BESS
   L.circle(bessPos, {radius: 200, color: '#1968AD', fillColor: '#1968AD', fillOpacity: 0.08, weight: 1.5}).addTo(map);
 
   map.fitBounds([bessPos, guoyanPos, solarPos, gymPos, gcb6Pos], {padding: [40, 40]});
+
+  function refreshMap() { setTimeout(function(){ map.invalidateSize(); }, 250); }
+  window.addEventListener('hashchange', refreshMap);
 });
 </script>
 </body>
